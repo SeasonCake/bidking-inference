@@ -15,9 +15,12 @@ capture code, client UI, production service, private calibration, or real user d
 Python 3.10 or newer is sufficient; runtime code uses only the standard library.
 
 ```powershell
-python -m auction_inference.cli examples/synthetic_session.json
+python scripts/run_example.py examples/synthetic_session.json
 python scripts/verify.py
 ```
+
+After an editable or wheel install, the equivalent console entry is
+`auction-inference examples/synthetic_session.json`.
 
 The CLI prints JSON with accepted/rejected hypotheses, normalized posterior estimates,
 and a deterministic Monte Carlo summary.

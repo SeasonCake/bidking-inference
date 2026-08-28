@@ -6,8 +6,10 @@
 它不是 BidKing 私有产品的镜像，不含游戏表、抓包、客户端、生产服务、私有校准或真实用户数据。
 
 ```powershell
-python -m auction_inference.cli examples/synthetic_session.json
+python scripts/run_example.py examples/synthetic_session.json
 python scripts/verify.py
 ```
+
+完成 editable/wheel 安装后，也可使用 `auction-inference examples/synthetic_session.json`。
 
 仓名、copyright 主体与最终许可证仍待作者冻结，见 `LICENSE-DECISION.md`。

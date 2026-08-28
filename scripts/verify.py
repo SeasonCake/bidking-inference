@@ -63,9 +63,8 @@ def main() -> int:
         check=True,
     )
     subprocess.run(
-        [sys.executable, "-m", "auction_inference.cli", "examples/synthetic_session.json"],
+        [sys.executable, "scripts/run_example.py", "examples/synthetic_session.json"],
         cwd=ROOT,
-        env=env,
         check=True,
         stdout=subprocess.DEVNULL,
     )
