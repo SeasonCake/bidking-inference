@@ -1,0 +1,19 @@
+{
+  "synthetic": true,
+  "evidence": {
+    "total_count": {"minimum": 10, "maximum": 14},
+    "total_value": {"minimum": 900, "maximum": 1600}
+  },
+  "hypotheses": [
+    {"label": "small", "total_count": 9, "total_value": 850, "prior": 0.2},
+    {"label": "balanced", "total_count": 12, "total_value": 1200, "prior": 0.5},
+    {"label": "dense", "total_count": 14, "total_value": 1540, "prior": 0.3}
+  ],
+  "monte_carlo": {
+    "values": [50, 100, 250],
+    "probabilities": [0.5, 0.35, 0.15],
+    "draws_per_trial": 12,
+    "trials": 2000,
+    "seed": 7
+  }
+}
