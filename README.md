@@ -79,21 +79,51 @@ print({row.label: round(row.probability, 4) for row in posterior.rows})
 
 ## 界面预览
 
-下面是 BidKing 私有产品研发过程中的历史界面，用于说明本公开项目来自怎样的真实使用场景。
+0.3.4 的使用流程可以概括成三步：启动后等待新局，竞拍中自动读取公开信息并持续更新估值，
+结算后对照实际结果复盘。点击任一缩略图可查看原图；演示视频将在完成后补充到这里。
+
+<table>
+  <tr>
+    <td width="26%" align="center">
+      <a href="docs/assets/screenshots/bidking-v0.3.4-standby.png">
+        <img src="docs/assets/screenshots/bidking-v0.3.4-standby.png"
+             alt="BidKing 0.3.4 待机界面" width="100%">
+      </a>
+      <br><strong>① 待机</strong><br><sub>打开计算器，等待新局</sub>
+    </td>
+    <td width="37%" align="center">
+      <a href="docs/assets/screenshots/bidking-v0.3.4-live-bidding.png">
+        <img src="docs/assets/screenshots/bidking-v0.3.4-live-bidding.png"
+             alt="BidKing 0.3.4 对局实时估值" width="100%">
+      </a>
+      <br><strong>② 对局</strong><br><sub>读取公开信息，实时更新估值</sub>
+    </td>
+    <td width="37%" align="center">
+      <a href="docs/assets/screenshots/bidking-v0.3.4-settlement.png">
+        <img src="docs/assets/screenshots/bidking-v0.3.4-settlement.png"
+             alt="BidKing 0.3.4 结算复盘" width="100%">
+      </a>
+      <br><strong>③ 结算</strong><br><sub>对照实际结果，查看差值并复盘</sub>
+    </td>
+  </tr>
+</table>
+
+<details>
+<summary><strong>查看历史界面</strong></summary>
 
 <p align="center">
   <img src="docs/assets/screenshots/bidking-ui-compact-dark-historical.png"
-       alt="BidKing 紧凑深色界面历史截图" width="428">
+       alt="BidKing 紧凑深色界面历史截图" width="320">
+  <br><em>早期紧凑深色布局。</em>
 </p>
-
-<p align="center"><em>紧凑深色布局历史截图（图中为早期开发版本）。</em></p>
 
 <p align="center">
   <img src="docs/assets/screenshots/bidking-live-gameplay-historical.png"
-       alt="BidKing 实机联动与地图视图历史截图" width="1100">
+       alt="BidKing 实机联动与地图视图历史截图" width="900">
+  <br><em>早期实机联动、地图视图与结算推断。</em>
 </p>
 
-<p align="center"><em>实机联动、地图视图与结算推断的历史开发截图；后续将补充 0.3.4 演示视频和新截图。</em></p>
+</details>
 
 截图中的第三方游戏画面、名称、商标与素材不属于本仓 MIT 许可，详见
 [`NOTICE.md`](NOTICE.md) 与[截图说明](docs/assets/screenshots/README.md)。

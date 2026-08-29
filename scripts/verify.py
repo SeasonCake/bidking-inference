@@ -17,6 +17,24 @@ ROOT = Path(__file__).resolve().parents[1]
 TEXT_SUFFIXES = {".md", ".py", ".toml", ".yml", ".yaml", ".json"}
 BINARY_SUFFIXES = {".dll", ".exe", ".pyd", ".so", ".dylib", ".zip", ".tar", ".7z", ".rar"}
 DOCUMENTATION_IMAGES = {
+    "docs/assets/screenshots/bidking-v0.3.4-standby.png": {
+        "bytes": 150_824,
+        "width": 996,
+        "height": 864,
+        "sha256": "77405db63d9d2b1a61470c01b98026f8003ff082d62d23e4bbf0ff6a88ea16e8",
+    },
+    "docs/assets/screenshots/bidking-v0.3.4-live-bidding.png": {
+        "bytes": 2_910_877,
+        "width": 1_905,
+        "height": 1_362,
+        "sha256": "f92c78f221b20371abd457913b2967c1665cf1580e5586aca8218a94d154c91d",
+    },
+    "docs/assets/screenshots/bidking-v0.3.4-settlement.png": {
+        "bytes": 2_689_792,
+        "width": 1_910,
+        "height": 1_249,
+        "sha256": "3c84d46f4926a5cfcede63149d37980aeb79a79a3807d6a0eef36ed6531b7b96",
+    },
     "docs/assets/screenshots/bidking-ui-compact-dark-historical.png": {
         "bytes": 27_416,
         "width": 428,

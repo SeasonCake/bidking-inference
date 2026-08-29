@@ -91,22 +91,52 @@ integers, non-finite values, and empty candidate sets fail closed.
 
 ## Product context
 
-These historical screenshots show the real product setting that motivated the public
-project.
+The 0.3.4 workflow has three visible stages: wait for a new session, let the tool update
+its estimate from public information during bidding, then compare the estimate with the
+settlement result. Select any thumbnail to view the full image. A demo video will follow.
+
+<table>
+  <tr>
+    <td width="26%" align="center">
+      <a href="docs/assets/screenshots/bidking-v0.3.4-standby.png">
+        <img src="docs/assets/screenshots/bidking-v0.3.4-standby.png"
+             alt="BidKing 0.3.4 standby screen" width="100%">
+      </a>
+      <br><strong>1. Standby</strong><br><sub>Open the tool and wait for a new session</sub>
+    </td>
+    <td width="37%" align="center">
+      <a href="docs/assets/screenshots/bidking-v0.3.4-live-bidding.png">
+        <img src="docs/assets/screenshots/bidking-v0.3.4-live-bidding.png"
+             alt="BidKing 0.3.4 live bidding estimate" width="100%">
+      </a>
+      <br><strong>2. Live bidding</strong><br><sub>Read public facts and update the estimate</sub>
+    </td>
+    <td width="37%" align="center">
+      <a href="docs/assets/screenshots/bidking-v0.3.4-settlement.png">
+        <img src="docs/assets/screenshots/bidking-v0.3.4-settlement.png"
+             alt="BidKing 0.3.4 settlement review" width="100%">
+      </a>
+      <br><strong>3. Settlement</strong><br><sub>Compare the result, delta, and session record</sub>
+    </td>
+  </tr>
+</table>
+
+<details>
+<summary><strong>View historical interfaces</strong></summary>
 
 <p align="center">
   <img src="docs/assets/screenshots/bidking-ui-compact-dark-historical.png"
-       alt="Historical compact dark BidKing interface" width="428">
+       alt="Historical compact dark BidKing interface" width="320">
+  <br><em>Earlier compact dark layout.</em>
 </p>
-
-<p align="center"><em>Historical compact dark layout from an earlier development version.</em></p>
 
 <p align="center">
   <img src="docs/assets/screenshots/bidking-live-gameplay-historical.png"
-       alt="Historical BidKing live integration and map view" width="1100">
+       alt="Historical BidKing live integration and map view" width="900">
+  <br><em>Earlier live integration, map view, and settlement inference.</em>
 </p>
 
-<p align="center"><em>Historical live integration, map view, and settlement inference; a 0.3.4 demo video and current screenshots will follow.</em></p>
+</details>
 
 Third-party game imagery, names, trademarks, and assets visible in screenshots are not
 covered by this repository's MIT License. See [`NOTICE.md`](NOTICE.md) and the

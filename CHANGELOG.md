@@ -4,6 +4,8 @@ This project follows Semantic Versioning. Dates use `YYYY-MM-DD`.
 
 ## [Unreleased]
 
+- Add a compact, bilingual three-step 0.3.4 screenshot flow for standby, live bidding,
+  and settlement review; move older interfaces into a collapsed historical section.
 - Make Simplified Chinese the default repository home page and add linked English docs.
 - Add reviewed historical product screenshots with explicit documentation-only licensing.
 - Refresh GitHub Actions to the current Node 24-based action releases.
