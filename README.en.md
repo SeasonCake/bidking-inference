@@ -93,7 +93,7 @@ integers, non-finite values, and empty candidate sets fail closed.
 
 The 0.3.4 workflow has three visible stages: wait for a new session, let the tool update
 its estimate from public information during bidding, then compare the estimate with the
-settlement result. Select any thumbnail to view the full image. A demo video will follow.
+settlement result. Select any thumbnail to view the full image.
 
 <table>
   <tr>
@@ -120,6 +120,10 @@ settlement result. Select any thumbnail to view the full image. A demo video wil
     </td>
   </tr>
 </table>
+
+<p align="center">
+  <strong>▶ <a href="https://www.bilibili.com/video/BV15z4C6SEoz/">Watch the complete BidKing 0.3.4 gameplay demo</a></strong>
+</p>
 
 <details>
 <summary><strong>View historical interfaces</strong></summary>
@@ -209,6 +213,13 @@ The companion repository
 [`evidence-first-agent-skills`](https://github.com/SeasonCake/evidence-first-agent-skills)
 publishes reusable architecture-survey, claim-verification, CLI-contract, and
 agent-compatibility workflows distilled from BidKing/LC2 engineering experience.
+
+## Demo and community
+
+- [Complete BidKing 0.3.4 gameplay demo](https://www.bilibili.com/video/BV15z4C6SEoz/)
+- [Author's Bilibili profile](https://space.bilibili.com/88048665)
+- Public-code questions and feature proposals: [GitHub Issues](https://github.com/SeasonCake/bidking-inference/issues)
+- Chinese-language user discussion and release feedback: QQ Group 3 `980106659`
 
 ## License and contribution
 

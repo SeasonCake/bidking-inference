@@ -80,7 +80,7 @@ print({row.label: round(row.probability, 4) for row in posterior.rows})
 ## 界面预览
 
 0.3.4 的使用流程可以概括成三步：启动后等待新局，竞拍中自动读取公开信息并持续更新估值，
-结算后对照实际结果复盘。点击任一缩略图可查看原图；演示视频将在完成后补充到这里。
+结算后对照实际结果复盘。点击任一缩略图可查看原图。
 
 <table>
   <tr>
@@ -107,6 +107,10 @@ print({row.label: round(row.probability, 4) for row in posterior.rows})
     </td>
   </tr>
 </table>
+
+<p align="center">
+  <strong>▶ <a href="https://www.bilibili.com/video/BV15z4C6SEoz/">观看 BidKing 0.3.4 完整实机演示</a></strong>
+</p>
 
 <details>
 <summary><strong>查看历史界面</strong></summary>
@@ -192,6 +196,13 @@ BidKing 产品。完整合同见 [`OPEN_SOURCE_BOUNDARY.md`](OPEN_SOURCE_BOUNDAR
 
 配套仓库 [`evidence-first-agent-skills`](https://github.com/SeasonCake/evidence-first-agent-skills)
 公开了从 BidKing/LC2 工程实践中抽象出的通用流程：架构调查、结论验证、CLI 合同和 agent 兼容性。
+
+## 演示与交流
+
+- [BidKing 0.3.4 完整实机演示](https://www.bilibili.com/video/BV15z4C6SEoz/)
+- [作者 Bilibili 主页](https://space.bilibili.com/88048665)
+- 公开代码问题与功能建议：[GitHub Issues](https://github.com/SeasonCake/bidking-inference/issues)
+- 中文使用交流与版本反馈：QQ 3群 `980106659`
 
 ## 许可证与贡献
 

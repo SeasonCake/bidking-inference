@@ -4,6 +4,8 @@ This project follows Semantic Versioning. Dates use `YYYY-MM-DD`.
 
 ## [Unreleased]
 
+- Link the complete 0.3.4 Bilibili demo, author profile, GitHub Issues, and Chinese
+  community support channel from both home pages.
 - Add a compact, bilingual three-step 0.3.4 screenshot flow for standby, live bidding,
   and settlement review; move older interfaces into a collapsed historical section.
 - Make Simplified Chinese the default repository home page and add linked English docs.
