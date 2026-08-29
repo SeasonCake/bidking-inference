@@ -52,8 +52,10 @@ def public_boundary_errors() -> list[str]:
     if (ROOT / "LICENSE-DECISION.md").exists():
         errors.append("obsolete license decision placeholder is still present")
     pyproject = (ROOT / "pyproject.toml").read_text(encoding="utf-8")
-    if 'license = { file = "LICENSE" }' not in pyproject:
-        errors.append("pyproject does not bind package metadata to LICENSE")
+    if 'license = "MIT"' not in pyproject:
+        errors.append("pyproject does not declare the MIT SPDX expression")
+    if 'license-files = ["LICENSE", "NOTICE.md"]' not in pyproject:
+        errors.append("pyproject does not bind package metadata to public license files")
     relationship = (ROOT / "PROJECT_RELATIONSHIP.md").read_text(encoding="utf-8")
     if "evidence-first-agent-skills" not in relationship:
         errors.append("companion skills repository is not linked")
