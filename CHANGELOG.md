@@ -4,6 +4,9 @@ This project follows Semantic Versioning. Dates use `YYYY-MM-DD`.
 
 ## [Unreleased]
 
+- Make Simplified Chinese the default repository home page and add linked English docs.
+- Add reviewed historical product screenshots with explicit documentation-only licensing.
+
 ## [0.1.0] - 2026-08-29
 
 - Add strict domain-neutral models and interval constraints.

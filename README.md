@@ -1,31 +1,56 @@
+<p align="right"><strong>简体中文</strong> · <a href="README.en.md">English</a></p>
+
 # BidKing Inference
 
-A domain-neutral Python library for bounded discrete inference. It is useful when a
-small set of candidate states must be compared against incomplete, approximate, or
-categorical observations. The medium open core includes:
+[![CI](https://github.com/SeasonCake/bidking-inference/actions/workflows/ci.yml/badge.svg)](https://github.com/SeasonCake/bidking-inference/actions/workflows/ci.yml)
+[![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](pyproject.toml)
 
-- strict candidates, scalar attributes, and fail-closed observation parsing;
-- exact, interval, approximate, and categorical evidence;
-- stable log-space posterior scoring for multiple weighted fields;
-- bounded joint-state enumeration and posterior diagnostics;
-- deterministic weighted-pool simulation with or without replacement;
-- record adapters, a JSON CLI, synthetic examples, and an installable package.
+一个从 BidKing 实际产品研发中抽象出来的、领域中立的离散推断 Python 库。它适合用不完整、近似或
+类别观测，对有限候选状态进行约束、评分、后验归一化和确定性模拟。
 
-This candidate is intentionally **not** the BidKing product. It contains no game tables,
-capture code, client UI, production service, private calibration, or real user data.
+> **版本说明：** BidKing 私有产品当前版本线为 `0.3.4`；本仓是独立维护的公开推断核心，当前公开
+> Release 为 [`v0.1.0`](https://github.com/SeasonCake/bidking-inference/releases/tag/v0.1.0)。两者不是同一个
+> 可执行产品，也不共用版本语义。
 
-## Companion skills
+## 界面预览
 
-The companion repository
-[`evidence-first-agent-skills`](https://github.com/SeasonCake/evidence-first-agent-skills)
-publishes reusable workflows distilled from private BidKing engineering experience:
-evidence levels, release verification, CLI contracts, UI acceptance, handoff recovery,
-and fresh-clone truth. It contains no private product source, incident records, customer
-data, or production topology. See `PROJECT_RELATIONSHIP.md` for the boundary.
+下面是 BidKing 私有产品研发过程中的历史界面，用于说明本公开推断核心所来自的真实应用背景。
+本仓不包含截图中的私有客户端、游戏适配、校准数据或运行时。
 
-## Quick start
+<p align="center">
+  <img src="docs/assets/screenshots/bidking-ui-compact-dark-historical.png"
+       alt="BidKing 紧凑深色界面历史截图" width="428">
+</p>
 
-Python 3.10 or newer is sufficient; runtime code uses only the standard library.
+<p align="center"><em>紧凑深色布局历史截图（图中为早期开发版本）。</em></p>
+
+<p align="center">
+  <img src="docs/assets/screenshots/bidking-live-gameplay-historical.png"
+       alt="BidKing 实机联动与地图视图历史截图" width="1100">
+</p>
+
+<p align="center"><em>实机联动、地图视图与结算推断的历史开发截图；后续将补充 0.3.4 演示视频和新截图。</em></p>
+
+截图中的第三方游戏画面、名称、商标与素材不属于本仓 MIT 许可，详见
+[`NOTICE.md`](NOTICE.md) 与[截图说明](docs/assets/screenshots/README.md)。
+
+## 公开核心包含什么
+
+- 严格候选、标量属性与 fail-closed 输入解析；
+- 精确、区间、近似及类别证据；
+- 多字段加权、log-space 稳定后验；
+- 有上限的联合状态枚举、熵/有效样本量/可信集合诊断；
+- 有放回或无放回的确定性加权池模拟；
+- 通用记录适配器、JSON CLI、合成示例及可安装 Python 包。
+
+它不是 BidKing 私有产品的镜像，不含游戏表、抓包、客户端、生产服务、私有校准或真实用户数据。
+公开核心足以让使用者接入自己的可分享数据，构建小型离散推断工具；完整边界见
+[`OPEN_SOURCE_BOUNDARY.md`](OPEN_SOURCE_BOUNDARY.md)。
+
+## 快速开始
+
+Python 3.10 或更新版本即可；运行时只使用标准库。
 
 ```powershell
 python scripts/run_example.py examples/synthetic_session.json
@@ -33,25 +58,14 @@ python scripts/run_example.py examples/synthetic_multidimensional.json
 python scripts/verify.py
 ```
 
-After an editable or wheel install, the equivalent console entry is
-`auction-inference examples/synthetic_session.json`.
-
-The legacy fixture prints accepted/rejected hypotheses, normalized estimates, and a
-deterministic Monte Carlo summary. The multidimensional fixture demonstrates hard and
-soft evidence, weighted posterior rows, diagnostics, and a smallest credible set.
-
-## Install
-
-From a source checkout:
+安装后也可以使用 CLI：
 
 ```powershell
 python -m pip install .
 auction-inference examples/synthetic_session.json
 ```
 
-The package has no runtime dependencies. Supported Python versions are exercised by CI.
-
-## Examples and API
+## 示例与文档
 
 ```powershell
 python examples/constraint_filter.py
@@ -62,20 +76,19 @@ python examples/pool_simulation.py
 python examples/record_adapter.py
 ```
 
-- `docs/PUBLIC_API.md` documents the supported imports and failure behavior.
-- `docs/INPUT_SCHEMA.md` documents the strict synthetic CLI schema.
-- `OPEN_SOURCE_BOUNDARY.md` explains what is intentionally excluded.
+- [公开 API](docs/PUBLIC_API.md)
+- [严格输入 schema](docs/INPUT_SCHEMA.md)
+- [项目关系与边界](PROJECT_RELATIONSHIP.md)
+- [贡献指南](CONTRIBUTING.md)
+- [维护与支持](MAINTAINING.md)
 
-The public core is sufficient to build a small discrete-inference tool with your own
-shareable candidate data. It deliberately does not include BidKing field mappings,
-calibration tables, product thresholds, business rules, or runtime integration.
+## 配套 skills
 
-## Project maintenance
+配套仓库 [`evidence-first-agent-skills`](https://github.com/SeasonCake/evidence-first-agent-skills)
+公开了从 BidKing/LC2 工程实践中抽象出的通用流程：架构调查、结论验证、CLI 合同和 agent 兼容性。
+它同样不包含私有源码、客户数据、事故原文或生产拓扑。
 
-See `CONTRIBUTING.md`, `MAINTAINING.md`, `SUPPORT.md`, `SECURITY.md`, and `CHANGELOG.md`.
-The public issue and pull-request templates require synthetic, shareable evidence.
+## 许可证与贡献
 
-## License and contribution
-
-Copyright (c) 2026 SeasonCake. Released under the MIT License. Contributions use the
-Developer Certificate of Origin 1.1 (`git commit -s`); no CLA is required.
+Copyright (c) 2026 SeasonCake，以 MIT License 发布。贡献采用 Developer Certificate of Origin 1.1
+（提交时使用 `git commit -s`），不要求 CLA。

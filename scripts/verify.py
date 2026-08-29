@@ -4,8 +4,10 @@
 from __future__ import annotations
 
 import compileall
+import hashlib
 import json
 import os
+import struct
 import subprocess
 import sys
 from pathlib import Path
@@ -14,6 +16,21 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 TEXT_SUFFIXES = {".md", ".py", ".toml", ".yml", ".yaml", ".json"}
 BINARY_SUFFIXES = {".dll", ".exe", ".pyd", ".so", ".dylib", ".zip", ".tar", ".7z", ".rar"}
+DOCUMENTATION_IMAGES = {
+    "docs/assets/screenshots/bidking-ui-compact-dark-historical.png": {
+        "bytes": 27_416,
+        "width": 428,
+        "height": 455,
+        "sha256": "3c96e862909e0d3d2701446098f118a4a756b7e50c2564c01d9c17af7ba0c122",
+    },
+    "docs/assets/screenshots/bidking-live-gameplay-historical.png": {
+        "bytes": 5_539_463,
+        "width": 3_834,
+        "height": 1_872,
+        "sha256": "de5008799cfec1b40d5706bc1f1058de00889d58c9f56e2313391a12ae2006d5",
+    },
+}
+FORBIDDEN_PNG_METADATA_CHUNKS = {b"eXIf", b"iTXt", b"tEXt", b"zTXt"}
 BANNED_SOURCE_FRAGMENTS = (
     "bidking_lab",
     "data/processed",
@@ -26,6 +43,9 @@ BANNED_SOURCE_FRAGMENTS = (
     "c:\\tmp\\",
 )
 REQUIRED_PUBLIC_FILES = (
+    "README.md",
+    "README.en.md",
+    "README.zh-CN.md",
     "CHANGELOG.md",
     "CODE_OF_CONDUCT.md",
     "CONTRIBUTING.md",
@@ -39,11 +59,65 @@ REQUIRED_PUBLIC_FILES = (
     ".github/ISSUE_TEMPLATE/feature_request.yml",
     "docs/PUBLIC_API.md",
     "docs/INPUT_SCHEMA.md",
+    "docs/assets/screenshots/README.md",
 )
 
 
-def public_boundary_errors() -> list[str]:
+def documentation_image_errors() -> list[str]:
     errors: list[str] = []
+    actual_images = {
+        path.relative_to(ROOT).as_posix()
+        for path in (ROOT / "docs").rglob("*.png")
+        if path.is_file()
+    }
+    expected_images = set(DOCUMENTATION_IMAGES)
+    for relative in sorted(actual_images - expected_images):
+        errors.append(f"documentation image is not allowlisted: {relative}")
+    for relative in sorted(expected_images - actual_images):
+        errors.append(f"allowlisted documentation image is missing: {relative}")
+
+    for relative, expected in DOCUMENTATION_IMAGES.items():
+        path = ROOT / relative
+        if not path.is_file():
+            continue
+        data = path.read_bytes()
+        if len(data) != expected["bytes"]:
+            errors.append(f"documentation image byte count changed: {relative}")
+        if hashlib.sha256(data).hexdigest() != expected["sha256"]:
+            errors.append(f"documentation image SHA-256 changed: {relative}")
+        if not data.startswith(b"\x89PNG\r\n\x1a\n"):
+            errors.append(f"documentation image is not a PNG: {relative}")
+            continue
+
+        position = 8
+        dimensions: tuple[int, int] | None = None
+        found_iend = False
+        while position + 12 <= len(data):
+            length = struct.unpack(">I", data[position : position + 4])[0]
+            kind = data[position + 4 : position + 8]
+            chunk_end = position + 12 + length
+            if chunk_end > len(data):
+                errors.append(f"documentation PNG is truncated: {relative}")
+                break
+            if kind == b"IHDR" and length == 13:
+                dimensions = struct.unpack(">II", data[position + 8 : position + 16])
+            if kind in FORBIDDEN_PNG_METADATA_CHUNKS:
+                errors.append(
+                    f"documentation PNG contains private-capable metadata {kind!r}: {relative}"
+                )
+            position = chunk_end
+            if kind == b"IEND":
+                found_iend = True
+                break
+        if not found_iend:
+            errors.append(f"documentation PNG has no IEND chunk: {relative}")
+        if dimensions != (expected["width"], expected["height"]):
+            errors.append(f"documentation image dimensions changed: {relative}")
+    return errors
+
+
+def public_boundary_errors() -> list[str]:
+    errors = documentation_image_errors()
     for relative in REQUIRED_PUBLIC_FILES:
         if not (ROOT / relative).is_file():
             errors.append(f"required public-maintenance file is missing: {relative}")

@@ -9,3 +9,9 @@ product source, data, assets, or production topology.
 
 Reusable workflow lessons are published in the companion repository:
 <https://github.com/SeasonCake/evidence-first-agent-skills>.
+
+Reviewed documentation screenshots under `docs/assets/screenshots/` show historical
+BidKing interfaces and may include third-party game imagery, names, trademarks, or
+assets. The screenshots are provided only to explain project context. Third-party
+content visible in them is not covered by this repository's MIT License and remains the
+property of its respective owners.
