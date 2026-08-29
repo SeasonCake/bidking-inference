@@ -1,4 +1,4 @@
-# BidKing Inference (public candidate)
+# BidKing Inference
 
 A small, domain-neutral Python library for reasoning about hidden auction inventory from
 bounded observations. It demonstrates three reusable primitives:
@@ -9,6 +9,15 @@ bounded observations. It demonstrates three reusable primitives:
 
 This candidate is intentionally **not** the BidKing product. It contains no game tables,
 capture code, client UI, production service, private calibration, or real user data.
+
+## Companion skills
+
+The companion repository
+[`evidence-first-agent-skills`](https://github.com/SeasonCake/evidence-first-agent-skills)
+publishes reusable workflows distilled from private BidKing engineering experience:
+evidence levels, release verification, CLI contracts, UI acceptance, handoff recovery,
+and fresh-clone truth. It contains no private product source, incident records, customer
+data, or production topology. See `PROJECT_RELATIONSHIP.md` for the boundary.
 
 ## Quick start
 
@@ -27,5 +36,5 @@ and a deterministic Monte Carlo summary.
 
 ## Status
 
-The code and synthetic tests are ready for isolated review. Repository name, copyright
-holder, and final license remain author decisions; see `LICENSE-DECISION.md`.
+Copyright (c) 2026 SeasonCake. Released under the MIT License. Contributions use the
+Developer Certificate of Origin 1.1 (`git commit -s`); no CLA is required.

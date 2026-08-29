@@ -29,6 +29,16 @@ BANNED_SOURCE_FRAGMENTS = (
 
 def public_boundary_errors() -> list[str]:
     errors: list[str] = []
+    if not (ROOT / "LICENSE").is_file():
+        errors.append("final LICENSE is missing")
+    if (ROOT / "LICENSE-DECISION.md").exists():
+        errors.append("obsolete license decision placeholder is still present")
+    pyproject = (ROOT / "pyproject.toml").read_text(encoding="utf-8")
+    if 'license = { file = "LICENSE" }' not in pyproject:
+        errors.append("pyproject does not bind package metadata to LICENSE")
+    relationship = (ROOT / "PROJECT_RELATIONSHIP.md").read_text(encoding="utf-8")
+    if "evidence-first-agent-skills" not in relationship:
+        errors.append("companion skills repository is not linked")
     scan_roots = [ROOT / "src", ROOT / "tests", ROOT / "examples"]
     for scan_root in scan_roots:
         for path in scan_root.rglob("*"):
