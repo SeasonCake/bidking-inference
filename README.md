@@ -34,7 +34,35 @@ After an editable or wheel install, the equivalent console entry is
 The CLI prints JSON with accepted/rejected hypotheses, normalized posterior estimates,
 and a deterministic Monte Carlo summary.
 
-## Status
+## Install
+
+From a source checkout:
+
+```powershell
+python -m pip install .
+auction-inference examples/synthetic_session.json
+```
+
+The package has no runtime dependencies. Supported Python versions are exercised by CI.
+
+## Examples and API
+
+```powershell
+python examples/constraint_filter.py
+python examples/posterior_summary.py
+python examples/monte_carlo_summary.py
+```
+
+- `docs/PUBLIC_API.md` documents the supported imports and failure behavior.
+- `docs/INPUT_SCHEMA.md` documents the strict synthetic CLI schema.
+- `OPEN_SOURCE_BOUNDARY.md` explains what is intentionally excluded.
+
+## Project maintenance
+
+See `CONTRIBUTING.md`, `MAINTAINING.md`, `SUPPORT.md`, `SECURITY.md`, and `CHANGELOG.md`.
+The public issue and pull-request templates require synthetic, shareable evidence.
+
+## License and contribution
 
 Copyright (c) 2026 SeasonCake. Released under the MIT License. Contributions use the
 Developer Certificate of Origin 1.1 (`git commit -s`); no CLA is required.

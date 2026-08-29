@@ -25,10 +25,28 @@ BANNED_SOURCE_FRAGMENTS = (
     "c:\\users\\",
     "c:\\tmp\\",
 )
+REQUIRED_PUBLIC_FILES = (
+    "CHANGELOG.md",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "DCO",
+    "LICENSE",
+    "MAINTAINING.md",
+    "SECURITY.md",
+    "SUPPORT.md",
+    ".github/pull_request_template.md",
+    ".github/ISSUE_TEMPLATE/bug_report.yml",
+    ".github/ISSUE_TEMPLATE/feature_request.yml",
+    "docs/PUBLIC_API.md",
+    "docs/INPUT_SCHEMA.md",
+)
 
 
 def public_boundary_errors() -> list[str]:
     errors: list[str] = []
+    for relative in REQUIRED_PUBLIC_FILES:
+        if not (ROOT / relative).is_file():
+            errors.append(f"required public-maintenance file is missing: {relative}")
     if not (ROOT / "LICENSE").is_file():
         errors.append("final LICENSE is missing")
     if (ROOT / "LICENSE-DECISION.md").exists():
@@ -39,7 +57,7 @@ def public_boundary_errors() -> list[str]:
     relationship = (ROOT / "PROJECT_RELATIONSHIP.md").read_text(encoding="utf-8")
     if "evidence-first-agent-skills" not in relationship:
         errors.append("companion skills repository is not linked")
-    scan_roots = [ROOT / "src", ROOT / "tests", ROOT / "examples"]
+    scan_roots = [ROOT / "src", ROOT / "tests", ROOT / "examples", ROOT / "docs"]
     for scan_root in scan_roots:
         for path in scan_root.rglob("*"):
             if not path.is_file() or "__pycache__" in path.parts:
@@ -66,19 +84,27 @@ def main() -> int:
     errors = public_boundary_errors()
     if errors:
         raise SystemExit("\n".join(errors))
-    subprocess.run(
+    completed = subprocess.run(
         [sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v"],
         cwd=ROOT,
         env=env,
         check=True,
+        text=True,
+        stderr=subprocess.PIPE,
     )
+    sys.stderr.write(completed.stderr)
     subprocess.run(
         [sys.executable, "scripts/run_example.py", "examples/synthetic_session.json"],
         cwd=ROOT,
         check=True,
         stdout=subprocess.DEVNULL,
     )
-    print(json.dumps({"result": "PASS", "tests": 7, "private_boundary_errors": 0}))
+    test_lines = [line for line in completed.stderr.splitlines() if line.startswith("test_")]
+    print(
+        json.dumps(
+            {"result": "PASS", "tests": len(test_lines), "private_boundary_errors": 0}
+        )
+    )
     return 0
 
 

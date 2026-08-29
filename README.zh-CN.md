@@ -19,5 +19,19 @@ python scripts/verify.py
 
 完成 editable/wheel 安装后，也可使用 `auction-inference examples/synthetic_session.json`。
 
+## 安装、示例与维护
+
+```powershell
+python -m pip install .
+auction-inference examples/synthetic_session.json
+python examples/constraint_filter.py
+python examples/posterior_summary.py
+python examples/monte_carlo_summary.py
+```
+
+公开 API 和严格输入 schema 分别见 `docs/PUBLIC_API.md`、`docs/INPUT_SCHEMA.md`；贡献、版本发布、
+支持和变更记录见 `CONTRIBUTING.md`、`MAINTAINING.md`、`SUPPORT.md` 与 `CHANGELOG.md`。所有公开
+问题复现都应使用可分享的合成输入。
+
 Copyright (c) 2026 SeasonCake，以 MIT License 发布。贡献采用 Developer Certificate of
 Origin 1.1（提交时使用 `git commit -s`），不要求 CLA。
