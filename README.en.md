@@ -3,24 +3,96 @@
 # BidKing Inference
 
 [![CI](https://github.com/SeasonCake/bidking-inference/actions/workflows/ci.yml/badge.svg)](https://github.com/SeasonCake/bidking-inference/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/SeasonCake/bidking-inference)](https://github.com/SeasonCake/bidking-inference/releases)
 [![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](pyproject.toml)
 
-A domain-neutral discrete-inference Python library distilled from the engineering of the
-private BidKing product. It compares bounded candidate states against incomplete,
-approximate, or categorical observations and provides posterior and deterministic
-simulation summaries.
+A discrete-inference toolkit distilled from the engineering of the real BidKing product.
+It targets finite-candidate problems with incomplete observations and explainable
+answers: compose exact, interval, approximate, or categorical evidence; filter and score
+candidates; normalize a posterior; inspect uncertainty; and verify behavior with
+reproducible simulation.
 
-> **Version note:** the private BidKing product currently follows the `0.3.4` line. This
-> repository is an independently versioned public inference core; its current public
-> release is [`v0.1.0`](https://github.com/SeasonCake/bidking-inference/releases/tag/v0.1.0).
-> They are not the same executable product and do not share version semantics.
+The repository is no longer only a minimal mathematical example. Alongside the
+maintained domain-neutral Python package, it publishes a reviewed layer of real early
+product source and historical map/item tables so readers can study how an inference
+prototype evolved into a desktop product.
+
+> **Version note:** the private BidKing product follows the `0.3.4` line. The maintained
+> package in this repository is independently versioned and currently released as
+> [`v0.1.0`](https://github.com/SeasonCake/bidking-inference/releases/tag/v0.1.0). The legacy layer is frozen at
+> `v0.2.0-hotfix1`/`0.2.7-hotfix3`; these are different artifacts with different version
+> semantics.
+
+## What is public now
+
+| Layer | Included | Useful for |
+| --- | --- | --- |
+| Maintained open core | strict observations, weighted posterior, joint enumeration, credible sets, calibration, sensitivity, and pool simulation | building a small inference tool with your own public data |
+| Real early source | the `v0.2.0-hotfix1` Tk interface, reference engine, inference, and simulation source | studying real UI/state/inference/presentation collaboration |
+| Frozen old data | the last `<0.2.8` maps, heroes, items, drop mapping, and quality weights | studying historical schemas and data modeling; not current game authority |
+| Engineering methods | tests, CLI, boundary verification, and companion evidence-first skills | reusing verification and agent-compatibility workflows |
+
+The current product's capture/memory chain, `0.2.8+` adaptations and calibration,
+client evolution, activation, servers, and production deployment remain private.
+
+## Problems it can solve
+
+- **Inference from partial observations:** preserve and normalize all feasible candidates
+  when only intervals, approximate values, or categories are known.
+- **Multi-field scoring:** combine hard constraints and soft evidence in log space.
+- **Uncertainty explanations:** report entropy, effective sample size, credible sets, and
+  stable rejection reasons.
+- **Evidence influence:** remove one term at a time and measure posterior total variation
+  and Jensen-Shannon divergence.
+- **Forecast calibration:** compute Brier score, log loss, ECE/MCE, and reliability bins.
+- **Reproducible simulation:** sample weighted discrete pools with or without replacement
+  under a fixed seed.
+
+```mermaid
+flowchart LR
+    A[Candidate states / your data] --> B[Strict parsing]
+    B --> C[Exact · interval · approximate · categorical observations]
+    C --> D[Constraint filtering + log-space scoring]
+    D --> E[Posterior distribution]
+    E --> F[Entropy · credible sets · sensitivity]
+    E --> G[Calibration · pool simulation]
+    F --> H[Explainable report / your application]
+    G --> H
+```
+
+## 30-second example
+
+```python
+from auction_inference import (
+    ApproximateObservation,
+    Candidate,
+    EvidenceTerm,
+    IntervalObservation,
+    infer_weighted_posterior,
+)
+
+candidates = (
+    Candidate("compact", {"count": 8, "value": 900}, 0.3),
+    Candidate("balanced", {"count": 12, "value": 1250}, 0.5),
+    Candidate("dense", {"count": 16, "value": 1700}, 0.2),
+)
+evidence = (
+    EvidenceTerm("count", IntervalObservation(8, 16)),
+    EvidenceTerm("value", ApproximateObservation(1300, 250)),
+)
+
+posterior = infer_weighted_posterior(candidates, evidence)
+print({row.label: round(row.probability, 4) for row in posterior.rows})
+```
+
+Maintained APIs use only the Python standard library. Invalid shapes, booleans posing as
+integers, non-finite values, and empty candidate sets fail closed.
 
 ## Product context
 
 These historical screenshots show the real product setting that motivated the public
-inference core. This repository does not contain the private client, game integration,
-calibration data, or runtime shown below.
+project.
 
 <p align="center">
   <img src="docs/assets/screenshots/bidking-ui-compact-dark-historical.png"
@@ -40,64 +112,77 @@ Third-party game imagery, names, trademarks, and assets visible in screenshots a
 covered by this repository's MIT License. See [`NOTICE.md`](NOTICE.md) and the
 [screenshot notes](docs/assets/screenshots/README.md).
 
-## What the public core includes
+## Public code map
 
-- strict candidates, scalar attributes, and fail-closed input parsing;
-- exact, interval, approximate, and categorical evidence;
-- stable log-space posterior scoring for multiple weighted fields;
-- bounded joint-state enumeration and posterior diagnostics;
-- deterministic weighted-pool simulation with or without replacement;
-- record adapters, a JSON CLI, synthetic examples, and an installable package.
+| Path | Contents |
+| --- | --- |
+| [`src/auction_inference`](src/auction_inference) | maintained domain-neutral inference package |
+| [`calibration.py`](src/auction_inference/calibration.py) | binary forecast calibration and reliability bins |
+| [`sensitivity.py`](src/auction_inference/sensitivity.py) | distribution shift and leave-one-evidence-out ranking |
+| [`examples/`](examples) | constraints, posterior, joint state, simulation, adapters, calibration, and sensitivity |
+| [`legacy/source-v0.2.0-hotfix1`](legacy/source-v0.2.0-hotfix1) | 56 real early source files, 1.59 MB |
+| [`legacy/data-v0.2.7-hotfix3`](legacy/data-v0.2.7-hotfix3/data/processed) | 7 frozen historical tables, 641 KB |
+| [`legacy/README.md`](legacy/README.md) | exact provenance, manifest digests, limits, and exclusions |
+| [`scripts/verify.py`](scripts/verify.py) | unified tests and public-boundary verification |
 
-This repository is intentionally **not** the BidKing product. It contains no game
-tables, capture code, client UI, production service, private calibration, or real user
-data. The public core is sufficient to build a small discrete-inference tool using your
-own shareable candidate data. See [`OPEN_SOURCE_BOUNDARY.md`](OPEN_SOURCE_BOUNDARY.md).
+Legacy files preserve their original Git blobs. They are read-only references and are
+outside the maintained package's Semantic Versioning contract.
 
 ## Quick start
 
-Python 3.10 or newer is sufficient; runtime code uses only the standard library.
+Python 3.10 or newer is sufficient:
 
 ```powershell
-python scripts/run_example.py examples/synthetic_session.json
-python scripts/run_example.py examples/synthetic_multidimensional.json
+git clone https://github.com/SeasonCake/bidking-inference.git
+cd bidking-inference
+python -m pip install .
+auction-inference examples/synthetic_session.json
 python scripts/verify.py
 ```
 
-Install and run the CLI:
-
-```powershell
-python -m pip install .
-auction-inference examples/synthetic_session.json
-```
-
-## Examples and documentation
+Selected standalone examples:
 
 ```powershell
 python examples/constraint_filter.py
 python examples/posterior_summary.py
-python examples/monte_carlo_summary.py
 python examples/joint_posterior.py
 python examples/pool_simulation.py
-python examples/record_adapter.py
+python examples/calibration_and_sensitivity.py
 ```
+
+## Documentation
 
 - [Public API](docs/PUBLIC_API.md)
 - [Strict input schema](docs/INPUT_SCHEMA.md)
-- [Project relationship and boundary](PROJECT_RELATIONSHIP.md)
+- [Open-source boundary](OPEN_SOURCE_BOUNDARY.md)
+- [Legacy source and data](legacy/README.md)
+- [Project relationship](PROJECT_RELATIONSHIP.md)
 - [Contribution guide](CONTRIBUTING.md)
 - [Maintenance and support](MAINTAINING.md)
+
+## Medium open-core boundary
+
+| Public | Retained |
+| --- | --- |
+| generic inference/calibration/sensitivity/simulation APIs | current game field mappings and consumers |
+| synthetic data, examples, tests, and CLI | real user samples, capture, and memory acquisition |
+| reviewed early source and frozen `<0.2.8` tables | `0.2.8+` models, current calibration, and decision policy |
+| public engineering skills and verification workflows | activation, servers, production topology, commercial builds, and protection |
+
+Developers receive a runnable generic toolkit and a meaningful real historical
+implementation, but this repository alone cannot reconstruct the current BidKing
+product. See [`OPEN_SOURCE_BOUNDARY.md`](OPEN_SOURCE_BOUNDARY.md).
 
 ## Companion skills
 
 The companion repository
 [`evidence-first-agent-skills`](https://github.com/SeasonCake/evidence-first-agent-skills)
 publishes reusable architecture-survey, claim-verification, CLI-contract, and
-agent-compatibility workflows distilled from BidKing/LC2 engineering experience. It
-contains no private product source, customer data, raw incident records, or production
-topology.
+agent-compatibility workflows distilled from BidKing/LC2 engineering experience.
 
 ## License and contribution
 
-Copyright (c) 2026 SeasonCake. Released under the MIT License. Contributions use the
-Developer Certificate of Origin 1.1 (`git commit -s`); no CLA is required.
+Copyright (c) 2026 SeasonCake. Released under the MIT License. Third-party game names,
+text, and factual metadata in the historical tables remain subject to the rights
+boundary in [`NOTICE.md`](NOTICE.md). Contributions use the Developer Certificate of
+Origin 1.1 (`git commit -s`); no CLA is required.

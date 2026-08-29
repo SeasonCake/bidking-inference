@@ -53,6 +53,12 @@ class ExampleTest(unittest.TestCase):
         self.assertEqual(document["accepted"], ["beta"])
         self.assertEqual(document["rejected"], ["alpha"])
 
+    def test_calibration_and_sensitivity(self) -> None:
+        document = self.run_example("calibration_and_sensitivity.py")
+        self.assertTrue(document["synthetic"])
+        self.assertGreater(document["calibration"]["brier_score"], 0.0)
+        self.assertEqual(len(document["evidence_influence"]), 2)
+
 
 if __name__ == "__main__":
     unittest.main()

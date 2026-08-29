@@ -1,0 +1,770 @@
+[
+  {
+    "battle_item_id": 100100,
+    "name": "全库透视",
+    "description": "显示所有藏品的轮廓",
+    "tags": [
+      11
+    ],
+    "quality": 5,
+    "quality_color": "gold",
+    "effect_type": 2,
+    "effect_type_label": "reveal_outlines"
+  },
+  {
+    "battle_item_id": 100101,
+    "name": "四象窥视",
+    "description": "随机显示4件藏品轮廓",
+    "tags": [
+      11
+    ],
+    "quality": 2,
+    "quality_color": "green",
+    "effect_type": 2,
+    "effect_type_label": "reveal_outlines"
+  },
+  {
+    "battle_item_id": 100102,
+    "name": "十方窥视",
+    "description": "随机显示10件藏品轮廓",
+    "tags": [
+      11
+    ],
+    "quality": 3,
+    "quality_color": "blue",
+    "effect_type": 2,
+    "effect_type_label": "reveal_outlines"
+  },
+  {
+    "battle_item_id": 100103,
+    "name": "总仓储空间",
+    "description": "显示所有藏品的总格数",
+    "tags": [
+      11
+    ],
+    "quality": 5,
+    "quality_color": "gold",
+    "effect_type": 3,
+    "effect_type_label": "show_total_cells"
+  },
+  {
+    "battle_item_id": 100104,
+    "name": "普品扫描",
+    "description": "显示所有绿色品质藏品的总格数",
+    "tags": [
+      11
+    ],
+    "quality": 1,
+    "quality_color": "white",
+    "effect_type": 3,
+    "effect_type_label": "show_total_cells"
+  },
+  {
+    "battle_item_id": 100105,
+    "name": "良品扫描",
+    "description": "显示所有蓝色品质藏品的总格数",
+    "tags": [
+      11
+    ],
+    "quality": 2,
+    "quality_color": "green",
+    "effect_type": 3,
+    "effect_type_label": "show_total_cells"
+  },
+  {
+    "battle_item_id": 100106,
+    "name": "优品扫描",
+    "description": "显示所有紫色品质藏品的总格数",
+    "tags": [
+      11
+    ],
+    "quality": 3,
+    "quality_color": "blue",
+    "effect_type": 3,
+    "effect_type_label": "show_total_cells"
+  },
+  {
+    "battle_item_id": 100107,
+    "name": "极品扫描",
+    "description": "显示所有金色品质藏品的总格数",
+    "tags": [
+      11
+    ],
+    "quality": 4,
+    "quality_color": "purple",
+    "effect_type": 3,
+    "effect_type_label": "show_total_cells"
+  },
+  {
+    "battle_item_id": 100108,
+    "name": "珍品扫描",
+    "description": "显示所有红色品质藏品的总格数",
+    "tags": [
+      11
+    ],
+    "quality": 5,
+    "quality_color": "gold",
+    "effect_type": 3,
+    "effect_type_label": "show_total_cells"
+  },
+  {
+    "battle_item_id": 100110,
+    "name": "普品均格",
+    "description": "显示所有绿色和白色品质藏品的平均格数",
+    "tags": [
+      11
+    ],
+    "quality": 2,
+    "quality_color": "green",
+    "effect_type": 4,
+    "effect_type_label": "show_avg_cells"
+  },
+  {
+    "battle_item_id": 100111,
+    "name": "良品均格",
+    "description": "显示所有蓝色品质藏品的平均格数",
+    "tags": [
+      11
+    ],
+    "quality": 2,
+    "quality_color": "green",
+    "effect_type": 4,
+    "effect_type_label": "show_avg_cells"
+  },
+  {
+    "battle_item_id": 100112,
+    "name": "优品均格",
+    "description": "显示所有紫色品质藏品的平均格数",
+    "tags": [
+      11
+    ],
+    "quality": 2,
+    "quality_color": "green",
+    "effect_type": 4,
+    "effect_type_label": "show_avg_cells"
+  },
+  {
+    "battle_item_id": 100113,
+    "name": "极品均格",
+    "description": "显示所有金色品质藏品的平均格数",
+    "tags": [
+      11
+    ],
+    "quality": 3,
+    "quality_color": "blue",
+    "effect_type": 4,
+    "effect_type_label": "show_avg_cells"
+  },
+  {
+    "battle_item_id": 100114,
+    "name": "珍品均格",
+    "description": "显示所有红色品质藏品的平均格数",
+    "tags": [
+      11
+    ],
+    "quality": 5,
+    "quality_color": "gold",
+    "effect_type": 4,
+    "effect_type_label": "show_avg_cells"
+  },
+  {
+    "battle_item_id": 100115,
+    "name": "库存清点",
+    "description": "显示所有藏品总数量",
+    "tags": [
+      11
+    ],
+    "quality": 4,
+    "quality_color": "purple",
+    "effect_type": 5,
+    "effect_type_label": "show_count"
+  },
+  {
+    "battle_item_id": 100116,
+    "name": "普品存量",
+    "description": "显示所有绿色品质藏品的总数量",
+    "tags": [
+      11
+    ],
+    "quality": 1,
+    "quality_color": "white",
+    "effect_type": 5,
+    "effect_type_label": "show_count"
+  },
+  {
+    "battle_item_id": 100117,
+    "name": "良品存量",
+    "description": "显示所有蓝色品质藏品的总数量",
+    "tags": [
+      11
+    ],
+    "quality": 2,
+    "quality_color": "green",
+    "effect_type": 5,
+    "effect_type_label": "show_count"
+  },
+  {
+    "battle_item_id": 100118,
+    "name": "优品存量",
+    "description": "显示所有紫色品质藏品的总数量",
+    "tags": [
+      11
+    ],
+    "quality": 3,
+    "quality_color": "blue",
+    "effect_type": 5,
+    "effect_type_label": "show_count"
+  },
+  {
+    "battle_item_id": 100119,
+    "name": "极品存量",
+    "description": "显示所有金色品质藏品的总数量",
+    "tags": [
+      11
+    ],
+    "quality": 4,
+    "quality_color": "purple",
+    "effect_type": 5,
+    "effect_type_label": "show_count"
+  },
+  {
+    "battle_item_id": 100120,
+    "name": "珍品存量",
+    "description": "显示所有红色品质藏品的总数量",
+    "tags": [
+      11
+    ],
+    "quality": 5,
+    "quality_color": "gold",
+    "effect_type": 5,
+    "effect_type_label": "show_count"
+  },
+  {
+    "battle_item_id": 100121,
+    "name": "终极审计",
+    "description": "显示所有藏品总价值",
+    "tags": [
+      11
+    ],
+    "quality": 6,
+    "quality_color": "red",
+    "effect_type": 6,
+    "effect_type_label": "show_value"
+  },
+  {
+    "battle_item_id": 100122,
+    "name": "普品估价",
+    "description": "显示绿色品质藏品总价值",
+    "tags": [
+      11
+    ],
+    "quality": 1,
+    "quality_color": "white",
+    "effect_type": 6,
+    "effect_type_label": "show_value"
+  },
+  {
+    "battle_item_id": 100123,
+    "name": "良品估价",
+    "description": "显示蓝色品质藏品总价值",
+    "tags": [
+      11
+    ],
+    "quality": 2,
+    "quality_color": "green",
+    "effect_type": 6,
+    "effect_type_label": "show_value"
+  },
+  {
+    "battle_item_id": 100124,
+    "name": "优品估价",
+    "description": "显示紫色品质藏品总价值",
+    "tags": [
+      11
+    ],
+    "quality": 3,
+    "quality_color": "blue",
+    "effect_type": 6,
+    "effect_type_label": "show_value"
+  },
+  {
+    "battle_item_id": 100125,
+    "name": "极品估价",
+    "description": "显示金色品质藏品总价值",
+    "tags": [
+      11
+    ],
+    "quality": 4,
+    "quality_color": "purple",
+    "effect_type": 6,
+    "effect_type_label": "show_value"
+  },
+  {
+    "battle_item_id": 100126,
+    "name": "珍品估价",
+    "description": "显示红色品质藏品总价值",
+    "tags": [
+      11
+    ],
+    "quality": 6,
+    "quality_color": "red",
+    "effect_type": 6,
+    "effect_type_label": "show_value"
+  },
+  {
+    "battle_item_id": 100127,
+    "name": "全知全能",
+    "description": "显示所有藏品",
+    "tags": [
+      11
+    ],
+    "quality": 6,
+    "quality_color": "red",
+    "effect_type": 1,
+    "effect_type_label": "reveal_items"
+  },
+  {
+    "battle_item_id": 100128,
+    "name": "随机抽检（1）",
+    "description": "随机显示1件藏品",
+    "tags": [
+      11
+    ],
+    "quality": 1,
+    "quality_color": "white",
+    "effect_type": 1,
+    "effect_type_label": "reveal_items"
+  },
+  {
+    "battle_item_id": 100129,
+    "name": "随机抽检（2）",
+    "description": "随机显示2件藏品",
+    "tags": [
+      11
+    ],
+    "quality": 2,
+    "quality_color": "green",
+    "effect_type": 1,
+    "effect_type_label": "reveal_items"
+  },
+  {
+    "battle_item_id": 100130,
+    "name": "随机抽检（4）",
+    "description": "随机显示4件藏品",
+    "tags": [
+      11
+    ],
+    "quality": 4,
+    "quality_color": "purple",
+    "effect_type": 1,
+    "effect_type_label": "reveal_items"
+  },
+  {
+    "battle_item_id": 100131,
+    "name": "随机抽检（6）",
+    "description": "随机显示6件藏品",
+    "tags": [
+      11
+    ],
+    "quality": 5,
+    "quality_color": "gold",
+    "effect_type": 1,
+    "effect_type_label": "reveal_items"
+  },
+  {
+    "battle_item_id": 100132,
+    "name": "随机抽检（8）",
+    "description": "随机显示8件藏品",
+    "tags": [
+      11
+    ],
+    "quality": 6,
+    "quality_color": "red",
+    "effect_type": 1,
+    "effect_type_label": "reveal_items"
+  },
+  {
+    "battle_item_id": 100133,
+    "name": "随机抽检（10）",
+    "description": "随机显示10件藏品",
+    "tags": [
+      11
+    ],
+    "quality": 6,
+    "quality_color": "red",
+    "effect_type": 1,
+    "effect_type_label": "reveal_items"
+  },
+  {
+    "battle_item_id": 100134,
+    "name": "明镜之眼",
+    "description": "显示所有藏品的品质",
+    "tags": [
+      11
+    ],
+    "quality": 6,
+    "quality_color": "red",
+    "effect_type": 7,
+    "effect_type_label": "show_quality"
+  },
+  {
+    "battle_item_id": 100135,
+    "name": "宝光双鉴",
+    "description": "随机显示2件藏品的品质",
+    "tags": [
+      11
+    ],
+    "quality": 1,
+    "quality_color": "white",
+    "effect_type": 7,
+    "effect_type_label": "show_quality"
+  },
+  {
+    "battle_item_id": 100136,
+    "name": "宝光四鉴",
+    "description": "随机显示4件藏品的品质",
+    "tags": [
+      11
+    ],
+    "quality": 2,
+    "quality_color": "green",
+    "effect_type": 7,
+    "effect_type_label": "show_quality"
+  },
+  {
+    "battle_item_id": 100137,
+    "name": "宝光六鉴",
+    "description": "随机显示6件藏品的品质",
+    "tags": [
+      11
+    ],
+    "quality": 3,
+    "quality_color": "blue",
+    "effect_type": 7,
+    "effect_type_label": "show_quality"
+  },
+  {
+    "battle_item_id": 100138,
+    "name": "宝光八鉴",
+    "description": "随机显示8件藏品的品质",
+    "tags": [
+      11
+    ],
+    "quality": 4,
+    "quality_color": "purple",
+    "effect_type": 7,
+    "effect_type_label": "show_quality"
+  },
+  {
+    "battle_item_id": 100139,
+    "name": "宝光十鉴",
+    "description": "随机显示10件藏品的品质",
+    "tags": [
+      11
+    ],
+    "quality": 4,
+    "quality_color": "purple",
+    "effect_type": 7,
+    "effect_type_label": "show_quality"
+  },
+  {
+    "battle_item_id": 100140,
+    "name": "华丽宝光",
+    "description": "随机显示15件藏品的品质",
+    "tags": [
+      11
+    ],
+    "quality": 5,
+    "quality_color": "gold",
+    "effect_type": 7,
+    "effect_type_label": "show_quality"
+  },
+  {
+    "battle_item_id": 100151,
+    "name": "【家具物品】鉴影",
+    "description": "显示家具物品的藏品的轮廓",
+    "tags": [
+      11
+    ],
+    "quality": 3,
+    "quality_color": "blue",
+    "effect_type": 2,
+    "effect_type_label": "reveal_outlines"
+  },
+  {
+    "battle_item_id": 100152,
+    "name": "【医疗药品】鉴影",
+    "description": "显示医疗药品的藏品的轮廓",
+    "tags": [
+      11
+    ],
+    "quality": 3,
+    "quality_color": "blue",
+    "effect_type": 2,
+    "effect_type_label": "reveal_outlines"
+  },
+  {
+    "battle_item_id": 100153,
+    "name": "【时尚潮流】鉴影",
+    "description": "显示时尚潮流的藏品的轮廓",
+    "tags": [
+      11
+    ],
+    "quality": 3,
+    "quality_color": "blue",
+    "effect_type": 2,
+    "effect_type_label": "reveal_outlines"
+  },
+  {
+    "battle_item_id": 100154,
+    "name": "【兵装军火】鉴影",
+    "description": "显示兵装军火的藏品的轮廓",
+    "tags": [
+      11
+    ],
+    "quality": 3,
+    "quality_color": "blue",
+    "effect_type": 2,
+    "effect_type_label": "reveal_outlines"
+  },
+  {
+    "battle_item_id": 100155,
+    "name": "【珠宝矿藏】鉴影",
+    "description": "显示珠宝矿藏的藏品的轮廓",
+    "tags": [
+      11
+    ],
+    "quality": 3,
+    "quality_color": "blue",
+    "effect_type": 2,
+    "effect_type_label": "reveal_outlines"
+  },
+  {
+    "battle_item_id": 100156,
+    "name": "【文物古董】鉴影",
+    "description": "显示文物古董的藏品的轮廓",
+    "tags": [
+      11
+    ],
+    "quality": 3,
+    "quality_color": "blue",
+    "effect_type": 2,
+    "effect_type_label": "reveal_outlines"
+  },
+  {
+    "battle_item_id": 100157,
+    "name": "【数码娱乐】鉴影",
+    "description": "显示数码娱乐的藏品的轮廓",
+    "tags": [
+      11
+    ],
+    "quality": 3,
+    "quality_color": "blue",
+    "effect_type": 2,
+    "effect_type_label": "reveal_outlines"
+  },
+  {
+    "battle_item_id": 100158,
+    "name": "【能源交通】鉴影",
+    "description": "显示能源交通的藏品的轮廓",
+    "tags": [
+      11
+    ],
+    "quality": 3,
+    "quality_color": "blue",
+    "effect_type": 2,
+    "effect_type_label": "reveal_outlines"
+  },
+  {
+    "battle_item_id": 100159,
+    "name": "【食饮珍馐】鉴影",
+    "description": "显示食饮珍馐的藏品的轮廓",
+    "tags": [
+      11
+    ],
+    "quality": 3,
+    "quality_color": "blue",
+    "effect_type": 2,
+    "effect_type_label": "reveal_outlines"
+  },
+  {
+    "battle_item_id": 100160,
+    "name": "【书画古籍】鉴影",
+    "description": "显示书画古籍的藏品的轮廓",
+    "tags": [
+      11
+    ],
+    "quality": 3,
+    "quality_color": "blue",
+    "effect_type": 2,
+    "effect_type_label": "reveal_outlines"
+  },
+  {
+    "battle_item_id": 100161,
+    "name": "至宝寻踪",
+    "description": "显示随机1个最高品质藏品的轮廓",
+    "tags": [
+      11
+    ],
+    "quality": 3,
+    "quality_color": "blue",
+    "effect_type": 2,
+    "effect_type_label": "reveal_outlines"
+  },
+  {
+    "battle_item_id": 100162,
+    "name": "至宝体量",
+    "description": "显示随机1个最高品质藏品的格子数量",
+    "tags": [
+      11
+    ],
+    "quality": 3,
+    "quality_color": "blue",
+    "effect_type": 3,
+    "effect_type_label": "show_total_cells"
+  },
+  {
+    "battle_item_id": 100163,
+    "name": "至宝估价",
+    "description": "显示随机1个最高品质藏品的价值",
+    "tags": [
+      11
+    ],
+    "quality": 4,
+    "quality_color": "purple",
+    "effect_type": 6,
+    "effect_type_label": "show_value"
+  },
+  {
+    "battle_item_id": 100164,
+    "name": "至宝抽样",
+    "description": "显示随机1个最高品质的藏品",
+    "tags": [
+      11
+    ],
+    "quality": 5,
+    "quality_color": "gold",
+    "effect_type": 1,
+    "effect_type_label": "reveal_items"
+  },
+  {
+    "battle_item_id": 100165,
+    "name": "巨物标识",
+    "description": "显示随机1个格子占用最多藏品的轮廓",
+    "tags": [
+      11
+    ],
+    "quality": 3,
+    "quality_color": "blue",
+    "effect_type": 1,
+    "effect_type_label": "reveal_items"
+  },
+  {
+    "battle_item_id": 100166,
+    "name": "巨物鉴定",
+    "description": "显示随机1个格子占用最多藏品的品质",
+    "tags": [
+      11
+    ],
+    "quality": 3,
+    "quality_color": "blue",
+    "effect_type": 7,
+    "effect_type_label": "show_quality"
+  },
+  {
+    "battle_item_id": 100167,
+    "name": "巨物估价",
+    "description": "显示随机1个格子占用最多藏品的价值",
+    "tags": [
+      11
+    ],
+    "quality": 3,
+    "quality_color": "blue",
+    "effect_type": 6,
+    "effect_type_label": "show_value"
+  },
+  {
+    "battle_item_id": 100168,
+    "name": "巨物抽样",
+    "description": "显示随机1个格子占用最多的藏品",
+    "tags": [
+      11
+    ],
+    "quality": 4,
+    "quality_color": "purple",
+    "effect_type": 1,
+    "effect_type_label": "reveal_items"
+  },
+  {
+    "battle_item_id": 100169,
+    "name": "单格均价",
+    "description": "显示占位1格藏品的平均价值",
+    "tags": [
+      11
+    ],
+    "quality": 4,
+    "quality_color": "purple",
+    "effect_type": 8,
+    "effect_type_label": "unknown_8"
+  },
+  {
+    "battle_item_id": 100170,
+    "name": "两格均价",
+    "description": "显示占位2格藏品的平均价值",
+    "tags": [
+      11
+    ],
+    "quality": 4,
+    "quality_color": "purple",
+    "effect_type": 8,
+    "effect_type_label": "unknown_8"
+  },
+  {
+    "battle_item_id": 100171,
+    "name": "三格均价",
+    "description": "显示占位3格藏品的平均价值",
+    "tags": [
+      11
+    ],
+    "quality": 4,
+    "quality_color": "purple",
+    "effect_type": 8,
+    "effect_type_label": "unknown_8"
+  },
+  {
+    "battle_item_id": 100172,
+    "name": "四格均价",
+    "description": "显示占位4格藏品的平均价值",
+    "tags": [
+      11
+    ],
+    "quality": 4,
+    "quality_color": "purple",
+    "effect_type": 8,
+    "effect_type_label": "unknown_8"
+  },
+  {
+    "battle_item_id": 100173,
+    "name": "六格均价",
+    "description": "显示占位6格藏品的平均价值",
+    "tags": [
+      11
+    ],
+    "quality": 4,
+    "quality_color": "purple",
+    "effect_type": 8,
+    "effect_type_label": "unknown_8"
+  },
+  {
+    "battle_item_id": 100174,
+    "name": "【能源交通】检定",
+    "description": "显示能源交通的藏品的轮廓和品质",
+    "tags": [
+      11
+    ],
+    "quality": 6,
+    "quality_color": "red",
+    "effect_type": 7,
+    "effect_type_label": "show_quality"
+  }
+]

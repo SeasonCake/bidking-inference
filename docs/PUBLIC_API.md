@@ -66,6 +66,27 @@ set. State priors are relative weights; each variable needs a positive total. Th
 - `smallest_credible_set(labeled_probabilities, mass=0.95)` returns the smallest
   probability-ordered prefix whose cumulative mass reaches the requested threshold.
 
+## Forecast calibration
+
+- `BinaryForecast(probability, outcome, weight=1.0)` stores one strict binary forecast.
+- `assess_binary_calibration(forecasts, bins=10)` returns weighted Brier score, clipped
+  finite log loss, expected/maximum calibration error, and non-empty reliability bins.
+
+Outcomes must be exact booleans, probabilities must be in `[0, 1]`, and weights must be
+positive. These metrics diagnose a supplied forecast set; they do not automatically
+change priors or authorize a product calibration.
+
+## Sensitivity and distribution shift
+
+- `compare_distributions(baseline, alternative)` compares normalized labeled
+  distributions over their union of labels. It reports total variation,
+  Jensen-Shannon divergence, top-label changes, and ordered per-label deltas.
+- `rank_evidence_influence(candidates, terms)` performs deterministic
+  leave-one-evidence-out scoring and ranks terms by posterior total variation.
+
+Sensitivity requires at least two evidence terms so every ablation arm retains a
+defined evidence contract. Results are diagnostic; they do not select or remove terms.
+
 ## Record adapters
 
 `MappingCandidateAdapter` maps public record fields to `Candidate`; `adapt_records`
@@ -89,3 +110,6 @@ The result includes the total summary and mean draws per category.
 Public names exported by `auction_inference.__all__` follow Semantic Versioning. Error
 message prose may improve in a minor release, while machine rejection reason strings are
 treated as public behavior.
+
+Files under `legacy/` are frozen historical reference material, not part of this public
+API or Semantic Versioning contract.

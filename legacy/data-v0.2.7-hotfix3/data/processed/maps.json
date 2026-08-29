@@ -1,0 +1,5376 @@
+[
+  {
+    "map_id": 2101,
+    "name": "未知快递",
+    "description": "这是一批真正的“无主之物”，物流信息完全丢失，源头成谜。每一个包裹都像一个等待被揭示的命运盲盒，充满了无限可能与意外。",
+    "category": 101,
+    "auction_mode": "open",
+    "sub_pool_weights": [
+      [
+        2101,
+        100
+      ],
+      [
+        2102,
+        20
+      ],
+      [
+        2103,
+        20
+      ],
+      [
+        2104,
+        20
+      ],
+      [
+        2105,
+        20
+      ],
+      [
+        2106,
+        20
+      ],
+      [
+        2107,
+        20
+      ]
+    ],
+    "rounds_total": 10,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 10000,
+    "drop_pool_id": 2101,
+    "items_per_session_min": 16,
+    "items_per_session_max": 32,
+    "value_tier_ui": "ui_value_low",
+    "mode_flag": 2,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      102,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 2102,
+    "name": "医院快递",
+    "description": "消毒水的气息隐约可闻，包裹形状规整不一，有的触手冰凉坚硬，有的则散发出淡淡的日常气息，仿佛来自一个功能完备的微型社区。",
+    "category": 101,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 10,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 10000,
+    "drop_pool_id": 2102,
+    "items_per_session_min": 16,
+    "items_per_session_max": 32,
+    "value_tier_ui": "ui_value_low",
+    "mode_flag": 2,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      102,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 2103,
+    "name": "超市快递",
+    "description": "包裹散发着浓郁的生活气息，既有规整的方形包装，也有触感柔软的袋件，充满了市井的烟火味与实用的质感。",
+    "category": 101,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 10,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 10000,
+    "drop_pool_id": 2103,
+    "items_per_session_min": 16,
+    "items_per_session_max": 32,
+    "value_tier_ui": "ui_value_low",
+    "mode_flag": 2,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      102,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 2104,
+    "name": "学区快递",
+    "description": "包裹重量轻重不一，有的棱角分明带有电子产品的精密感，有的则是规整的方形，散发着旧纸与油墨特有的沉稳气息。",
+    "category": 101,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 10,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 10000,
+    "drop_pool_id": 2104,
+    "items_per_session_min": 16,
+    "items_per_session_max": 32,
+    "value_tier_ui": "ui_value_low",
+    "mode_flag": 2,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      102,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 2105,
+    "name": "小区快递",
+    "description": "最贴近生活的包裹堆，充满了家常的味道。从规整的家具包装到日常消耗品的触感，平凡中或许藏着不凡的惊喜。",
+    "category": 101,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 10,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 10000,
+    "drop_pool_id": 2105,
+    "items_per_session_min": 16,
+    "items_per_session_max": 32,
+    "value_tier_ui": "ui_value_low",
+    "mode_flag": 2,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      102,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 2106,
+    "name": "玩具店快递",
+    "description": "包裹色彩鲜艳，充满活力。多数轻巧，但个别异常沉重坚硬，手感复杂，似乎装着为不同年龄层准备的“大型玩具”或专业装备。",
+    "category": 101,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 10,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 10000,
+    "drop_pool_id": 2106,
+    "items_per_session_min": 16,
+    "items_per_session_max": 32,
+    "value_tier_ui": "ui_value_low",
+    "mode_flag": 2,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      102,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 2107,
+    "name": "古董街快递",
+    "description": "包裹散发着陈旧木材和特殊纸张的气味，手感或轻或重，个别小件却分量十足，仿佛承载着被时光打磨过的秘密。",
+    "category": 101,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 10,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 10000,
+    "drop_pool_id": 2107,
+    "items_per_session_min": 16,
+    "items_per_session_max": 32,
+    "value_tier_ui": "ui_value_low",
+    "mode_flag": 2,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      102,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 2201,
+    "name": "未知仓库",
+    "description": "仓库主人身份成谜，留下的货物杂乱无章，从日常用品到造型奇特的器械应有尽有，每一次探索都是全新的谜题。",
+    "category": 102,
+    "auction_mode": "open",
+    "sub_pool_weights": [
+      [
+        2201,
+        100
+      ],
+      [
+        2202,
+        20
+      ],
+      [
+        2203,
+        20
+      ],
+      [
+        2204,
+        20
+      ],
+      [
+        2205,
+        20
+      ]
+    ],
+    "rounds_total": 15,
+    "entry_fee_silver": 2000,
+    "starting_budget_silver": 100000,
+    "drop_pool_id": 2201,
+    "items_per_session_min": 16,
+    "items_per_session_max": 32,
+    "value_tier_ui": "ui_value_lower",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      102,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 2202,
+    "name": "潮牌仓库",
+    "description": "仓库里堆满未拆封的板式家具和蒙尘的模特架，所有物品贴着统一的品牌标签，风格鲜明，诉说着某个时代的流行印记。",
+    "category": 102,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 15,
+    "entry_fee_silver": 2000,
+    "starting_budget_silver": 100000,
+    "drop_pool_id": 2202,
+    "items_per_session_min": 16,
+    "items_per_session_max": 32,
+    "value_tier_ui": "ui_value_lower",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      102,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 2203,
+    "name": "硬核资产仓库",
+    "description": "空气中弥漫着机油与电路板的味道，被厚重篷布覆盖的硬朗轮廓与密集的仪器箱共存，充满了未释放的能量感。",
+    "category": 102,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 15,
+    "entry_fee_silver": 2000,
+    "starting_budget_silver": 100000,
+    "drop_pool_id": 2203,
+    "items_per_session_min": 16,
+    "items_per_session_max": 32,
+    "value_tier_ui": "ui_value_lower",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      102,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 2204,
+    "name": "民生储备仓库",
+    "description": "甜腻、腐败与苦涩的药味混合，货架上堆满了各式密封包装，它们的价值在时间的侵蚀下变得极其微妙。",
+    "category": 102,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 15,
+    "entry_fee_silver": 2000,
+    "starting_budget_silver": 100000,
+    "drop_pool_id": 2204,
+    "items_per_session_min": 16,
+    "items_per_session_max": 32,
+    "value_tier_ui": "ui_value_lower",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      102,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 2205,
+    "name": "书店仓库",
+    "description": "仓库深处，落灰的箱奁与卷轴筒堆积如山，寂静中弥漫着时光的气息，真伪与价值都隐藏在厚厚的尘埃之下。",
+    "category": 102,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 15,
+    "entry_fee_silver": 2000,
+    "starting_budget_silver": 100000,
+    "drop_pool_id": 2205,
+    "items_per_session_min": 16,
+    "items_per_session_max": 32,
+    "value_tier_ui": "ui_value_lower",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      102,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 2301,
+    "name": "杂货集装箱",
+    "description": "集装箱标签破损，记录混乱。它像海上的幽灵货柜，内容物在多次转手后已成谜团，开启它是真正的冒险。",
+    "category": 103,
+    "auction_mode": "open",
+    "sub_pool_weights": [
+      [
+        2301,
+        100
+      ],
+      [
+        2302,
+        20
+      ],
+      [
+        2303,
+        20
+      ],
+      [
+        2304,
+        20
+      ],
+      [
+        2305,
+        20
+      ],
+      [
+        2306,
+        20
+      ],
+      [
+        2307,
+        20
+      ],
+      [
+        2308,
+        20
+      ],
+      [
+        2309,
+        20
+      ],
+      [
+        2310,
+        20
+      ]
+    ],
+    "rounds_total": 20,
+    "entry_fee_silver": 5000,
+    "starting_budget_silver": 500000,
+    "drop_pool_id": 2301,
+    "items_per_session_min": 18,
+    "items_per_session_max": 36,
+    "value_tier_ui": "ui_value_medium ",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      103
+    ]
+  },
+  {
+    "map_id": 2302,
+    "name": "家居集装箱",
+    "description": "箱内是精心包裹的现代家居构件与织物，风格统一，宛如一个跨越重洋、等待被重新定义的生活空间样本。",
+    "category": 103,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 20,
+    "entry_fee_silver": 5000,
+    "starting_budget_silver": 500000,
+    "drop_pool_id": 2302,
+    "items_per_session_min": 18,
+    "items_per_session_max": 36,
+    "value_tier_ui": "ui_value_medium ",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      103
+    ]
+  },
+  {
+    "map_id": 2303,
+    "name": "数码科技集装箱",
+    "description": "箱体有特殊加固痕迹，敲击声沉闷。内部传来隐约的电流嗡鸣与金属冷感，内容物显然需要专业对待。",
+    "category": 103,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 20,
+    "entry_fee_silver": 5000,
+    "starting_budget_silver": 500000,
+    "drop_pool_id": 2303,
+    "items_per_session_min": 18,
+    "items_per_session_max": 36,
+    "value_tier_ui": "ui_value_medium ",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      103
+    ]
+  },
+  {
+    "map_id": 2304,
+    "name": "冷链集装箱",
+    "description": "冷藏箱的寂静内部，复杂的气味暗示着内容物正处于蜕变临界点，结局的天平摇摆不定。",
+    "category": 103,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 20,
+    "entry_fee_silver": 5000,
+    "starting_budget_silver": 500000,
+    "drop_pool_id": 2304,
+    "items_per_session_min": 18,
+    "items_per_session_max": 36,
+    "value_tier_ui": "ui_value_medium ",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      103
+    ]
+  },
+  {
+    "map_id": 2305,
+    "name": "古董工艺集装箱",
+    "description": "箱体老旧，散发着异域的陈旧气息。内里的容器大小不一，手感或轻或重，秘密与风险被紧紧锁住。",
+    "category": 103,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 20,
+    "entry_fee_silver": 5000,
+    "starting_budget_silver": 500000,
+    "drop_pool_id": 2305,
+    "items_per_session_min": 18,
+    "items_per_session_max": 36,
+    "value_tier_ui": "ui_value_medium ",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      103
+    ]
+  },
+  {
+    "map_id": 2306,
+    "name": "文博集装箱",
+    "description": "箱门开启，是扑鼻的旧纸墨香。里面堆满了各种材质的储藏箱，堪称一座处于静默状态的私人资料库。",
+    "category": 103,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 20,
+    "entry_fee_silver": 5000,
+    "starting_budget_silver": 500000,
+    "drop_pool_id": 2306,
+    "items_per_session_min": 18,
+    "items_per_session_max": 36,
+    "value_tier_ui": "ui_value_medium ",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      103
+    ]
+  },
+  {
+    "map_id": 2307,
+    "name": "奢华集装箱",
+    "description": "外观普通的集装箱内藏着坚实的保密箱，分量惊人，静谧中透着一种不言自明的贵重感。",
+    "category": 103,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 20,
+    "entry_fee_silver": 5000,
+    "starting_budget_silver": 500000,
+    "drop_pool_id": 2307,
+    "items_per_session_min": 18,
+    "items_per_session_max": 36,
+    "value_tier_ui": "ui_value_medium ",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      103
+    ]
+  },
+  {
+    "map_id": 2308,
+    "name": "医疗用品集装箱",
+    "description": "箱体布满警示标志，内有专业的温控架构。尽管系统已失效，但严谨的布局仍暗示着内容物的特殊性。",
+    "category": 103,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 20,
+    "entry_fee_silver": 5000,
+    "starting_budget_silver": 500000,
+    "drop_pool_id": 2308,
+    "items_per_session_min": 18,
+    "items_per_session_max": 36,
+    "value_tier_ui": "ui_value_medium ",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      103
+    ]
+  },
+  {
+    "map_id": 2309,
+    "name": "军用物资集装箱",
+    "description": "文件显示它属于一个已注销的实体。箱内是整齐的标准化储藏箱，喷印着冷峻的行业代码与规格标识。",
+    "category": 103,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 20,
+    "entry_fee_silver": 5000,
+    "starting_budget_silver": 500000,
+    "drop_pool_id": 2309,
+    "items_per_session_min": 18,
+    "items_per_session_max": 36,
+    "value_tier_ui": "ui_value_medium ",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      103
+    ]
+  },
+  {
+    "map_id": 2310,
+    "name": "潮牌集装箱",
+    "description": "箱内充斥着崭新的工业塑料与电子元件气息，货物被防护材料包裹，是一个未被激活的科技空间。",
+    "category": 103,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 20,
+    "entry_fee_silver": 5000,
+    "starting_budget_silver": 500000,
+    "drop_pool_id": 2310,
+    "items_per_session_min": 18,
+    "items_per_session_max": 36,
+    "value_tier_ui": "ui_value_medium ",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      103
+    ]
+  },
+  {
+    "map_id": 2401,
+    "name": "未知别墅",
+    "description": "前任房主身份成谜，离去匆忙。别墅内的物品从日常起居到个人收藏都原封不动，像一个突然凝固的时间胶囊，充满未知。",
+    "category": 104,
+    "auction_mode": "open",
+    "sub_pool_weights": [
+      [
+        2401,
+        100
+      ],
+      [
+        2402,
+        20
+      ],
+      [
+        2403,
+        20
+      ],
+      [
+        2404,
+        20
+      ],
+      [
+        2405,
+        20
+      ],
+      [
+        2406,
+        20
+      ],
+      [
+        2407,
+        20
+      ],
+      [
+        2408,
+        20
+      ],
+      [
+        2409,
+        20
+      ],
+      [
+        2410,
+        20
+      ]
+    ],
+    "rounds_total": 25,
+    "entry_fee_silver": 10000,
+    "starting_budget_silver": 2000000,
+    "drop_pool_id": 2401,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2402,
+    "name": "设计师居所",
+    "description": "这位别墅主人是位品味独到的收藏家。屋内充斥着未拆标签的家具样品和定制时装，整个空间宛如一个私人展示厅。",
+    "category": 104,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 25,
+    "entry_fee_silver": 10000,
+    "starting_budget_silver": 2000000,
+    "drop_pool_id": 2402,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2403,
+    "name": "科学家居所",
+    "description": "原主人是位低调的技术极客。车库经过改造，书房服务器指示灯微亮，地下室里锁着的，是他最硬核的“玩具”与收藏。",
+    "category": 104,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 25,
+    "entry_fee_silver": 10000,
+    "starting_budget_silver": 2000000,
+    "drop_pool_id": 2403,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2404,
+    "name": "养生学家居所",
+    "description": "别墅拥有巨大的专业厨房和恒温酒窖，同时还有一个设备齐全的私人理疗室，空气中混合着香料与草本的复杂气味。",
+    "category": 104,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 25,
+    "entry_fee_silver": 10000,
+    "starting_budget_silver": 2000000,
+    "drop_pool_id": 2404,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2405,
+    "name": "望族居所",
+    "description": "一个老钱家族的夏日别墅。书房里是沉重的橡木书柜，女主人的梳妆台抽屉未锁，家族的历史与财富被不经意地留在了这里。",
+    "category": 104,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 25,
+    "entry_fee_silver": 10000,
+    "starting_budget_silver": 2000000,
+    "drop_pool_id": 2405,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2406,
+    "name": "学者居所",
+    "description": "原主人是位离群索居的教授。整座别墅几乎被书架填满，手稿和卷轴从书房蔓延到客厅。",
+    "category": 104,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 25,
+    "entry_fee_silver": 10000,
+    "starting_budget_silver": 2000000,
+    "drop_pool_id": 2406,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2407,
+    "name": "私人金库",
+    "description": "这栋别墅的装修极致简约，却配有远超寻常的安防系统。主卧密室的门虚掩着，里面是大小不一的特制保险箱。",
+    "category": 104,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 25,
+    "entry_fee_silver": 10000,
+    "starting_budget_silver": 2000000,
+    "drop_pool_id": 2407,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2408,
+    "name": "奢华养老院",
+    "description": "别墅被改造得明亮整洁，拥有专业的空气过滤系统。一个房间里存放着未带走的医疗设备和小型低温冷藏柜。",
+    "category": 104,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 25,
+    "entry_fee_silver": 10000,
+    "starting_budget_silver": 2000000,
+    "drop_pool_id": 2408,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2409,
+    "name": "末日庇护所",
+    "description": "原主人有极强的安全意识。别墅结构经过特殊加固，地下避难所里存放着一些标有特殊代码的、需要权限才能开启的密封箱。",
+    "category": 104,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 25,
+    "entry_fee_silver": 10000,
+    "starting_budget_silver": 2000000,
+    "drop_pool_id": 2409,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2410,
+    "name": "极客改造屋",
+    "description": "这里是科技宅的天堂。从顶级的影音室到满墙的游戏主机，每一个房间都为了实现数字时代的终极娱乐体验而设计。",
+    "category": 104,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 25,
+    "entry_fee_silver": 10000,
+    "starting_budget_silver": 2000000,
+    "drop_pool_id": 2410,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2501,
+    "name": "未知残骸",
+    "description": "这艘船的国籍与年代已不可考，残骸由多艘沉船堆积而成。打捞出的密封舱内容物极其混杂，是深海真正的盲盒。",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [
+      [
+        2501,
+        100
+      ],
+      [
+        2502,
+        20
+      ],
+      [
+        2503,
+        20
+      ],
+      [
+        2504,
+        20
+      ],
+      [
+        2505,
+        20
+      ],
+      [
+        2506,
+        20
+      ],
+      [
+        2507,
+        20
+      ],
+      [
+        2508,
+        20
+      ],
+      [
+        2509,
+        20
+      ],
+      [
+        2510,
+        20
+      ]
+    ],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2501,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2502,
+    "name": "​远洋客轮舱房​",
+    "description": "来自一艘触礁沉没的豪华邮轮。此密封舱可能是头等舱套房或奢侈品商店的库房，里面封存着上一个时代的流行与奢华。",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2502,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2503,
+    "name": "​军用舰艇保险库​",
+    "description": "来自一艘因冲突沉没的军用舰艇。舱体坚固异常，内部可能封存着舰载设备的备用零件、通讯器材或舰员的重要私人物品。",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2503,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2504,
+    "name": "​冷链货船隔离舱​",
+    "description": "一艘专门运输特殊货物的货轮。此舱室具有保温与密封特性，里面或许保存着为特定目的地准备的给养或药剂，状态成谜。",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2504,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2505,
+    "name": "​殖民商船宝库​",
+    "description": "来自大航海时代的失落商船。此舱门被贝类紧紧包裹，里面木箱的轮廓依稀可辨，可能装着改变贸易格局的“白色黄金”。",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2505,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2506,
+    "name": "​探险家座舰资料库​",
+    "description": "属于一支传奇的极地探险队。此防水舱专门用于存放航行日志、珍贵海图与考古拓片，是知识探险家梦寐以求的宝藏。",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2506,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2507,
+    "name": "​皇家御用货舱​",
+    "description": "沉船档案显示它与某位显赫人物密切相关。此舱室规格极高，里面特制的箱子内，或许是为进贡而准备的稀有矿物与瑰宝。",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2507,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2508,
+    "name": "​生物实验室样本库​",
+    "description": "一艘具有科研背景的船只。此舱室标有生物危害标志，内部有严格的固定架，似乎用来保存某种特殊的有机样本。",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2508,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2509,
+    "name": "​私掠船军火舱​",
+    "description": "一艘身份暧昧的武装船只的弹药库。舱内物品被妥善防水处理，主要是那个时代的标准制式装备，但或许有特例。",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2509,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2510,
+    "name": "​现代货轮娱乐库​",
+    "description": "一艘近些年沉没的大型集装箱船。此密封舱内是运往电子市场的“新潮玩具”，包装完好，仿佛时间在此停滞。",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2510,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2511,
+    "name": "未知残骸",
+    "description": "红色UP",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2511,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2512,
+    "name": "​远洋客轮舱房​",
+    "description": "红色UP",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2512,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2513,
+    "name": "​军用舰艇保险库​",
+    "description": "红色UP",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2513,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2514,
+    "name": "​冷链货船隔离舱​",
+    "description": "红色UP",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2514,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2515,
+    "name": "​殖民商船宝库​",
+    "description": "红色UP",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2515,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2516,
+    "name": "​探险家座舰资料库​",
+    "description": "红色UP",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2516,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2517,
+    "name": "​皇家御用货舱​",
+    "description": "红色UP",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2517,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2518,
+    "name": "​生物实验室样本库​",
+    "description": "红色UP",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2518,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2519,
+    "name": "​私掠船军火舱​",
+    "description": "红色UP",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2519,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2520,
+    "name": "​现代货轮娱乐库​",
+    "description": "红色UP",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2520,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2521,
+    "name": "未知残骸",
+    "description": "白色DOWN红色UP",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [
+      [
+        2521,
+        100
+      ],
+      [
+        2522,
+        20
+      ],
+      [
+        2523,
+        20
+      ],
+      [
+        2524,
+        20
+      ],
+      [
+        2525,
+        20
+      ],
+      [
+        2526,
+        20
+      ],
+      [
+        2527,
+        20
+      ],
+      [
+        2528,
+        20
+      ],
+      [
+        2529,
+        20
+      ],
+      [
+        2530,
+        20
+      ]
+    ],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2521,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2522,
+    "name": "​远洋客轮舱房​",
+    "description": "白色DOWN红色UP",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2522,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2523,
+    "name": "​军用舰艇保险库​",
+    "description": "白色DOWN红色UP",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2523,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2524,
+    "name": "​冷链货船隔离舱​",
+    "description": "白色DOWN红色UP",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2524,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2525,
+    "name": "​殖民商船宝库​",
+    "description": "白色DOWN红色UP",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2525,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2526,
+    "name": "​探险家座舰资料库​",
+    "description": "白色DOWN红色UP",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2526,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2527,
+    "name": "​皇家御用货舱​",
+    "description": "白色DOWN红色UP",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2527,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2528,
+    "name": "​生物实验室样本库​",
+    "description": "白色DOWN红色UP",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2528,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2529,
+    "name": "​私掠船军火舱​",
+    "description": "白色DOWN红色UP",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2529,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2530,
+    "name": "​现代货轮娱乐库​",
+    "description": "白色DOWN红色UP",
+    "category": 105,
+    "auction_mode": "open",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2530,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 2601,
+    "name": "隐秘拍卖会",
+    "description": "这场高阶盛宴隐匿于神秘之所，唯有最顶尖的竞买人才能获得入场资格，非顶尖者连窥伺资格都没有。拍卖台铺着暗纹丝绒，鎏金托盘上的每件拍品都覆着暗纹密封罩，隐约透出奇异光泽，藏着跨越时代的隐秘、未被揭晓的真相与不可估量的价值。",
+    "category": 106,
+    "auction_mode": "open",
+    "sub_pool_weights": [
+      [
+        2601,
+        100
+      ]
+    ],
+    "rounds_total": 30,
+    "entry_fee_silver": 100000,
+    "starting_budget_silver": 10000000,
+    "drop_pool_id": 2601,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 3101,
+    "name": "未知快递",
+    "description": "这是一批真正的“无主之物”，物流信息完全丢失，源头成谜。每一个包裹都像一个等待被揭示的命运盲盒，充满了无限可能与意外。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2101,
+    "items_per_session_min": 12,
+    "items_per_session_max": 24,
+    "value_tier_ui": "ui_value_low",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3102,
+    "name": "医院快递",
+    "description": "消毒水的气息隐约可闻，包裹形状规整不一，有的触手冰凉坚硬，有的则散发出淡淡的日常气息，仿佛来自一个功能完备的微型社区。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2102,
+    "items_per_session_min": 12,
+    "items_per_session_max": 24,
+    "value_tier_ui": "ui_value_low",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3103,
+    "name": "超市快递",
+    "description": "包裹散发着浓郁的生活气息，既有规整的方形包装，也有触感柔软的袋件，充满了市井的烟火味与实用的质感。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2103,
+    "items_per_session_min": 12,
+    "items_per_session_max": 24,
+    "value_tier_ui": "ui_value_low",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3104,
+    "name": "学区快递",
+    "description": "包裹重量轻重不一，有的棱角分明带有电子产品的精密感，有的则是规整的方形，散发着旧纸与油墨特有的沉稳气息。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2104,
+    "items_per_session_min": 12,
+    "items_per_session_max": 24,
+    "value_tier_ui": "ui_value_low",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3105,
+    "name": "小区快递",
+    "description": "最贴近生活的包裹堆，充满了家常的味道。从规整的家具包装到日常消耗品的触感，平凡中或许藏着不凡的惊喜。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2105,
+    "items_per_session_min": 12,
+    "items_per_session_max": 24,
+    "value_tier_ui": "ui_value_low",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3106,
+    "name": "玩具店快递",
+    "description": "包裹色彩鲜艳，充满活力。多数轻巧，但个别异常沉重坚硬，手感复杂，似乎装着为不同年龄层准备的“大型玩具”或专业装备。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2106,
+    "items_per_session_min": 12,
+    "items_per_session_max": 24,
+    "value_tier_ui": "ui_value_low",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3107,
+    "name": "古董街快递",
+    "description": "包裹散发着陈旧木材和特殊纸张的气味，手感或轻或重，个别小件却分量十足，仿佛承载着被时光打磨过的秘密。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2107,
+    "items_per_session_min": 12,
+    "items_per_session_max": 24,
+    "value_tier_ui": "ui_value_low",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3201,
+    "name": "未知仓库",
+    "description": "仓库主人身份成谜，留下的货物杂乱无章，从日常用品到造型奇特的器械应有尽有，每一次探索都是全新的谜题。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2201,
+    "items_per_session_min": 14,
+    "items_per_session_max": 28,
+    "value_tier_ui": "ui_value_lower",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3202,
+    "name": "潮牌仓库",
+    "description": "仓库里堆满未拆封的板式家具和蒙尘的模特架，所有物品贴着统一的品牌标签，风格鲜明，诉说着某个时代的流行印记。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2202,
+    "items_per_session_min": 14,
+    "items_per_session_max": 28,
+    "value_tier_ui": "ui_value_lower",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3203,
+    "name": "硬核资产仓库",
+    "description": "空气中弥漫着机油与电路板的味道，被厚重篷布覆盖的硬朗轮廓与密集的仪器箱共存，充满了未释放的能量感。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2203,
+    "items_per_session_min": 14,
+    "items_per_session_max": 28,
+    "value_tier_ui": "ui_value_lower",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3204,
+    "name": "民生储备仓库",
+    "description": "甜腻、腐败与苦涩的药味混合，货架上堆满了各式密封包装，它们的价值在时间的侵蚀下变得极其微妙。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2204,
+    "items_per_session_min": 14,
+    "items_per_session_max": 28,
+    "value_tier_ui": "ui_value_lower",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3205,
+    "name": "书店仓库",
+    "description": "仓库深处，落灰的箱奁与卷轴筒堆积如山，寂静中弥漫着时光的气息，真伪与价值都隐藏在厚厚的尘埃之下。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2205,
+    "items_per_session_min": 14,
+    "items_per_session_max": 28,
+    "value_tier_ui": "ui_value_lower",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3301,
+    "name": "杂货集装箱",
+    "description": "集装箱标签破损，记录混乱。它像海上的幽灵货柜，内容物在多次转手后已成谜团，开启它是真正的冒险。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2301,
+    "items_per_session_min": 16,
+    "items_per_session_max": 32,
+    "value_tier_ui": "ui_value_medium ",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3302,
+    "name": "家居集装箱",
+    "description": "箱内是精心包裹的现代家居构件与织物，风格统一，宛如一个跨越重洋、等待被重新定义的生活空间样本。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2302,
+    "items_per_session_min": 16,
+    "items_per_session_max": 32,
+    "value_tier_ui": "ui_value_medium ",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3303,
+    "name": "数码科技集装箱",
+    "description": "箱体有特殊加固痕迹，敲击声沉闷。内部传来隐约的电流嗡鸣与金属冷感，内容物显然需要专业对待。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2303,
+    "items_per_session_min": 16,
+    "items_per_session_max": 32,
+    "value_tier_ui": "ui_value_medium ",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3304,
+    "name": "冷链集装箱",
+    "description": "冷藏箱的寂静内部，复杂的气味暗示着内容物正处于蜕变临界点，结局的天平摇摆不定。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2304,
+    "items_per_session_min": 16,
+    "items_per_session_max": 32,
+    "value_tier_ui": "ui_value_medium ",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3305,
+    "name": "古董工艺集装箱",
+    "description": "箱体老旧，散发着异域的陈旧气息。内里的容器大小不一，手感或轻或重，秘密与风险被紧紧锁住。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2305,
+    "items_per_session_min": 16,
+    "items_per_session_max": 32,
+    "value_tier_ui": "ui_value_medium ",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3306,
+    "name": "文博集装箱",
+    "description": "箱门开启，是扑鼻的旧纸墨香。里面堆满了各种材质的储藏箱，堪称一座处于静默状态的私人资料库。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2306,
+    "items_per_session_min": 16,
+    "items_per_session_max": 32,
+    "value_tier_ui": "ui_value_medium ",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3307,
+    "name": "奢华集装箱",
+    "description": "外观普通的集装箱内藏着坚实的保密箱，分量惊人，静谧中透着一种不言自明的贵重感。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2307,
+    "items_per_session_min": 16,
+    "items_per_session_max": 32,
+    "value_tier_ui": "ui_value_medium ",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3308,
+    "name": "医疗用品集装箱",
+    "description": "箱体布满警示标志，内有专业的温控架构。尽管系统已失效，但严谨的布局仍暗示着内容物的特殊性。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2308,
+    "items_per_session_min": 16,
+    "items_per_session_max": 32,
+    "value_tier_ui": "ui_value_medium ",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3309,
+    "name": "军用物资集装箱",
+    "description": "文件显示它属于一个已注销的实体。箱内是整齐的标准化储藏箱，喷印着冷峻的行业代码与规格标识。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2309,
+    "items_per_session_min": 16,
+    "items_per_session_max": 32,
+    "value_tier_ui": "ui_value_medium ",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3310,
+    "name": "潮牌集装箱",
+    "description": "箱内充斥着崭新的工业塑料与电子元件气息，货物被防护材料包裹，是一个未被激活的科技空间。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2310,
+    "items_per_session_min": 16,
+    "items_per_session_max": 32,
+    "value_tier_ui": "ui_value_medium ",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3401,
+    "name": "未知别墅",
+    "description": "前任房主身份成谜，离去匆忙。别墅内的物品从日常起居到个人收藏都原封不动，像一个突然凝固的时间胶囊，充满未知。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2401,
+    "items_per_session_min": 18,
+    "items_per_session_max": 36,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3402,
+    "name": "设计师居所",
+    "description": "这位别墅主人是位品味独到的收藏家。屋内充斥着未拆标签的家具样品和定制时装，整个空间宛如一个私人展示厅。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2402,
+    "items_per_session_min": 18,
+    "items_per_session_max": 36,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3403,
+    "name": "科学家居所",
+    "description": "原主人是位低调的技术极客。车库经过改造，书房服务器指示灯微亮，地下室里锁着的，是他最硬核的“玩具”与收藏。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2403,
+    "items_per_session_min": 18,
+    "items_per_session_max": 36,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3404,
+    "name": "养生学家居所",
+    "description": "别墅拥有巨大的专业厨房和恒温酒窖，同时还有一个设备齐全的私人理疗室，空气中混合着香料与草本的复杂气味。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2404,
+    "items_per_session_min": 18,
+    "items_per_session_max": 36,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3405,
+    "name": "望族居所",
+    "description": "一个老钱家族的夏日别墅。书房里是沉重的橡木书柜，女主人的梳妆台抽屉未锁，家族的历史与财富被不经意地留在了这里。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2405,
+    "items_per_session_min": 18,
+    "items_per_session_max": 36,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3406,
+    "name": "学者居所",
+    "description": "原主人是位离群索居的教授。整座别墅几乎被书架填满，手稿和卷轴从书房蔓延到客厅。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2406,
+    "items_per_session_min": 18,
+    "items_per_session_max": 36,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3407,
+    "name": "私人金库",
+    "description": "这栋别墅的装修极致简约，却配有远超寻常的安防系统。主卧密室的门虚掩着，里面是大小不一的特制保险箱。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2407,
+    "items_per_session_min": 18,
+    "items_per_session_max": 36,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3408,
+    "name": "奢华养老院",
+    "description": "别墅被改造得明亮整洁，拥有专业的空气过滤系统。一个房间里存放着未带走的医疗设备和小型低温冷藏柜。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2408,
+    "items_per_session_min": 18,
+    "items_per_session_max": 36,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3409,
+    "name": "末日庇护所",
+    "description": "原主人有极强的安全意识。别墅结构经过特殊加固，地下避难所里存放着一些标有特殊代码的、需要权限才能开启的密封箱。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2409,
+    "items_per_session_min": 18,
+    "items_per_session_max": 36,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3410,
+    "name": "极客改造屋",
+    "description": "这里是科技宅的天堂。从顶级的影音室到满墙的游戏主机，每一个房间都为了实现数字时代的终极娱乐体验而设计。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2410,
+    "items_per_session_min": 18,
+    "items_per_session_max": 36,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3501,
+    "name": "未知残骸",
+    "description": "这艘船的国籍与年代已不可考，残骸由多艘沉船堆积而成。打捞出的密封舱内容物极其混杂，是深海真正的盲盒。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2501,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3502,
+    "name": "​远洋客轮舱房​",
+    "description": "来自一艘触礁沉没的豪华邮轮。此密封舱可能是头等舱套房或奢侈品商店的库房，里面封存着上一个时代的流行与奢华。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2502,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3503,
+    "name": "​军用舰艇保险库​",
+    "description": "来自一艘因冲突沉没的军用舰艇。舱体坚固异常，内部可能封存着舰载设备的备用零件、通讯器材或舰员的重要私人物品。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2503,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3504,
+    "name": "​冷链货船隔离舱​",
+    "description": "一艘专门运输特殊货物的货轮。此舱室具有保温与密封特性，里面或许保存着为特定目的地准备的给养或药剂，状态成谜。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2504,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3505,
+    "name": "​殖民商船宝库​",
+    "description": "来自大航海时代的失落商船。此舱门被贝类紧紧包裹，里面木箱的轮廓依稀可辨，可能装着改变贸易格局的“白色黄金”。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2505,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3506,
+    "name": "​探险家座舰资料库​",
+    "description": "属于一支传奇的极地探险队。此防水舱专门用于存放航行日志、珍贵海图与考古拓片，是知识探险家梦寐以求的宝藏。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2506,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3507,
+    "name": "​皇家御用货舱​",
+    "description": "沉船档案显示它与某位显赫人物密切相关。此舱室规格极高，里面特制的箱子内，或许是为进贡而准备的稀有矿物与瑰宝。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2507,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3508,
+    "name": "​生物实验室样本库​",
+    "description": "一艘具有科研背景的船只。此舱室标有生物危害标志，内部有严格的固定架，似乎用来保存某种特殊的有机样本。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2508,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3509,
+    "name": "​私掠船军火舱​",
+    "description": "一艘身份暧昧的武装船只的弹药库。舱内物品被妥善防水处理，主要是那个时代的标准制式装备，但或许有特例。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2509,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 3510,
+    "name": "​现代货轮娱乐库​",
+    "description": "一艘近些年沉没的大型集装箱船。此密封舱内是运往电子市场的“新潮玩具”，包装完好，仿佛时间在此停滞。",
+    "category": 201,
+    "auction_mode": "training",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 0,
+    "starting_budget_silver": 0,
+    "drop_pool_id": 2510,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 1,
+    "bid_price_ladder": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      103,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "map_id": 4401,
+    "name": "未知别墅",
+    "description": "前任房主身份成谜，离去匆忙。别墅内的物品从日常起居到个人收藏都原封不动，像一个突然凝固的时间胶囊，充满未知。",
+    "category": 304,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [
+      [
+        4401,
+        100
+      ],
+      [
+        4402,
+        20
+      ],
+      [
+        4403,
+        20
+      ],
+      [
+        4404,
+        20
+      ],
+      [
+        4405,
+        20
+      ],
+      [
+        4406,
+        20
+      ],
+      [
+        4407,
+        20
+      ],
+      [
+        4408,
+        20
+      ],
+      [
+        4409,
+        20
+      ],
+      [
+        4410,
+        20
+      ]
+    ],
+    "rounds_total": 25,
+    "entry_fee_silver": 10000,
+    "starting_budget_silver": 1000000,
+    "drop_pool_id": 2401,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4402,
+    "name": "设计师居所",
+    "description": "这位别墅主人是位品味独到的收藏家。屋内充斥着未拆标签的家具样品和定制时装，整个空间宛如一个私人展示厅。",
+    "category": 304,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 25,
+    "entry_fee_silver": 10000,
+    "starting_budget_silver": 1000000,
+    "drop_pool_id": 2402,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4403,
+    "name": "科学家居所",
+    "description": "原主人是位低调的技术极客。车库经过改造，书房服务器指示灯微亮，地下室里锁着的，是他最硬核的“玩具”与收藏。",
+    "category": 304,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 25,
+    "entry_fee_silver": 10000,
+    "starting_budget_silver": 1000000,
+    "drop_pool_id": 2403,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4404,
+    "name": "养生学家居所",
+    "description": "别墅拥有巨大的专业厨房和恒温酒窖，同时还有一个设备齐全的私人理疗室，空气中混合着香料与草本的复杂气味。",
+    "category": 304,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 25,
+    "entry_fee_silver": 10000,
+    "starting_budget_silver": 1000000,
+    "drop_pool_id": 2404,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4405,
+    "name": "望族居所",
+    "description": "一个老钱家族的夏日别墅。书房里是沉重的橡木书柜，女主人的梳妆台抽屉未锁，家族的历史与财富被不经意地留在了这里。",
+    "category": 304,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 25,
+    "entry_fee_silver": 10000,
+    "starting_budget_silver": 1000000,
+    "drop_pool_id": 2405,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4406,
+    "name": "学者居所",
+    "description": "原主人是位离群索居的教授。整座别墅几乎被书架填满，手稿和卷轴从书房蔓延到客厅。",
+    "category": 304,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 25,
+    "entry_fee_silver": 10000,
+    "starting_budget_silver": 1000000,
+    "drop_pool_id": 2406,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4407,
+    "name": "私人金库",
+    "description": "这栋别墅的装修极致简约，却配有远超寻常的安防系统。主卧密室的门虚掩着，里面是大小不一的特制保险箱。",
+    "category": 304,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 25,
+    "entry_fee_silver": 10000,
+    "starting_budget_silver": 1000000,
+    "drop_pool_id": 2407,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4408,
+    "name": "奢华养老院",
+    "description": "别墅被改造得明亮整洁，拥有专业的空气过滤系统。一个房间里存放着未带走的医疗设备和小型低温冷藏柜。",
+    "category": 304,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 25,
+    "entry_fee_silver": 10000,
+    "starting_budget_silver": 1000000,
+    "drop_pool_id": 2408,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4409,
+    "name": "末日庇护所",
+    "description": "原主人有极强的安全意识。别墅结构经过特殊加固，地下避难所里存放着一些标有特殊代码的、需要权限才能开启的密封箱。",
+    "category": 304,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 25,
+    "entry_fee_silver": 10000,
+    "starting_budget_silver": 1000000,
+    "drop_pool_id": 2409,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4410,
+    "name": "极客改造屋",
+    "description": "这里是科技宅的天堂。从顶级的影音室到满墙的游戏主机，每一个房间都为了实现数字时代的终极娱乐体验而设计。",
+    "category": 304,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 25,
+    "entry_fee_silver": 10000,
+    "starting_budget_silver": 1000000,
+    "drop_pool_id": 2410,
+    "items_per_session_min": 20,
+    "items_per_session_max": 40,
+    "value_tier_ui": "ui_value_higher",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      103,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4501,
+    "name": "未知残骸",
+    "description": "这艘船的国籍与年代已不可考，残骸由多艘沉船堆积而成。打捞出的密封舱内容物极其混杂，是深海真正的盲盒。",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [
+      [
+        4501,
+        100
+      ],
+      [
+        4502,
+        20
+      ],
+      [
+        4503,
+        20
+      ],
+      [
+        4504,
+        20
+      ],
+      [
+        4505,
+        20
+      ],
+      [
+        4506,
+        20
+      ],
+      [
+        4507,
+        20
+      ],
+      [
+        4508,
+        20
+      ],
+      [
+        4509,
+        20
+      ],
+      [
+        4510,
+        20
+      ]
+    ],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2501,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4502,
+    "name": "​远洋客轮舱房​",
+    "description": "来自一艘触礁沉没的豪华邮轮。此密封舱可能是头等舱套房或奢侈品商店的库房，里面封存着上一个时代的流行与奢华。",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2502,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4503,
+    "name": "​军用舰艇保险库​",
+    "description": "来自一艘因冲突沉没的军用舰艇。舱体坚固异常，内部可能封存着舰载设备的备用零件、通讯器材或舰员的重要私人物品。",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2503,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4504,
+    "name": "​冷链货船隔离舱​",
+    "description": "一艘专门运输特殊货物的货轮。此舱室具有保温与密封特性，里面或许保存着为特定目的地准备的给养或药剂，状态成谜。",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2504,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4505,
+    "name": "​殖民商船宝库​",
+    "description": "来自大航海时代的失落商船。此舱门被贝类紧紧包裹，里面木箱的轮廓依稀可辨，可能装着改变贸易格局的“白色黄金”。",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2505,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4506,
+    "name": "​探险家座舰资料库​",
+    "description": "属于一支传奇的极地探险队。此防水舱专门用于存放航行日志、珍贵海图与考古拓片，是知识探险家梦寐以求的宝藏。",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2506,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4507,
+    "name": "​皇家御用货舱​",
+    "description": "沉船档案显示它与某位显赫人物密切相关。此舱室规格极高，里面特制的箱子内，或许是为进贡而准备的稀有矿物与瑰宝。",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2507,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4508,
+    "name": "​生物实验室样本库​",
+    "description": "一艘具有科研背景的船只。此舱室标有生物危害标志，内部有严格的固定架，似乎用来保存某种特殊的有机样本。",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2508,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4509,
+    "name": "​私掠船军火舱​",
+    "description": "一艘身份暧昧的武装船只的弹药库。舱内物品被妥善防水处理，主要是那个时代的标准制式装备，但或许有特例。",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2509,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4510,
+    "name": "​现代货轮娱乐库​",
+    "description": "一艘近些年沉没的大型集装箱船。此密封舱内是运往电子市场的“新潮玩具”，包装完好，仿佛时间在此停滞。",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2510,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4511,
+    "name": "未知残骸",
+    "description": "红色UP",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2511,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4512,
+    "name": "​远洋客轮舱房​",
+    "description": "红色UP",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2512,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4513,
+    "name": "​军用舰艇保险库​",
+    "description": "红色UP",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2513,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4514,
+    "name": "​冷链货船隔离舱​",
+    "description": "红色UP",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2514,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4515,
+    "name": "​殖民商船宝库​",
+    "description": "红色UP",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2515,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4516,
+    "name": "​探险家座舰资料库​",
+    "description": "红色UP",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2516,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4517,
+    "name": "​皇家御用货舱​",
+    "description": "红色UP",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2517,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4518,
+    "name": "​生物实验室样本库​",
+    "description": "红色UP",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2518,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4519,
+    "name": "​私掠船军火舱​",
+    "description": "红色UP",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2519,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4520,
+    "name": "​现代货轮娱乐库​",
+    "description": "红色UP",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2520,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4521,
+    "name": "未知残骸",
+    "description": "白色DOWN红色UP",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [
+      [
+        4521,
+        100
+      ],
+      [
+        4522,
+        20
+      ],
+      [
+        4523,
+        20
+      ],
+      [
+        4524,
+        20
+      ],
+      [
+        4525,
+        20
+      ],
+      [
+        4526,
+        20
+      ],
+      [
+        4527,
+        20
+      ],
+      [
+        4528,
+        20
+      ],
+      [
+        4529,
+        20
+      ],
+      [
+        4530,
+        20
+      ]
+    ],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2521,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4522,
+    "name": "​远洋客轮舱房​",
+    "description": "白色DOWN红色UP",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2522,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4523,
+    "name": "​军用舰艇保险库​",
+    "description": "白色DOWN红色UP",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2523,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4524,
+    "name": "​冷链货船隔离舱​",
+    "description": "白色DOWN红色UP",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2524,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4525,
+    "name": "​殖民商船宝库​",
+    "description": "白色DOWN红色UP",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2525,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4526,
+    "name": "​探险家座舰资料库​",
+    "description": "白色DOWN红色UP",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2526,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4527,
+    "name": "​皇家御用货舱​",
+    "description": "白色DOWN红色UP",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2527,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4528,
+    "name": "​生物实验室样本库​",
+    "description": "白色DOWN红色UP",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2528,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4529,
+    "name": "​私掠船军火舱​",
+    "description": "白色DOWN红色UP",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2529,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 4530,
+    "name": "​现代货轮娱乐库​",
+    "description": "白色DOWN红色UP",
+    "category": 305,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2530,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 5501,
+    "name": "未知残骸",
+    "description": "这艘船的国籍与年代已不可考，残骸由多艘沉船堆积而成。打捞出的密封舱内容物极其混杂，是深海真正的盲盒。",
+    "category": 401,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [
+      [
+        5501,
+        100
+      ],
+      [
+        5502,
+        20
+      ],
+      [
+        5503,
+        20
+      ],
+      [
+        5504,
+        20
+      ],
+      [
+        5505,
+        20
+      ],
+      [
+        5506,
+        20
+      ],
+      [
+        5507,
+        20
+      ],
+      [
+        5508,
+        20
+      ],
+      [
+        5509,
+        20
+      ],
+      [
+        5510,
+        20
+      ]
+    ],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2501,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 5502,
+    "name": "​远洋客轮舱房​",
+    "description": "来自一艘触礁沉没的豪华邮轮。此密封舱可能是头等舱套房或奢侈品商店的库房，里面封存着上一个时代的流行与奢华。",
+    "category": 401,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2502,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 5503,
+    "name": "​军用舰艇保险库​",
+    "description": "来自一艘因冲突沉没的军用舰艇。舱体坚固异常，内部可能封存着舰载设备的备用零件、通讯器材或舰员的重要私人物品。",
+    "category": 401,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2503,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 5504,
+    "name": "​冷链货船隔离舱​",
+    "description": "一艘专门运输特殊货物的货轮。此舱室具有保温与密封特性，里面或许保存着为特定目的地准备的给养或药剂，状态成谜。",
+    "category": 401,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2504,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 5505,
+    "name": "​殖民商船宝库​",
+    "description": "来自大航海时代的失落商船。此舱门被贝类紧紧包裹，里面木箱的轮廓依稀可辨，可能装着改变贸易格局的“白色黄金”。",
+    "category": 401,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2505,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 5506,
+    "name": "​探险家座舰资料库​",
+    "description": "属于一支传奇的极地探险队。此防水舱专门用于存放航行日志、珍贵海图与考古拓片，是知识探险家梦寐以求的宝藏。",
+    "category": 401,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2506,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 5507,
+    "name": "​皇家御用货舱​",
+    "description": "沉船档案显示它与某位显赫人物密切相关。此舱室规格极高，里面特制的箱子内，或许是为进贡而准备的稀有矿物与瑰宝。",
+    "category": 401,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2507,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 5508,
+    "name": "​生物实验室样本库​",
+    "description": "一艘具有科研背景的船只。此舱室标有生物危害标志，内部有严格的固定架，似乎用来保存某种特殊的有机样本。",
+    "category": 401,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2508,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 5509,
+    "name": "​私掠船军火舱​",
+    "description": "一艘身份暧昧的武装船只的弹药库。舱内物品被妥善防水处理，主要是那个时代的标准制式装备，但或许有特例。",
+    "category": 401,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2509,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 5510,
+    "name": "​现代货轮娱乐库​",
+    "description": "一艘近些年沉没的大型集装箱船。此密封舱内是运往电子市场的“新潮玩具”，包装完好，仿佛时间在此停滞。",
+    "category": 401,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2510,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 5601,
+    "name": "未知残骸",
+    "description": "这艘船的国籍与年代已不可考，残骸由多艘沉船堆积而成。打捞出的密封舱内容物极其混杂，是深海真正的盲盒。",
+    "category": 402,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [
+      [
+        5601,
+        100
+      ],
+      [
+        5602,
+        20
+      ],
+      [
+        5603,
+        20
+      ],
+      [
+        5604,
+        20
+      ],
+      [
+        5605,
+        20
+      ],
+      [
+        5606,
+        20
+      ],
+      [
+        5607,
+        20
+      ],
+      [
+        5608,
+        20
+      ],
+      [
+        5609,
+        20
+      ],
+      [
+        5610,
+        20
+      ]
+    ],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2501,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 5602,
+    "name": "​远洋客轮舱房​",
+    "description": "来自一艘触礁沉没的豪华邮轮。此密封舱可能是头等舱套房或奢侈品商店的库房，里面封存着上一个时代的流行与奢华。",
+    "category": 402,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2502,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 5603,
+    "name": "​军用舰艇保险库​",
+    "description": "来自一艘因冲突沉没的军用舰艇。舱体坚固异常，内部可能封存着舰载设备的备用零件、通讯器材或舰员的重要私人物品。",
+    "category": 402,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2503,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 5604,
+    "name": "​冷链货船隔离舱​",
+    "description": "一艘专门运输特殊货物的货轮。此舱室具有保温与密封特性，里面或许保存着为特定目的地准备的给养或药剂，状态成谜。",
+    "category": 402,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2504,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 5605,
+    "name": "​殖民商船宝库​",
+    "description": "来自大航海时代的失落商船。此舱门被贝类紧紧包裹，里面木箱的轮廓依稀可辨，可能装着改变贸易格局的“白色黄金”。",
+    "category": 402,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2505,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 5606,
+    "name": "​探险家座舰资料库​",
+    "description": "属于一支传奇的极地探险队。此防水舱专门用于存放航行日志、珍贵海图与考古拓片，是知识探险家梦寐以求的宝藏。",
+    "category": 402,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2506,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 5607,
+    "name": "​皇家御用货舱​",
+    "description": "沉船档案显示它与某位显赫人物密切相关。此舱室规格极高，里面特制的箱子内，或许是为进贡而准备的稀有矿物与瑰宝。",
+    "category": 402,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2507,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 5608,
+    "name": "​生物实验室样本库​",
+    "description": "一艘具有科研背景的船只。此舱室标有生物危害标志，内部有严格的固定架，似乎用来保存某种特殊的有机样本。",
+    "category": 402,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2508,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 5609,
+    "name": "​私掠船军火舱​",
+    "description": "一艘身份暧昧的武装船只的弹药库。舱内物品被妥善防水处理，主要是那个时代的标准制式装备，但或许有特例。",
+    "category": 402,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2509,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "map_id": 5610,
+    "name": "​现代货轮娱乐库​",
+    "description": "一艘近些年沉没的大型集装箱船。此密封舱内是运往电子市场的“新潮玩具”，包装完好，仿佛时间在此停滞。",
+    "category": 402,
+    "auction_mode": "sealed",
+    "sub_pool_weights": [],
+    "rounds_total": 30,
+    "entry_fee_silver": 25000,
+    "starting_budget_silver": 5000000,
+    "drop_pool_id": 2520,
+    "items_per_session_min": 22,
+    "items_per_session_max": 44,
+    "value_tier_ui": "ui_value_high",
+    "mode_flag": 4,
+    "bid_price_ladder": [
+      2000,
+      1600,
+      1300,
+      1100,
+      0
+    ],
+    "round_category_hints": [
+      103,
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+]

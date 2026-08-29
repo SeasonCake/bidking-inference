@@ -30,6 +30,20 @@ DOCUMENTATION_IMAGES = {
         "sha256": "de5008799cfec1b40d5706bc1f1058de00889d58c9f56e2313391a12ae2006d5",
     },
 }
+LEGACY_SNAPSHOTS = {
+    "legacy/source-v0.2.0-hotfix1": {
+        "files": 56,
+        "bytes": 1_589_297,
+        "manifest_sha256": "4a3af572d1376e7d268e9b60b32499f3fa97f2746144e7377d1d87d548b48247",
+        "suffixes": {".py"},
+    },
+    "legacy/data-v0.2.7-hotfix3": {
+        "files": 7,
+        "bytes": 641_335,
+        "manifest_sha256": "1cb2ff181202b370d1e0c6da5cc5667a8719be49e91b465ca66be506d5a15f99",
+        "suffixes": {".json"},
+    },
+}
 FORBIDDEN_PNG_METADATA_CHUNKS = {b"eXIf", b"iTXt", b"tEXt", b"zTXt"}
 BANNED_SOURCE_FRAGMENTS = (
     "bidking_lab",
@@ -60,7 +74,76 @@ REQUIRED_PUBLIC_FILES = (
     "docs/PUBLIC_API.md",
     "docs/INPUT_SCHEMA.md",
     "docs/assets/screenshots/README.md",
+    "legacy/README.md",
 )
+
+
+def _tree_manifest_digest(root: Path) -> tuple[int, int, str]:
+    files = sorted(
+        (
+            path
+            for path in root.rglob("*")
+            if path.is_file() and "__pycache__" not in path.parts
+        ),
+        key=lambda path: path.relative_to(root).as_posix(),
+    )
+    lines = [
+        f"{path.relative_to(root).as_posix()}\t{hashlib.sha256(path.read_bytes()).hexdigest()}"
+        for path in files
+    ]
+    payload = (("\n".join(lines) + "\n") if lines else "").encode("utf-8")
+    return len(files), sum(path.stat().st_size for path in files), hashlib.sha256(payload).hexdigest()
+
+
+def legacy_snapshot_errors() -> list[str]:
+    errors: list[str] = []
+    allowed_url = "https://github.com/SeasonCake/bidking-lab"
+    banned_fragments = (
+        "http://",
+        "c:\\users\\",
+        "d:\\",
+        "g:\\",
+        "master_key",
+        "activation_core",
+        "upload_config",
+        "authorization:",
+        "-----begin private key-----",
+    )
+    for relative, expected in LEGACY_SNAPSHOTS.items():
+        root = ROOT / relative
+        if not root.is_dir():
+            errors.append(f"legacy snapshot is missing: {relative}")
+            continue
+        files = [
+            path
+            for path in root.rglob("*")
+            if path.is_file() and "__pycache__" not in path.parts
+        ]
+        count, byte_count, digest = _tree_manifest_digest(root)
+        if count != expected["files"]:
+            errors.append(f"legacy snapshot file count changed: {relative}")
+        if byte_count != expected["bytes"]:
+            errors.append(f"legacy snapshot byte count changed: {relative}")
+        if digest != expected["manifest_sha256"]:
+            errors.append(f"legacy snapshot manifest digest changed: {relative}")
+        for path in files:
+            nested = path.relative_to(ROOT).as_posix()
+            if path.suffix.casefold() not in expected["suffixes"]:
+                errors.append(f"unexpected legacy file type: {nested}")
+                continue
+            text = path.read_text(encoding="utf-8", errors="strict")
+            lowered = text.casefold().replace(allowed_url.casefold(), "")
+            for fragment in banned_fragments:
+                if fragment in lowered:
+                    errors.append(f"private fragment {fragment!r} in {nested}")
+            if "https://" in lowered:
+                errors.append(f"unreviewed URL in legacy snapshot: {nested}")
+            if path.suffix.casefold() == ".json":
+                try:
+                    json.loads(text)
+                except json.JSONDecodeError:
+                    errors.append(f"invalid legacy JSON: {nested}")
+    return errors
 
 
 def documentation_image_errors() -> list[str]:
@@ -117,7 +200,7 @@ def documentation_image_errors() -> list[str]:
 
 
 def public_boundary_errors() -> list[str]:
-    errors = documentation_image_errors()
+    errors = documentation_image_errors() + legacy_snapshot_errors()
     for relative in REQUIRED_PUBLIC_FILES:
         if not (ROOT / relative).is_file():
             errors.append(f"required public-maintenance file is missing: {relative}")
@@ -159,6 +242,10 @@ def main() -> int:
     env = {**os.environ, "PYTHONPATH": str(ROOT / "src")}
     if not compileall.compile_dir(ROOT / "src", quiet=1):
         raise SystemExit("compileall failed")
+    if not compileall.compile_dir(
+        ROOT / "legacy" / "source-v0.2.0-hotfix1", quiet=1
+    ):
+        raise SystemExit("legacy compileall failed")
     errors = public_boundary_errors()
     if errors:
         raise SystemExit("\n".join(errors))

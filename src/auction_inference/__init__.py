@@ -1,6 +1,12 @@
 """Domain-neutral primitives for discrete hidden-inventory inference."""
 
 from .adapters import CandidateAdapter, MappingCandidateAdapter, adapt_records
+from .calibration import (
+    BinaryForecast,
+    CalibrationReport,
+    ReliabilityBin,
+    assess_binary_calibration,
+)
 from .constraints import ConstraintResult, evaluate_hypothesis, filter_hypotheses
 from .diagnostics import PosteriorDiagnostics, posterior_diagnostics, smallest_credible_set
 from .joint import (
@@ -36,9 +42,18 @@ from .scoring import (
     infer_weighted_posterior,
     score_candidate,
 )
+from .sensitivity import (
+    DistributionShift,
+    EvidenceInfluence,
+    ProbabilityDelta,
+    compare_distributions,
+    rank_evidence_influence,
+)
 
 __all__ = [
     "ApproximateObservation",
+    "BinaryForecast",
+    "CalibrationReport",
     "Candidate",
     "CandidateAdapter",
     "CandidateScore",
@@ -46,8 +61,10 @@ __all__ = [
     "CategoryMean",
     "ConstraintResult",
     "DiscreteVariable",
+    "DistributionShift",
     "Evidence",
     "EvidenceTerm",
+    "EvidenceInfluence",
     "ExactObservation",
     "Hypothesis",
     "Interval",
@@ -57,13 +74,17 @@ __all__ = [
     "ObservationMatch",
     "PoolItem",
     "PoolSimulationSummary",
+    "ProbabilityDelta",
     "PosteriorDiagnostics",
     "PosteriorRow",
     "PosteriorSummary",
+    "ReliabilityBin",
     "VariableState",
     "WeightedPosteriorRow",
     "WeightedPosteriorSummary",
     "adapt_records",
+    "assess_binary_calibration",
+    "compare_distributions",
     "enumerate_joint_candidates",
     "evaluate_hypothesis",
     "filter_hypotheses",
@@ -72,6 +93,7 @@ __all__ = [
     "infer_weighted_posterior",
     "observation_from_mapping",
     "posterior_diagnostics",
+    "rank_evidence_influence",
     "score_candidate",
     "simulate_pool",
     "simulate_totals",
