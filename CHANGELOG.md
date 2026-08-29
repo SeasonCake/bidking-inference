@@ -6,6 +6,7 @@ This project follows Semantic Versioning. Dates use `YYYY-MM-DD`.
 
 - Make Simplified Chinese the default repository home page and add linked English docs.
 - Add reviewed historical product screenshots with explicit documentation-only licensing.
+- Refresh GitHub Actions to the current Node 24-based action releases.
 
 ## [0.1.0] - 2026-08-29
 
