@@ -27,9 +27,12 @@ class PosteriorSummary:
 
 
 def normalize_weights(weights: Iterable[float]) -> tuple[float, ...]:
-    values = tuple(float(weight) for weight in weights)
-    if not values:
+    raw_values = tuple(weights)
+    if not raw_values:
         raise ValueError("at least one weight is required")
+    if any(isinstance(value, bool) or not isinstance(value, (int, float)) for value in raw_values):
+        raise TypeError("weights must be finite numbers")
+    values = tuple(float(weight) for weight in raw_values)
     if any(not isfinite(value) or value < 0 for value in values):
         raise ValueError("weights must be finite and non-negative")
     total = fsum(values)

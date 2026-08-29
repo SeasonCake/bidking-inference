@@ -1,11 +1,15 @@
 # BidKing Inference
 
-A small, domain-neutral Python library for reasoning about hidden auction inventory from
-bounded observations. It demonstrates three reusable primitives:
+A domain-neutral Python library for bounded discrete inference. It is useful when a
+small set of candidate states must be compared against incomplete, approximate, or
+categorical observations. The medium open core includes:
 
-- strict discrete hypotheses and interval evidence;
-- fail-closed constraint filtering and posterior normalization;
-- deterministic Monte Carlo summaries over synthetic value pools.
+- strict candidates, scalar attributes, and fail-closed observation parsing;
+- exact, interval, approximate, and categorical evidence;
+- stable log-space posterior scoring for multiple weighted fields;
+- bounded joint-state enumeration and posterior diagnostics;
+- deterministic weighted-pool simulation with or without replacement;
+- record adapters, a JSON CLI, synthetic examples, and an installable package.
 
 This candidate is intentionally **not** the BidKing product. It contains no game tables,
 capture code, client UI, production service, private calibration, or real user data.
@@ -25,14 +29,16 @@ Python 3.10 or newer is sufficient; runtime code uses only the standard library.
 
 ```powershell
 python scripts/run_example.py examples/synthetic_session.json
+python scripts/run_example.py examples/synthetic_multidimensional.json
 python scripts/verify.py
 ```
 
 After an editable or wheel install, the equivalent console entry is
 `auction-inference examples/synthetic_session.json`.
 
-The CLI prints JSON with accepted/rejected hypotheses, normalized posterior estimates,
-and a deterministic Monte Carlo summary.
+The legacy fixture prints accepted/rejected hypotheses, normalized estimates, and a
+deterministic Monte Carlo summary. The multidimensional fixture demonstrates hard and
+soft evidence, weighted posterior rows, diagnostics, and a smallest credible set.
 
 ## Install
 
@@ -51,11 +57,18 @@ The package has no runtime dependencies. Supported Python versions are exercised
 python examples/constraint_filter.py
 python examples/posterior_summary.py
 python examples/monte_carlo_summary.py
+python examples/joint_posterior.py
+python examples/pool_simulation.py
+python examples/record_adapter.py
 ```
 
 - `docs/PUBLIC_API.md` documents the supported imports and failure behavior.
 - `docs/INPUT_SCHEMA.md` documents the strict synthetic CLI schema.
 - `OPEN_SOURCE_BOUNDARY.md` explains what is intentionally excluded.
+
+The public core is sufficient to build a small discrete-inference tool with your own
+shareable candidate data. It deliberately does not include BidKing field mappings,
+calibration tables, product thresholds, business rules, or runtime integration.
 
 ## Project maintenance
 

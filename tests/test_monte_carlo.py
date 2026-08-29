@@ -16,6 +16,8 @@ class MonteCarloTest(unittest.TestCase):
     def test_rejects_invalid_distribution(self) -> None:
         with self.assertRaises(ValueError):
             simulate_totals([1], [0.0], draws_per_trial=1, trials=1, seed=1)
+        with self.assertRaises(TypeError):
+            simulate_totals([1, 2], [True, 1.0], draws_per_trial=1, trials=1, seed=1)
 
 
 if __name__ == "__main__":

@@ -71,9 +71,11 @@ def public_boundary_errors() -> list[str]:
                 for fragment in BANNED_SOURCE_FRAGMENTS:
                     if fragment.casefold() in text:
                         errors.append(f"private fragment {fragment!r} in {relative}")
-    fixture = json.loads((ROOT / "examples" / "synthetic_session.json").read_text(encoding="utf-8"))
-    if fixture.get("synthetic") is not True:
-        errors.append("example fixture is not explicitly synthetic")
+    for fixture_path in sorted((ROOT / "examples").glob("*.json")):
+        fixture = json.loads(fixture_path.read_text(encoding="utf-8"))
+        if type(fixture) is not dict or fixture.get("synthetic") is not True:
+            relative = fixture_path.relative_to(ROOT).as_posix()
+            errors.append(f"example fixture is not explicitly synthetic: {relative}")
     return errors
 
 
@@ -95,6 +97,16 @@ def main() -> int:
     sys.stderr.write(completed.stderr)
     subprocess.run(
         [sys.executable, "scripts/run_example.py", "examples/synthetic_session.json"],
+        cwd=ROOT,
+        check=True,
+        stdout=subprocess.DEVNULL,
+    )
+    subprocess.run(
+        [
+            sys.executable,
+            "scripts/run_example.py",
+            "examples/synthetic_multidimensional.json",
+        ],
         cwd=ROOT,
         check=True,
         stdout=subprocess.DEVNULL,

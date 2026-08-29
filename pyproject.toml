@@ -5,12 +5,12 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "auction-inference"
 version = "0.1.0"
-description = "Domain-neutral discrete inference and synthetic Monte Carlo examples"
+description = "Domain-neutral discrete inference with composable evidence and simulation"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
 authors = [{ name = "SeasonCake" }]
-keywords = ["inference", "constraints", "monte-carlo", "synthetic-data"]
+keywords = ["inference", "bayesian", "probability", "constraints", "monte-carlo"]
 classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
@@ -28,3 +28,7 @@ auction-inference = "auction_inference.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.ruff.lint]
+# Exact type checks intentionally reject booleans and container subclasses at trust boundaries.
+ignore = ["E721"]

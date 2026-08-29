@@ -38,6 +38,21 @@ class ExampleTest(unittest.TestCase):
         self.assertEqual(first, second)
         self.assertEqual(first["summary"]["seed"], 17)
 
+    def test_joint_posterior(self) -> None:
+        document = self.run_example("joint_posterior.py")
+        self.assertEqual(len(document["rows"]), 4)
+        self.assertAlmostEqual(sum(row["probability"] for row in document["rows"]), 1.0)
+
+    def test_pool_simulation(self) -> None:
+        document = self.run_example("pool_simulation.py")
+        self.assertTrue(document["with_replacement"]["replacement"])
+        self.assertFalse(document["without_replacement"]["replacement"])
+
+    def test_record_adapter(self) -> None:
+        document = self.run_example("record_adapter.py")
+        self.assertEqual(document["accepted"], ["beta"])
+        self.assertEqual(document["rejected"], ["alpha"])
+
 
 if __name__ == "__main__":
     unittest.main()

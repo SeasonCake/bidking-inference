@@ -26,6 +26,8 @@ class PosteriorTest(unittest.TestCase):
             normalize_weights([0.0, 0.0])
         with self.assertRaises(ValueError):
             normalize_weights([1.0, float("nan")])
+        with self.assertRaises(TypeError):
+            normalize_weights([True, 1.0])
 
 
 if __name__ == "__main__":

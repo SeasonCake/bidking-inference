@@ -1,0 +1,41 @@
+{
+  "synthetic": true,
+  "mode": "weighted",
+  "credible_mass": 0.8,
+  "candidates": [
+    {
+      "label": "compact",
+      "attributes": {"count": 8, "value": 900, "region": "north"},
+      "prior": 0.25
+    },
+    {
+      "label": "balanced",
+      "attributes": {"count": 11, "value": 1200, "region": "north"},
+      "prior": 0.45
+    },
+    {
+      "label": "wide",
+      "attributes": {"count": 13, "value": 1500, "region": "south"},
+      "prior": 0.30
+    }
+  ],
+  "evidence": [
+    {
+      "field": "count",
+      "observation": {"kind": "interval", "minimum": 9, "maximum": 13}
+    },
+    {
+      "field": "value",
+      "weight": 1.0,
+      "observation": {"kind": "approximate", "center": 1300, "scale": 200, "cutoff": 3}
+    },
+    {
+      "field": "region",
+      "weight": 0.7,
+      "observation": {
+        "kind": "categorical",
+        "likelihoods": {"north": 1.0, "south": 0.5}
+      }
+    }
+  ]
+}
