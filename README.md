@@ -7,27 +7,25 @@
 [![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](pyproject.toml)
 
-一个从 BidKing 实际产品研发中抽象出来的离散推断工具箱。它面向“候选有限、观测不完整、答案需要
-解释”的问题：把精确、区间、近似或类别证据组合起来，筛选候选状态、计算后验、检查不确定性，
-并用可复现模拟验证结果。
+**从对局中的零散线索，到可解释的估值与概率。**
 
-本仓不再只是一个最小数学示例。除了持续维护的领域中立 Python 包，还公开了经过审查的早期真实
-产品源码和旧地图/道具表，方便学习一个推断工具如何从原型演进为桌面产品。
+BidKing 在竞拍中持续合并件数、格数、品质、技能和道具揭示，提供保守、参考、激进三档出价参考，
+并在结算后帮助复盘。这里也提供可独立运行的 Python 推断工具箱、早期桌面实现和可复现的工程案例，
+方便从数学方法一路读到实际产品架构。
 
-> **版本说明：** BidKing 私有产品当前版本线为 `0.3.4`；本仓的维护包独立版本化，当前公开
-> Release 为 [`v0.1.0`](https://github.com/SeasonCake/bidking-inference/releases/tag/v0.1.0)。历史源码层冻结在
-> `v0.2.0-hotfix1`/`0.2.7-hotfix3`，三者不是同一个可执行产品，也不共用版本语义。
+[下载热修1 Windows 成品](https://github.com/SeasonCake/bidking-inference/releases/tag/product-v0.3.4-hotfix1) ·
+[运行推断示例](#快速开始) · [阅读热修1工程案例](docs/EVIDENCE_LIFECYCLE.zh-CN.md) ·
+[观看实机演示](https://www.bilibili.com/video/BV15z4C6SEoz/)
 
-## 现在公开了什么
+## 从哪里开始
 
 | 层 | 可以直接获得的内容 | 适合用途 |
 | --- | --- | --- |
-| 维护中的 open-core | 严格观测、加权后验、联合枚举、可信集合、校准、敏感性和池模拟 | 接入自己的公开数据，构建小型推断/估计工具 |
+| Windows 成品 | 实时估价悬浮窗、三档报价参考、候选详情、小地图与结算复盘 | 下载即用；试用与激活按程序内说明 |
+| Python 推断工具箱 | 严格观测、加权后验、联合枚举、可信集合、校准、敏感性和池模拟 | 接入自己的数据，构建小型推断/估计工具 |
 | 早期真实源码 | `v0.2.0-hotfix1` 的 Tk 主界面、参考引擎、推断和模拟源码 | 阅读真实 UI、状态、推断与展示如何协作 |
 | 冻结旧数据 | 最后一个 `<0.2.8` 版本的地图、英雄、道具、掉落映射和品质权重 | 研究旧版数据建模和表结构；不代表当前游戏 |
 | 工程方法 | 测试、CLI、边界验证，以及配套 evidence-first skills | 复用验证、架构调查和 agent 兼容流程 |
-
-当前私有产品的采集/内存链、`0.2.8+` 适配与校准、客户端演进、激活、服务端和生产部署仍不公开。
 
 ## 它能解决什么
 
@@ -150,6 +148,11 @@ Semantic Versioning 合同。
 
 ## 快速开始
 
+**直接使用计算器：** 从上方 Release 下载 ZIP，完整解压后，先启动 `BidKingLive.exe`；
+等悬浮窗出现，再从 Steam 启动游戏。需要 Windows 10/11 64位，首次按提示完成设置。
+
+**运行开源推断工具箱：**
+
 Python 3.10 或更新版本即可：
 
 ```powershell
@@ -168,10 +171,12 @@ python examples/posterior_summary.py
 python examples/joint_posterior.py
 python examples/pool_simulation.py
 python examples/calibration_and_sensitivity.py
+python examples/evidence_lifecycle.py
 ```
 
 ## 文档
 
+- [热修1工程案例：观测完整性、跨版本资格与后验](docs/EVIDENCE_LIFECYCLE.zh-CN.md)
 - [公开 API](docs/PUBLIC_API.md)
 - [严格输入 schema](docs/INPUT_SCHEMA.md)
 - [开源边界](OPEN_SOURCE_BOUNDARY.md)
@@ -179,18 +184,6 @@ python examples/calibration_and_sensitivity.py
 - [项目关系](PROJECT_RELATIONSHIP.md)
 - [贡献指南](CONTRIBUTING.md)
 - [维护与支持](MAINTAINING.md)
-
-## 中等开源边界
-
-| 已公开 | 继续保留 |
-| --- | --- |
-| 通用推断/校准/敏感性/模拟 API | 当前游戏字段映射与消费者 |
-| 合成数据、示例、测试和 CLI | 真实用户样本、抓包与内存采集 |
-| 经审查的早期源码与 `<0.2.8` 冻结表 | `0.2.8+` 模型、当前校准和报价策略 |
-| 公开工程 skills 和验证流程 | 激活、服务器、生产拓扑、商业构建与保护链 |
-
-因此外部开发者可以获得可运行的通用工具和有研究价值的真实历史实现，但不能只靠本仓重建当前
-BidKing 产品。完整合同见 [`OPEN_SOURCE_BOUNDARY.md`](OPEN_SOURCE_BOUNDARY.md)。
 
 ## 配套 skills
 
@@ -206,6 +199,9 @@ BidKing 产品。完整合同见 [`OPEN_SOURCE_BOUNDARY.md`](OPEN_SOURCE_BOUNDAR
 
 ## 许可证与贡献
 
-Copyright (c) 2026 SeasonCake，以 MIT License 发布。历史表中的第三方游戏名称、文本和事实元数据
-受 [`NOTICE.md`](NOTICE.md) 的权利边界约束。贡献采用 Developer Certificate of Origin 1.1
-（提交时使用 `git commit -s`），不要求 CLA。
+开源代码采用 [MIT](LICENSE)；Windows 成品按随包 `LICENSE.txt` 使用。推断包仍为独立的
+[`v0.1.0`](https://github.com/SeasonCake/bidking-inference/releases/tag/v0.1.0) 版本线。
+源码层次与素材说明见[项目范围](OPEN_SOURCE_BOUNDARY.md)和[NOTICE](NOTICE.md)。
+贡献采用 DCO 1.1（`git commit -s`），不要求 CLA。
+
+如果工具或案例对你有帮助，欢迎 Star 收藏；也欢迎带着可复现示例提交 Issue 或 PR。

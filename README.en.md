@@ -7,34 +7,27 @@
 [![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](pyproject.toml)
 
-A discrete-inference toolkit distilled from the engineering of the real BidKing product.
-It targets finite-candidate problems with incomplete observations and explainable
-answers: compose exact, interval, approximate, or categorical evidence; filter and score
-candidates; normalize a posterior; inspect uncertainty; and verify behavior with
-reproducible simulation.
+**Turn incomplete observations into explainable estimates and probabilities.**
 
-The repository is no longer only a minimal mathematical example. Alongside the
-maintained domain-neutral Python package, it publishes a reviewed layer of real early
-product source and historical map/item tables so readers can study how an inference
-prototype evolved into a desktop product.
+BidKing combines item counts, occupied cells, quality, and revealed clues during an
+auction to provide conservative, reference, and aggressive bidding estimates, followed
+by settlement review. This repository also offers a standalone Python inference toolkit,
+early desktop implementation, and reproducible engineering case studies: a path from
+the mathematics to a working product architecture.
 
-> **Version note:** the private BidKing product follows the `0.3.4` line. The maintained
-> package in this repository is independently versioned and currently released as
-> [`v0.1.0`](https://github.com/SeasonCake/bidking-inference/releases/tag/v0.1.0). The legacy layer is frozen at
-> `v0.2.0-hotfix1`/`0.2.7-hotfix3`; these are different artifacts with different version
-> semantics.
+[Download hotfix1 for Windows](https://github.com/SeasonCake/bidking-inference/releases/tag/product-v0.3.4-hotfix1) ·
+[Run the toolkit](#quick-start) · [Read the hotfix1 case study](docs/EVIDENCE_LIFECYCLE.md) ·
+[Watch the product demo](https://www.bilibili.com/video/BV15z4C6SEoz/)
 
-## What is public now
+## Where to start
 
 | Layer | Included | Useful for |
 | --- | --- | --- |
-| Maintained open core | strict observations, weighted posterior, joint enumeration, credible sets, calibration, sensitivity, and pool simulation | building a small inference tool with your own public data |
+| Windows application | live estimates, three bidding references, candidate details, minimap, and settlement review | trying the product; trial and activation follow the in-app instructions |
+| Python inference toolkit | strict observations, weighted posterior, joint enumeration, credible sets, calibration, sensitivity, and pool simulation | building an inference tool with your own data |
 | Real early source | the `v0.2.0-hotfix1` Tk interface, reference engine, inference, and simulation source | studying real UI/state/inference/presentation collaboration |
 | Frozen old data | the last `<0.2.8` maps, heroes, items, drop mapping, and quality weights | studying historical schemas and data modeling; not current game authority |
 | Engineering methods | tests, CLI, boundary verification, and companion evidence-first skills | reusing verification and agent-compatibility workflows |
-
-The current product's capture/memory chain, `0.2.8+` adaptations and calibration,
-client evolution, activation, servers, and production deployment remain private.
 
 ## Problems it can solve
 
@@ -164,6 +157,12 @@ outside the maintained package's Semantic Versioning contract.
 
 ## Quick start
 
+**Use the calculator:** download the ZIP from the Release above and fully extract it.
+Start `BidKingLive.exe` first, wait for the overlay, then launch the game from Steam.
+Windows 10/11 64-bit is required; follow the first-run setup prompts.
+
+**Run the open-source inference toolkit:**
+
 Python 3.10 or newer is sufficient:
 
 ```powershell
@@ -182,10 +181,12 @@ python examples/posterior_summary.py
 python examples/joint_posterior.py
 python examples/pool_simulation.py
 python examples/calibration_and_sensitivity.py
+python examples/evidence_lifecycle.py
 ```
 
 ## Documentation
 
+- [Hotfix1 engineering case study: completeness, revision identity, and posterior](docs/EVIDENCE_LIFECYCLE.md)
 - [Public API](docs/PUBLIC_API.md)
 - [Strict input schema](docs/INPUT_SCHEMA.md)
 - [Open-source boundary](OPEN_SOURCE_BOUNDARY.md)
@@ -193,19 +194,6 @@ python examples/calibration_and_sensitivity.py
 - [Project relationship](PROJECT_RELATIONSHIP.md)
 - [Contribution guide](CONTRIBUTING.md)
 - [Maintenance and support](MAINTAINING.md)
-
-## Medium open-core boundary
-
-| Public | Retained |
-| --- | --- |
-| generic inference/calibration/sensitivity/simulation APIs | current game field mappings and consumers |
-| synthetic data, examples, tests, and CLI | real user samples, capture, and memory acquisition |
-| reviewed early source and frozen `<0.2.8` tables | `0.2.8+` models, current calibration, and decision policy |
-| public engineering skills and verification workflows | activation, servers, production topology, commercial builds, and protection |
-
-Developers receive a runnable generic toolkit and a meaningful real historical
-implementation, but this repository alone cannot reconstruct the current BidKing
-product. See [`OPEN_SOURCE_BOUNDARY.md`](OPEN_SOURCE_BOUNDARY.md).
 
 ## Companion skills
 
@@ -223,7 +211,11 @@ agent-compatibility workflows distilled from BidKing/LC2 engineering experience.
 
 ## License and contribution
 
-Copyright (c) 2026 SeasonCake. Released under the MIT License. Third-party game names,
-text, and factual metadata in the historical tables remain subject to the rights
-boundary in [`NOTICE.md`](NOTICE.md). Contributions use the Developer Certificate of
-Origin 1.1 (`git commit -s`); no CLA is required.
+Open-source code uses [MIT](LICENSE); the Windows application uses its bundled
+`LICENSE.txt`. The inference package retains its independent
+[`v0.1.0`](https://github.com/SeasonCake/bidking-inference/releases/tag/v0.1.0) version line.
+See [project scope](OPEN_SOURCE_BOUNDARY.md) and [NOTICE](NOTICE.md) for source and asset details.
+Contributions use DCO 1.1 (`git commit -s`); no CLA is required.
+
+If a tool or case study helps you, a Star is welcome. Reproducible Issues and improvement
+PRs are equally appreciated.

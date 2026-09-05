@@ -4,6 +4,11 @@ This project follows Semantic Versioning. Dates use `YYYY-MM-DD`.
 
 ## [Unreleased]
 
+- Put product download, runnable examples, architecture, and reuse value first on the
+  bilingual home pages; consolidate scope details into linked documentation.
+- Share a bilingual, independently written hotfix1 case study with a runnable synthetic
+  evidence-lifecycle example and regressions for exact/partial/missing counts and
+  session/revision qualification. Public package API, version, and legacy bytes are unchanged.
 - Link the complete 0.3.4 Bilibili demo, author profile, GitHub Issues, and Chinese
   community support channel from both home pages.
 - Add a compact, bilingual three-step 0.3.4 screenshot flow for standby, live bidding,
