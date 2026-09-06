@@ -9,8 +9,12 @@ mirror of the current private product.
 Reusable engineering workflows learned while building and maintaining BidKing are
 published separately in
 [`evidence-first-agent-skills`](https://github.com/SeasonCake/evidence-first-agent-skills).
-That companion covers evidence levels, verification, CLI contracts, architecture
-surveys, and fresh-agent compatibility.
+That companion covers browser-edit recovery, intent checkpoints, evidence levels,
+verification, CLI contracts, architecture surveys and fresh-agent compatibility.
+
+The private product's 0.3.5 target is currently in development, as described in the
+dated [development snapshot](docs/DEVELOPMENT_STATUS.md). It does not change the public
+package's separate v0.1.0 line or turn in-progress source checks into a product release.
 
 Neither repository contains current private source history, production topology,
 customer diagnostics, credentials, captured traffic, or third-party binary/game assets.

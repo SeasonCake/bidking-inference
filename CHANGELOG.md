@@ -4,6 +4,9 @@ This project follows Semantic Versioning. Dates use `YYYY-MM-DD`.
 
 ## [Unreleased]
 
+- Add a bilingual 0.3.5 development snapshot and link reusable browser/intent workflows.
+  This is a documentation-only update: the public package API/version, historical
+  snapshots, and existing downloadable Windows release are unchanged.
 - Put product download, runnable examples, architecture, and reuse value first on the
   bilingual home pages; consolidate scope details into linked documentation.
 - Share a bilingual, independently written hotfix1 case study with a runnable synthetic

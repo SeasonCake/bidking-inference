@@ -17,6 +17,8 @@ BidKing 在竞拍中持续合并件数、格数、品质、技能和道具揭示
 [运行推断示例](#快速开始) · [阅读热修1工程案例](docs/EVIDENCE_LIFECYCLE.zh-CN.md) ·
 [观看实机演示](https://www.bilibili.com/video/BV15z4C6SEoz/)
 
+0.3.5仍在研发与验证中，尚未发布；查看[当前研发进展](docs/DEVELOPMENT_STATUS.zh-CN.md)。
+
 ## 从哪里开始
 
 | 层 | 可以直接获得的内容 | 适合用途 |
@@ -176,6 +178,7 @@ python examples/evidence_lifecycle.py
 
 ## 文档
 
+- [0.3.5研发进展与当前可复用内容](docs/DEVELOPMENT_STATUS.zh-CN.md)
 - [热修1工程案例：观测完整性、跨版本资格与后验](docs/EVIDENCE_LIFECYCLE.zh-CN.md)
 - [公开 API](docs/PUBLIC_API.md)
 - [严格输入 schema](docs/INPUT_SCHEMA.md)
@@ -188,7 +191,8 @@ python examples/evidence_lifecycle.py
 ## 配套 skills
 
 配套仓库 [`evidence-first-agent-skills`](https://github.com/SeasonCake/evidence-first-agent-skills)
-公开了从 BidKing/LC2 工程实践中抽象出的通用流程：架构调查、结论验证、CLI 合同和 agent 兼容性。
+公开了从 BidKing/LC2 工程实践中抽象出的通用流程：浏览器编辑与保存回读、意图确认、架构调查、
+结论验证、CLI 合同和 agent 兼容性。技能可独立安装，场景入口示例见该仓安装说明。
 
 ## 演示与交流
 

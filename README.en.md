@@ -19,6 +19,9 @@ the mathematics to a working product architecture.
 [Run the toolkit](#quick-start) · [Read the hotfix1 case study](docs/EVIDENCE_LIFECYCLE.md) ·
 [Watch the product demo](https://www.bilibili.com/video/BV15z4C6SEoz/)
 
+0.3.5 is still under development and verification, not released. See the
+[development snapshot](docs/DEVELOPMENT_STATUS.md).
+
 ## Where to start
 
 | Layer | Included | Useful for |
@@ -186,6 +189,7 @@ python examples/evidence_lifecycle.py
 
 ## Documentation
 
+- [0.3.5 development progress and reusable workflows](docs/DEVELOPMENT_STATUS.md)
 - [Hotfix1 engineering case study: completeness, revision identity, and posterior](docs/EVIDENCE_LIFECYCLE.md)
 - [Public API](docs/PUBLIC_API.md)
 - [Strict input schema](docs/INPUT_SCHEMA.md)
@@ -199,8 +203,10 @@ python examples/evidence_lifecycle.py
 
 The companion repository
 [`evidence-first-agent-skills`](https://github.com/SeasonCake/evidence-first-agent-skills)
-publishes reusable architecture-survey, claim-verification, CLI-contract, and
-agent-compatibility workflows distilled from BidKing/LC2 engineering experience.
+publishes browser-edit verification, intent checkpoints, architecture-survey,
+claim-verification, CLI-contract and agent-compatibility workflows distilled from
+BidKing/LC2 engineering experience. Install them independently; the installation guide
+includes an optional standing-route example.
 
 ## Demo and community
 
