@@ -4,6 +4,9 @@ This project follows Semantic Versioning. Dates use `YYYY-MM-DD`.
 
 ## [Unreleased]
 
+- Refresh the 2026-09-07 bilingual development snapshot with scoped quote, recovery,
+  refresh and interface progress, plus remaining real-journey and delivery work.
+  Link a reusable interim-maintenance guide; no package, download or release change.
 - Add a bilingual 0.3.5 development snapshot and link reusable browser/intent workflows.
   This is a documentation-only update: the public package API/version, historical
   snapshots, and existing downloadable Windows release are unchanged.
