@@ -4,6 +4,13 @@ This project follows Semantic Versioning. Dates use `YYYY-MM-DD`.
 
 ## [Unreleased]
 
+- Add three newly written synthetic failure-workflow slices: atomic snapshots,
+  stale-refresh completion gates and independent remote/local/recovery outcomes;
+  include nine runnable scenarios, falsifying controls and bilingual engineering notes.
+- Expand issue inputs around components, minimal event traces, expected invariants
+  and non-sensitive Windows-release symptoms; keep private diagnostic channels separate.
+- Mirror the already released Windows product 0.3.5 as `product-v0.3.5` with the
+  unchanged product ZIP and checksum. The maintained Python package remains v0.1.0.
 - Isolate repository synthetic-example imports from unrelated installed `examples`
   packages, with a fresh-process collision regression. Inference behavior is unchanged.
 - Update bilingual product status on 2026-09-08 after the Windows 0.3.5 release;

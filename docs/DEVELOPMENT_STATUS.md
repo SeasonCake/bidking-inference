@@ -4,6 +4,9 @@
 
 Recorded on 2026-09-08. This updates the September 7 development snapshot, retained in Git history.
 
+September 9: [product-v0.3.5 on GitHub](https://github.com/SeasonCake/bidking-inference/releases/tag/product-v0.3.5) now mirrors the original ZIP with SHA256SUMS. A complete download matched the released product; there was no rebuild or library-version change.
+Three newly written [failure workflows](FAILURE_WORKFLOWS.md) provide public reproduction and contribution entry points without private implementations or real diagnostics.
+
 [Windows 0.3.5 is available](https://bidking-dist-1317950063.cos.ap-shanghai.myqcloud.com/bidking-live-v0.3.5-encrypted.zip),
 and the update notification has switched to this version. The public Python toolkit keeps
 its separate `v0.1.0` version: it is not a mirror of the current client source.

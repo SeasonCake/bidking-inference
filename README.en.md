@@ -15,8 +15,8 @@ by settlement review. This repository also offers a standalone Python inference 
 early desktop implementation, and reproducible engineering case studies: a path from
 the mathematics to a working product architecture.
 
-[Download 0.3.5 for Windows](https://bidking-dist-1317950063.cos.ap-shanghai.myqcloud.com/bidking-live-v0.3.5-encrypted.zip) ·
-[Run the toolkit](#quick-start) · [Read the hotfix1 case study](docs/EVIDENCE_LIFECYCLE.md) ·
+[Download 0.3.5 for Windows](https://github.com/SeasonCake/bidking-inference/releases/tag/product-v0.3.5) ·
+[Run the toolkit](#quick-start) · [Explore failure workflows](docs/FAILURE_WORKFLOWS.md) ·
 [Watch the product demo](https://www.bilibili.com/video/BV15z4C6SEoz/)
 
 0.3.5 is released, adding personal bidding presets and improving calculation refresh
@@ -33,6 +33,7 @@ The public Python toolkit retains its separate `v0.1.0` version;
 | Real early source | the `v0.2.0-hotfix1` Tk interface, reference engine, inference, and simulation source | studying real UI/state/inference/presentation collaboration |
 | Frozen old data | the last `<0.2.8` maps, heroes, items, drop mapping, and quality weights | studying historical schemas and data modeling; not current game authority |
 | Engineering methods | tests, CLI, boundary verification, and companion evidence-first skills | reusing verification and agent-compatibility workflows |
+| Failure workflows | atomic JSON snapshots, refresh handles and independent save outcomes; nine synthetic scenarios | adapting small mechanisms and reporting reproducible failure cases |
 
 ## Problems it can solve
 
@@ -187,10 +188,12 @@ python examples/joint_posterior.py
 python examples/pool_simulation.py
 python examples/calibration_and_sensitivity.py
 python examples/evidence_lifecycle.py
+python examples/failure_workflows.py
 ```
 
 ## Documentation
 
+- [Three runnable failure workflows and contribution directions](docs/FAILURE_WORKFLOWS.md)
 - [0.3.5 development progress and reusable workflows](docs/DEVELOPMENT_STATUS.md)
 - [Hotfix1 engineering case study: completeness, revision identity, and posterior](docs/EVIDENCE_LIFECYCLE.md)
 - [Public API](docs/PUBLIC_API.md)

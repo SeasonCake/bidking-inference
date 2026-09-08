@@ -1,39 +1,64 @@
 name: Bug report
-description: Report a reproducible problem using synthetic public inputs
+description: Report a public-code counterexample or a non-sensitive Windows-release symptom
 title: "[Bug] "
 labels: ["bug"]
 body:
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - Maintained inference API or CLI
+        - Failure workflows - snapshot I/O
+        - Failure workflows - refresh gate
+        - Failure workflows - staged save
+        - Evidence lifecycle or another synthetic example
+        - Windows release - download, startup or visible behavior
+        - Documentation or unclear public contract
+    validations:
+      required: true
   - type: input
     id: version
     attributes:
       label: Version
-      placeholder: "0.1.0"
+      description: Give the package version, product version or example commit SHA.
+      placeholder: "library 0.1.0 / Windows product 0.3.5 / example commit"
     validations:
       required: true
   - type: input
     id: python
     attributes:
-      label: Python version
-      placeholder: "3.12.4"
+      label: OS and runtime
+      description: Include Python for public code; the packaged Windows application does not need a separate Python installation.
+      placeholder: "Windows 11, Python 3.13 / Ubuntu, Python 3.10"
+    validations:
+      required: true
+  - type: input
+    id: scenario
+    attributes:
+      label: Scenario or exact command
+      placeholder: "python examples/failure_workflows.py --scenario refresh-late-result"
     validations:
       required: true
   - type: textarea
     id: reproduce
     attributes:
       label: Reproduction
-      description: Use only synthetic, publicly shareable input.
+      description: For public code, give minimal synthetic input and event order. For Windows releases, give non-sensitive steps and the visible symptom. Do not attach complete diagnostics or account details.
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
       label: Expected behavior
+      description: Which invariant should hold? For example, the old target remains, an old completion is rejected, or local failure is not reported as full success.
     validations:
       required: true
   - type: textarea
     id: actual
     attributes:
       label: Actual behavior
+      description: Include repeatability and a minimal sanitized output. Do not paste real service requests, tokens, private paths or captured traffic.
     validations:
       required: true
   - type: checkboxes

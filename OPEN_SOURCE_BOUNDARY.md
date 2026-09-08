@@ -7,6 +7,8 @@ Included:
 - binary forecast calibration and leave-one-evidence-out sensitivity diagnostics;
 - generic record adapters and deterministic weighted-pool simulation;
 - synthetic fixtures and examples;
+- newly written generic failure-workflow reference code for JSON snapshots, refresh
+  handles and fake document-save outcomes, with deterministic fault injection;
 - a frozen, reviewed subset of the real `v0.2.0-hotfix1` source and pre-0.2.8 historical
   map/item tables under `legacy/`;
 - reviewed, author-supplied documentation screenshots listed in `NOTICE.md`;
@@ -21,6 +23,10 @@ Excluded:
 - private model parameters, field mappings, calibration tables, business thresholds,
   decision strategy, incident logs, product diagnostics, and receipts;
 - third-party binaries or source copied from reference projects.
+
+The engineering cases are independent synthetic reconstructions, not renamed extracts
+of product persistence, authorization, network or calculation implementations. They do
+not import the private repository or disclose its protocols, constants or incident text.
 
 The maintained package must remain useful without the private project, a game
 installation, credentials, GUI interaction, or machine-specific paths. The legacy

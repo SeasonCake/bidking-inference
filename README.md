@@ -13,8 +13,8 @@ BidKing 在竞拍中持续合并件数、格数、品质、技能和道具揭示
 并在结算后帮助复盘。这里也提供可独立运行的 Python 推断工具箱、早期桌面实现和可复现的工程案例，
 方便从数学方法一路读到实际产品架构。
 
-[下载 0.3.5 Windows 成品](https://bidking-dist-1317950063.cos.ap-shanghai.myqcloud.com/bidking-live-v0.3.5-encrypted.zip) ·
-[运行推断示例](#快速开始) · [阅读热修1工程案例](docs/EVIDENCE_LIFECYCLE.zh-CN.md) ·
+[下载 0.3.5 Windows 成品](https://github.com/SeasonCake/bidking-inference/releases/tag/product-v0.3.5) ·
+[运行推断示例](#快速开始) · [失败与恢复工程案例](docs/FAILURE_WORKFLOWS.zh-CN.md) ·
 [观看实机演示](https://www.bilibili.com/video/BV15z4C6SEoz/)
 
 0.3.5 已发布，新增个人报价方案并改进计算刷新与启动体验；查看[版本状态与后续工作](docs/DEVELOPMENT_STATUS.zh-CN.md)。
@@ -29,6 +29,7 @@ BidKing 在竞拍中持续合并件数、格数、品质、技能和道具揭示
 | 早期真实源码 | `v0.2.0-hotfix1` 的 Tk 主界面、参考引擎、推断和模拟源码 | 阅读真实 UI、状态、推断与展示如何协作 |
 | 冻结旧数据 | 最后一个 `<0.2.8` 版本的地图、英雄、道具、掉落映射和品质权重 | 研究旧版数据建模和表结构；不代表当前游戏 |
 | 工程方法 | 测试、CLI、边界验证，以及配套 evidence-first skills | 复用验证、架构调查和 agent 兼容流程 |
+| 故障工作流 | 原子JSON快照、刷新请求句柄、远端/本地/恢复分轴结果，9个合成场景 | 直接研究失败边界，为自己的工具构造小而可复现的Issue |
 
 ## 它能解决什么
 
@@ -175,10 +176,12 @@ python examples/joint_posterior.py
 python examples/pool_simulation.py
 python examples/calibration_and_sensitivity.py
 python examples/evidence_lifecycle.py
+python examples/failure_workflows.py
 ```
 
 ## 文档
 
+- [三组可运行故障案例与贡献方向](docs/FAILURE_WORKFLOWS.zh-CN.md)
 - [0.3.5研发进展与当前可复用内容](docs/DEVELOPMENT_STATUS.zh-CN.md)
 - [热修1工程案例：观测完整性、跨版本资格与后验](docs/EVIDENCE_LIFECYCLE.zh-CN.md)
 - [公开 API](docs/PUBLIC_API.md)

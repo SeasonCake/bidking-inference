@@ -4,6 +4,9 @@
 
 记录日期：2026-09-08。本页更新9月7日的研发快照；旧快照保留在 Git 历史中。
 
+9月9日补充：[GitHub产品发行product-v0.3.5](https://github.com/SeasonCake/bidking-inference/releases/tag/product-v0.3.5)已补齐原ZIP及SHA256SUMS，完整下载回读与已发布成品相同，没有重新构建。开源库版本与旧发行保持。
+另有重新编写的[三组故障工作流](FAILURE_WORKFLOWS.zh-CN.md)，供公开复现与改进；不包含当前私有实现或真实诊断。
+
 [Windows 0.3.5 已开放下载](https://bidking-dist-1317950063.cos.ap-shanghai.myqcloud.com/bidking-live-v0.3.5-encrypted.zip)，
 并已切换新版提示。公开 Python 推断包仍为独立的 `v0.1.0`，不是当前客户端源码镜像。
 [旧0.3.4-hotfix1](https://github.com/SeasonCake/bidking-inference/releases/tag/product-v0.3.4-hotfix1)继续保留。

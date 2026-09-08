@@ -14,11 +14,13 @@ body:
     id: proposal
     attributes:
       label: Proposed public contract
+      description: Name the reusable input/output and boundaries. Proposed contribution directions are not existing supported modules.
     validations:
       required: true
   - type: textarea
     id: evidence
     attributes:
       label: Synthetic example or evidence
+      description: Give a small normal case and a counterexample that should fail. Do not copy private product implementations or real datasets.
     validations:
       required: true
