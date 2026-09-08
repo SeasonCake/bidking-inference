@@ -13,11 +13,12 @@ BidKing 在竞拍中持续合并件数、格数、品质、技能和道具揭示
 并在结算后帮助复盘。这里也提供可独立运行的 Python 推断工具箱、早期桌面实现和可复现的工程案例，
 方便从数学方法一路读到实际产品架构。
 
-[下载热修1 Windows 成品](https://github.com/SeasonCake/bidking-inference/releases/tag/product-v0.3.4-hotfix1) ·
+[下载 0.3.5 Windows 成品](https://bidking-dist-1317950063.cos.ap-shanghai.myqcloud.com/bidking-live-v0.3.5-encrypted.zip) ·
 [运行推断示例](#快速开始) · [阅读热修1工程案例](docs/EVIDENCE_LIFECYCLE.zh-CN.md) ·
 [观看实机演示](https://www.bilibili.com/video/BV15z4C6SEoz/)
 
-0.3.5仍在研发与验证中，尚未发布；查看[当前研发进展](docs/DEVELOPMENT_STATUS.zh-CN.md)。
+0.3.5 已发布，新增个人报价方案并改进计算刷新与启动体验；查看[版本状态与后续工作](docs/DEVELOPMENT_STATUS.zh-CN.md)。
+公开 Python 推断包仍为独立的 `v0.1.0`；[旧热修1下载](https://github.com/SeasonCake/bidking-inference/releases/tag/product-v0.3.4-hotfix1)继续保留。
 
 ## 从哪里开始
 

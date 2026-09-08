@@ -1,36 +1,53 @@
-# BidKing 0.3.5: development progress
+# BidKing 0.3.5: released work and what remains
 
 [简体中文](DEVELOPMENT_STATUS.zh-CN.md) · [Back to the overview](../README.en.md)
 
-Recorded on 2026-09-07. This is a development snapshot, not release notes or a downloadable candidate.
+Recorded on 2026-09-08. This updates the September 7 development snapshot, retained in Git history.
 
-The 0.3.5 goal is a more consistent experience across estimates, personal bidding preferences,
-state recovery and everyday navigation. Source changes and verification are still in progress.
-The available Windows application remains
-[0.3.4-hotfix1](https://github.com/SeasonCake/bidking-inference/releases/tag/product-v0.3.4-hotfix1).
-The public Python inference package retains its separate `v0.1.0` version line.
+[Windows 0.3.5 is available](https://bidking-dist-1317950063.cos.ap-shanghai.myqcloud.com/bidking-live-v0.3.5-encrypted.zip),
+and the update notification has switched to this version. The public Python toolkit keeps
+its separate `v0.1.0` version: it is not a mirror of the current client source.
+[The older 0.3.4-hotfix1 download](https://github.com/SeasonCake/bidking-inference/releases/tag/product-v0.3.4-hotfix1) remains available.
 
-## Work in progress
+## What ships in this version
 
-| Area | Intended benefit | Progress and remaining work at this snapshot |
-| --- | --- | --- |
-| Joint constraints and calculation correctness | Combine revealed facts while keeping candidate and estimate semantics consistent | Several scoped source revisions and independent reviews have results; real-input qualification, uncovered field semantics and statistical calibration remain separate, without a claim of complete hero accuracy |
-| Basic bidding preferences | Save personal presets and adjust three references while retaining original estimates | Settlement-time association and selected save, reopen and restore-default flows have been verified; real manual-input paths and the complete user journey remain in progress |
-| Activation recovery and device-change guidance | Distinguish local recovery stages and communicate current state more accurately | Local recovery, commit-failure classification and related logic review have results; complete real activation, device-change journeys and necessary service rollout are not complete |
-| Refresh and startup | Reduce unnecessary waiting and keep results associated with the current session | Selected real refresh paths and interface states have been checked; repeated computation triggered by stale input is undergoing further revision and verification, while startup performance and overall end-to-end gains remain unproven |
-| Help and navigation | Make help, store entry points and explanatory copy easier to find and consistent | Store entry points, selected copy and local export-recovery flows have been checked; other real states and the final artifact still need verification |
+- Bidding preferences: independent ratios for the three references, a shared quote cap,
+  named presets and defaults; original estimates are retained and repeated application does not compound ratios.
+- Joint constraints: improved handling of Viktor's three mean observations and combined size/mean-value constraints.
+- Calculation refresh: improved budgets, cancellation and result association; usable results
+  survive timeout/cancellation without stale results replacing the current state.
+- Startup and recovery: clearer startup feedback, failure cleanup, directory-permission
+  restoration and guidance when activation results disagree with local state.
+- Everyday navigation: revised help/store entry points and copy; the server records the
+  last tool quote and configuration effective before settlement.
 
-A scoped source pass is not a completed product release. Candidate builds, visible interfaces,
-packaging, necessary service changes and published-artifact readback need their own evidence.
-No 0.3.5 download, release date or unmeasured performance improvement is promised here.
+The selected client delivery, required service update, real-match upload checks, complete
+download-object readback and update-notification switch are complete. Announcement publication
+was confirmed by the author. This documentation round additionally checked HTTP 200 and the
+95,466,681-byte download length on September 8; that lightweight check is not a fresh full
+download or another packaged runtime test, and the limited real tests do not prove every environment.
 
-## Scope of this interim update
+## Remaining work and limits
 
-This update changes progress documentation and reusable maintenance guidance only, not the
-public inference package, existing downloads or product release state. A complete version
-will be described separately after its verification and delivery work is complete; a planned
-time window is not a published release. Maintenance preserves the scope of completed checks,
-later findings and missing real inputs instead of repeating closed work or overstating progress.
+- Existing activation and device-change rules remain in effect. The eight-change limit
+  and related server compatibility/recovery work were deferred to hotfix1 or hotfix2.
+- Statistical calibration tuning was deferred to 0.3.5-hotfix1. New type-level mean, count
+  and presence evidence still require a later selected version and real inputs.
+- The diagnostic BAT convenience entry retains a known issue for next-version debugging.
+  Normal startup and in-app export are usable; not every diagnostic entry is claimed to pass.
+- Complete real-hero coverage, deep-cache behavior, internet-cafe conditions and overall
+  performance gains remain unproven. No accuracy or speedup percentage is claimed.
+
+Post-release work now covers test entry points, coverage and code maintenance. It does not
+rebuild 0.3.5 or automatically start deferred features. Further product changes and dates
+depend on their selected scope, verification and delivery.
+
+## Scope of this public maintenance round
+
+This update describes the version and links an existing download. It does not change the
+public package API/version, frozen legacy source/data or existing GitHub release assets.
+Current product source, server implementation and runtime data stay outside this repository.
+Completed, deferred and unknown work remain distinct; a source pass is not delivery evidence.
 
 ## What you can reuse now
 

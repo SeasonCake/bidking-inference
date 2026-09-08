@@ -4,6 +4,12 @@ This project follows Semantic Versioning. Dates use `YYYY-MM-DD`.
 
 ## [Unreleased]
 
+- Isolate repository synthetic-example imports from unrelated installed `examples`
+  packages, with a fresh-process collision regression. Inference behavior is unchanged.
+- Update bilingual product status on 2026-09-08 after the Windows 0.3.5 release;
+  link the existing maintainer-hosted download and describe shipped features, deferrals
+  and unmeasured areas. The Python package, legacy snapshots and GitHub release assets
+  are unchanged; this documentation update does not rebuild or republish the product.
 - Refresh the 2026-09-07 bilingual development snapshot with scoped quote, recovery,
   refresh and interface progress, plus remaining real-journey and delivery work.
   Link a reusable interim-maintenance guide; no package, download or release change.

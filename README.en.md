@@ -15,12 +15,14 @@ by settlement review. This repository also offers a standalone Python inference 
 early desktop implementation, and reproducible engineering case studies: a path from
 the mathematics to a working product architecture.
 
-[Download hotfix1 for Windows](https://github.com/SeasonCake/bidking-inference/releases/tag/product-v0.3.4-hotfix1) ·
+[Download 0.3.5 for Windows](https://bidking-dist-1317950063.cos.ap-shanghai.myqcloud.com/bidking-live-v0.3.5-encrypted.zip) ·
 [Run the toolkit](#quick-start) · [Read the hotfix1 case study](docs/EVIDENCE_LIFECYCLE.md) ·
 [Watch the product demo](https://www.bilibili.com/video/BV15z4C6SEoz/)
 
-0.3.5 is still under development and verification, not released. See the
-[development snapshot](docs/DEVELOPMENT_STATUS.md).
+0.3.5 is released, adding personal bidding presets and improving calculation refresh
+and startup handling. See [version status and remaining work](docs/DEVELOPMENT_STATUS.md).
+The public Python toolkit retains its separate `v0.1.0` version;
+[the older hotfix1 download](https://github.com/SeasonCake/bidking-inference/releases/tag/product-v0.3.4-hotfix1) remains available.
 
 ## Where to start
 

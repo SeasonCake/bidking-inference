@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import subprocess
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -13,6 +14,27 @@ from examples.evidence_lifecycle import Snapshot, infer_snapshot  # noqa: E402
 
 
 class EvidenceLifecycleTest(unittest.TestCase):
+    def test_local_examples_win_over_an_unrelated_installed_package(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            shadow = Path(directory)
+            package = shadow / "examples"
+            package.mkdir()
+            (package / "__init__.py").write_text(
+                "raise RuntimeError('unrelated examples package was imported')\n",
+                encoding="utf-8",
+            )
+            script = (
+                "import sys; sys.path[:0] = " + repr([str(ROOT), str(shadow)])
+                + "; import examples.evidence_lifecycle as target; print(target.__file__)"
+            )
+            completed = subprocess.run(
+                [sys.executable, "-c", script], cwd=ROOT, capture_output=True,
+                text=True, timeout=10,
+            )
+            self.assertEqual(completed.returncode, 0, completed.stderr)
+            self.assertEqual(Path(completed.stdout.strip()).resolve(),
+                             (ROOT / "examples" / "evidence_lifecycle.py").resolve())
+
     def infer(self, complete: bool, seen: int | None) -> dict[str, object]:
         return infer_snapshot(Snapshot("run-a", "revision-b", complete, seen),
                               current_session="run-a", current_revision="revision-b")
