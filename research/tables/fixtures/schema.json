@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "tables": {
+    "items.tsv": {
+      "encoding": "tsv",
+      "columns": [
+        "id",
+        "name"
+      ],
+      "id_column": "id"
+    },
+    "labels.tsv": {
+      "encoding": "tsv",
+      "columns": [
+        "id",
+        "label"
+      ],
+      "id_column": "id"
+    },
+    "notes.txt": {
+      "encoding": "text"
+    },
+    "retired.tsv": {
+      "encoding": "tsv",
+      "columns": [
+        "id",
+        "name"
+      ],
+      "id_column": "id"
+    },
+    "new.tsv": {
+      "encoding": "tsv",
+      "columns": [
+        "id",
+        "name"
+      ],
+      "id_column": "id"
+    }
+  }
+}

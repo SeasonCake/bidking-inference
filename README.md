@@ -14,7 +14,7 @@ BidKing 在竞拍中持续合并件数、格数、品质、技能和道具揭示
 方便从数学方法一路读到实际产品架构。
 
 [下载 0.3.5 Windows 成品](https://github.com/SeasonCake/bidking-inference/releases/tag/product-v0.3.5) ·
-[运行推断示例](#快速开始) · [失败与恢复工程案例](docs/FAILURE_WORKFLOWS.zh-CN.md) ·
+[运行推断示例](#快速开始) · [研究路线：代码、数据与失败案例](docs/research/README.zh-CN.md) ·
 [观看实机演示](https://www.bilibili.com/video/BV15z4C6SEoz/)
 
 0.3.5 已发布，新增个人报价方案并改进计算刷新与启动体验；查看[版本状态与后续工作](docs/DEVELOPMENT_STATUS.zh-CN.md)。
@@ -30,6 +30,23 @@ BidKing 在竞拍中持续合并件数、格数、品质、技能和道具揭示
 | 冻结旧数据 | 最后一个 `<0.2.8` 版本的地图、英雄、道具、掉落映射和品质权重 | 研究旧版数据建模和表结构；不代表当前游戏 |
 | 工程方法 | 测试、CLI、边界验证，以及配套 evidence-first skills | 复用验证、架构调查和 agent 兼容流程 |
 | 故障工作流 | 原子JSON快照、刷新请求句柄、远端/本地/恢复分轴结果，9个合成场景 | 直接研究失败边界，为自己的工具构造小而可复现的Issue |
+| 研究与适配 | 艾莎旧算法/虚构可见性、TCP/OCR/表工具、C#调度测试、旧数据图 | 从一个反例入手，读真实源码、运行实验并继续研究 |
+
+## 新的研究入口
+
+**信息更多，为什么报价反而没了？** 从艾莎的候选窗口开始，读到合成样本与真实可见信息的差异，
+再沿旧数据、表结构变更、运行时身份与采集链路逐步加深。
+这一层包含真实历史小源码、可运行适配与失败案例；深度 C++/符号实验则明确列为研究框架。
+
+[艾莎四个案例](docs/research/AISHA_CASE_STUDY.zh-CN.md) ·
+[历史数据图谱](docs/research/HISTORICAL_DATA.zh-CN.md) ·
+[TCP／表差分／OCR](docs/research/PYTHON_TOOLS.zh-CN.md) ·
+[Match10 复盘](docs/research/MATCH10_LESSONS.zh-CN.md)
+
+![五档历史品质权重：q1包含q2，不代表当前掉落概率](docs/assets/charts/quality-mix.png)
+
+图来自已经公开的冻结旧数据；[研究总览](docs/research/README.zh-CN.md)提供完整阅读路线、
+运行命令、口径解释与贡献题目。研究代码独立于 v0.1.0 稳定包，不需要游戏。
 
 ## 它能解决什么
 
@@ -142,6 +159,8 @@ print({row.label: round(row.probability, 4) for row in posterior.rows})
 | [`calibration.py`](src/auction_inference/calibration.py) | 二元概率预测校准与可靠性分箱 |
 | [`sensitivity.py`](src/auction_inference/sensitivity.py) | 分布漂移和 leave-one-evidence-out 影响排序 |
 | [`examples/`](examples) | 约束、后验、联合状态、模拟、适配器、校准与敏感性示例 |
+| [`research/`](research) | 可从源仓运行的历史适配、合成模型与C#调度测试；不进入稳定API |
+| [`docs/research/`](docs/research/README.zh-CN.md) | 研究阅读路线、图谱、来源、失败复盘与未完成实验设计 |
 | [`legacy/source-v0.2.0-hotfix1`](legacy/source-v0.2.0-hotfix1) | 56 个真实早期源码文件，1.59 MB |
 | [`legacy/data-v0.2.7-hotfix3`](legacy/data-v0.2.7-hotfix3/data/processed) | 7 份冻结旧表，641 KB |
 | [`legacy/README.md`](legacy/README.md) | 精确来源、哈希摘要、限制与排除项 |
@@ -181,6 +200,7 @@ python examples/failure_workflows.py
 
 ## 文档
 
+- [研究总览：从报价异常到数据与运行时](docs/research/README.zh-CN.md)
 - [三组可运行故障案例与贡献方向](docs/FAILURE_WORKFLOWS.zh-CN.md)
 - [0.3.5研发进展与当前可复用内容](docs/DEVELOPMENT_STATUS.zh-CN.md)
 - [热修1工程案例：观测完整性、跨版本资格与后验](docs/EVIDENCE_LIFECYCLE.zh-CN.md)

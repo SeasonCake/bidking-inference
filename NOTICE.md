@@ -6,9 +6,21 @@ BidKing code from the early free/open product line and a reviewed set of pre-0.2
 historical tables. Their exact provenance and frozen lifecycle are recorded in
 `legacy/README.md`.
 
+Selected later author-owned helpers are adapted under `research/`; exact commits,
+source-relative paths, original blobs and adaptations appear in
+`docs/research/PROVENANCE.json`. New teaching models and historical aggregate extracts
+are separately labeled. This limited grant is not a license for unselected private
+product source or third-party assets.
+
+Charts under `docs/assets/charts/` are original numeric visualizations derived from
+the explicitly named public historical tables, approved aggregate summaries, or clearly
+labeled synthetic teaching inputs. Their
+CSV inputs and generator are linked in the research guide. They contain no extracted
+game artwork; the underlying historical metadata retains the rights distinction below.
+
 The general problem shape was informed by experience building a private imperfect-
 information auction calculator. That experience is not a license to redistribute its
-later product source, current data, assets, or production topology.
+unselected later product source, current data, assets, or production topology.
 
 Reusable workflow lessons are published in the companion repository:
 <https://github.com/SeasonCake/evidence-first-agent-skills>.

@@ -1,0 +1,494 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-09-09",
+  "lifecycle": "source-checkout-research",
+  "description": "Selected historical adaptations, independently written teaching code and explicitly reviewed summaries. Original source identities refer to author-owned historical Git objects; the entire private source tree is not distributed. This manifest records provenance, not current game compatibility or a publication receipt.",
+  "entries": [
+    {
+      "id": "transport-reassembly",
+      "kind": "historical_adaptation",
+      "files": [
+        "research/transport/__init__.py",
+        "research/transport/__main__.py",
+        "research/transport/tcp_reassembly.py"
+      ],
+      "sources": [
+        {
+          "project": "BidKing",
+          "commit": "ce9a5753a78268dd1e6e989afe7b31b15b2656f0",
+          "path": "src/bidking_lab/live/tcp_reassembly.py",
+          "git_blob": "2d555fee09f4673691bd087d750b7cb0e3e514cd",
+          "sha256": "c9505c6a552ab7b15d295bdd62866be43a376159034b347bbe3a0ff5e0ff4e51"
+        }
+      ],
+      "adaptation": "Extracted full _Segment/_FlowState/TcpSeqReassembler class bodies; AST equality including docstrings verified. Removed os/environment switch/export and replaced module description. Preserved constants/imports needed by classes.",
+      "reuse_note": "The original helper was still reused in the private product at the 2026-09-09 source review; historical does not mean retired."
+    },
+    {
+      "id": "transport-historical-tests",
+      "kind": "historical_adaptation",
+      "files": [
+        "tests/test_research_transport.py"
+      ],
+      "sources": [
+        {
+          "project": "BidKing",
+          "commit": "ce9a5753a78268dd1e6e989afe7b31b15b2656f0",
+          "path": "tests/test_tcp_seq_reassembly.py",
+          "git_blob": "93b5f001a8fe13ea677afed24d8a8fe62a72f2b4"
+        }
+      ],
+      "adaptation": "Copied only 14 synthetic top-level tests preceding _run_ab_process; replaced imports, registered FunctionTestCase loader, added five synthetic boundary tests. Excluded product A/B, real fixture and capture wiring tests."
+    },
+    {
+      "id": "table-codec",
+      "kind": "historical_adaptation",
+      "files": [
+        "research/tables/codec.py"
+      ],
+      "sources": [
+        {
+          "project": "BidKing",
+          "commit": "ce9a5753a78268dd1e6e989afe7b31b15b2656f0",
+          "path": "src/bidking_lab/extract/tables.py",
+          "git_blob": "a67ab280bac0b37be2088c33a32bd7afd7361f55",
+          "sha256": "7e06e476daa1c77b0ad725b11b85c3e9f58cf4420cfd5931de17c7b5ec347420"
+        }
+      ],
+      "adaptation": "Selected decode_table_text/iter_table_rows/assert_uniform_columns only; all three AST including docstrings equal. Added separate strict decoder. No secure import, transparent file loader or discovery logic.",
+      "reuse_note": "The original helper was still reused in the private product at the 2026-09-09 source review; historical does not mean retired."
+    },
+    {
+      "id": "ocr-normalization",
+      "kind": "historical_adaptation",
+      "files": [
+        "research/text/__init__.py",
+        "research/text/__main__.py",
+        "research/text/ocr_normalize.py",
+        "tests/test_research_ocr.py"
+      ],
+      "sources": [
+        {
+          "project": "BidKing",
+          "commit": "ce9a5753a78268dd1e6e989afe7b31b15b2656f0",
+          "path": "src/bidking_lab/capture/ocr_normalize.py",
+          "git_blob": "1ec6f70764a82aa095442a7b728d35beccdbab68",
+          "sha256": "84803ec10bda2126a35c50f352b45abc6c7a9c8873f0984cd737347b3d20e16a"
+        }
+      ],
+      "adaptation": "Whole historical dictionary, regex and function; replaced module docstring only. Whole module AST excluding first docstring verified equal. Six new artificial-text tests.",
+      "reuse_note": "The original helper was still reused in the private product at the 2026-09-09 source review; historical does not mean retired."
+    },
+    {
+      "id": "synthetic-table-diff",
+      "kind": "synthetic_teaching",
+      "files": [
+        "docs/research/PYTHON_TOOLS.zh-CN.md",
+        "research/tables/__init__.py",
+        "research/tables/__main__.py",
+        "research/tables/diff.py",
+        "research/tables/fixtures/after/items.tsv",
+        "research/tables/fixtures/after/labels.tsv",
+        "research/tables/fixtures/after/new.tsv",
+        "research/tables/fixtures/after/notes.txt",
+        "research/tables/fixtures/before/items.tsv",
+        "research/tables/fixtures/before/labels.tsv",
+        "research/tables/fixtures/before/notes.txt",
+        "research/tables/fixtures/before/retired.tsv",
+        "research/tables/fixtures/schema.json",
+        "tests/test_research_tables.py"
+      ],
+      "sources": [],
+      "adaptation": "Independent new explicit-schema flat-directory comparison CLI; historical all-TextAsset workflow read as background only. Does not copy extractor source, receipts, real tables or bundle adapter."
+    },
+    {
+      "id": "aisha-early-window",
+      "kind": "historical_adaptation",
+      "files": [
+        "research/aisha/windows.py",
+        "tests/test_research_aisha.py",
+        "docs/research/AISHA_CASE_STUDY.zh-CN.md"
+      ],
+      "sources": [
+        {
+          "project": "BidKing",
+          "commit": "a0aaeacf858b98280016867b7f43322303b12b35",
+          "path": "hero_ref/src/ahmad_ref_engine.py",
+          "git_blob": "e1abd5692b00f34e0faabfa023d3e6c7d60d2656",
+          "sha256": "dce303be77e076a0fbe7d14a28fb7afaeccbe550933615999dda10041a9212be"
+        },
+        {
+          "project": "BidKing",
+          "commit": "a0aaeacf858b98280016867b7f43322303b12b35",
+          "path": "docs/handoffs/CHECKPOINT_aisha_early_round_count_window_2026-06-29.zh-CN.md",
+          "git_blob": "7b9a7ecb7cedc5a561a01d7d429a47746663ae9b",
+          "sha256": "c1003aaf5294895f3311fdf9880483f20d2d24004f56fb3512db5aa2634a474f"
+        }
+      ],
+      "adaptation": "Second helper receives explicit keyword-only rollback: bool=False instead of reading AISHA_DISABLE_EARLY_COUNT_WINDOW_EXPAND from os.environ; docstring updated. No environment mutation is needed. New strict wrapper rejects malformed toy counts/bands and receives a reachable band as an input; it does not implement _fixed_count_reachable_total_band. The original without-grid-target branch had no band step; the wrapper exposes that branch explicitly and rejects a supplied band there.",
+      "retained": [
+        "_aisha_early_round_count_window_bounds method body",
+        "_maybe_expand_aisha_early_inverted_count_window arithmetic and diagnostic note",
+        "50 and 100 count caps",
+        "fixed-band clamp/reanchor before conditional expansion on the grid-target branch"
+      ]
+    },
+    {
+      "id": "aisha-grid-feasibility",
+      "kind": "historical_adaptation",
+      "files": [
+        "research/aisha/replay_contract.py",
+        "tests/test_research_aisha.py",
+        "docs/research/AISHA_CASE_STUDY.zh-CN.md"
+      ],
+      "sources": [
+        {
+          "project": "BidKing",
+          "commit": "409870265c8344619b56fd72e9b013e8f3694220",
+          "path": "hero_ref/src/ahmad_ref_engine.py",
+          "git_blob": "1fe17c51d04ffb5094bfe37d2c1e9ed8e7e3f92b",
+          "sha256": "51d43d97b031e7d905d6495a72dcfd5d63828ee79bf8fb1416c2a372252cc5d6"
+        },
+        {
+          "project": "BidKing",
+          "commit": "409870265c8344619b56fd72e9b013e8f3694220",
+          "path": "docs/handoffs/HANDOFF_aisha_quote_rootcause_offline_fidelity_2026-07-01.zh-CN.md",
+          "git_blob": "eba9a133b9c66ee9cd3c4556323a159538234de6",
+          "sha256": "35b76d623ffac0569f75d71d76e0a6e448a6f3b7fa62f9e7312e72de47373aac"
+        }
+      ],
+      "adaptation": "Independent live/offline teaching adapter handles only total_avg_cells semantic rows; it is not copied from runtime snapshot or the old audit script. A separate new wrapper validates finite positive values, supplied units (an omitted unit defaults to cells_per_item), duplicate conflicts, complete monotonic nonnegative ranges and finite products. No quote model; output explicitly marks quote_evaluated=false.",
+      "retained": [
+        "_apply_total_avg_cells_grid_feasibility full method body, including Python round and partial-None grid behavior"
+      ]
+    },
+    {
+      "id": "aisha-synthetic-visibility",
+      "kind": "synthetic_teaching",
+      "files": [
+        "research/aisha/visibility.py",
+        "research/aisha/fixtures/toy_warehouse.json",
+        "tests/test_research_aisha.py",
+        "docs/research/AISHA_CASE_STUDY.zh-CN.md"
+      ],
+      "sources": [
+        {
+          "project": "BidKing",
+          "commit": "c8015490427f594da02cc50fdb8f67f6cedd4865",
+          "path": "scripts/synthesize_draw_hero_samples.py",
+          "git_blob": "cd72af0a8ee4c844e0994c35ec8f1cce05f69a67",
+          "sha256": "667ddcc1374779f86d16ef194b450ee531dabb613dbbd595930011b6789d0c8f"
+        }
+      ],
+      "adaptation": "Mechanism reference for independently written simulator. No original full function bodies or engine/capture adapters copied.",
+      "teaching_choices": [
+        "Ten fictional rectangular items and arbitrary prices; one-based coordinates and synthetic entity keys.",
+        "Explicit integer seed; cross-source repeat hits merge, each tool draw samples without replacement.",
+        "Quality-only uses a fictional upper/lower coarse zone; no exact footprint or value leaks.",
+        "R1 split-white exact count/cells; R2 white+green merged exact count/cells. These are observable teaching fields, not a byte-for-byte original snapshot schema.",
+        "Gold scan emits known zero explicitly, unlike the original >0 field-update gate; missing remains distinct.",
+        "All returned item objects are constructed from a visibility whitelist; no truth object is serialized."
+      ]
+    },
+    {
+      "id": "aisha-public-round-correction",
+      "kind": "synthetic_teaching",
+      "files": [
+        "research/aisha/visibility.py",
+        "docs/research/AISHA_CASE_STUDY.zh-CN.md"
+      ],
+      "sources": [
+        {
+          "project": "BidKing",
+          "commit": "4489929a920bea986c6230d91a431f7556fcd424",
+          "path": "scripts/synthesize_draw_hero_samples.py",
+          "git_blob": "af2132c5a530957f44bc516c6ed002be1293dc59",
+          "sha256": "a8ff03e130ba7eeff36630da6085f2df4f4ed0d1af42216666fd5e01927cb4bb"
+        }
+      ],
+      "adaptation": "Documented July map-family/wire-round correction expressed independently with explicit family labels. Unknown families reject rather than inherit the old uncalibrated fallback. Census raw inputs were not reread or rerun."
+    },
+    {
+      "id": "aisha-historical-summary",
+      "kind": "historical_aggregate",
+      "files": [
+        "research/aisha/fixtures/historical_summary.json",
+        "docs/research/AISHA_CASE_STUDY.zh-CN.md"
+      ],
+      "sources": [
+        {
+          "project": "BidKing",
+          "commit": "c8015490427f594da02cc50fdb8f67f6cedd4865",
+          "path": "data/reports/synth_vs_real_aisha_compare.json",
+          "git_blob": "34b4173ae1a0fe2a8b59d06baa5d58e76c591899",
+          "sha256": "43118e3fac43dc9de7faaeb193525fad9dde5f1b068dde6db220ca50747e7241"
+        }
+      ],
+      "adaptation": "Whitelist source.summary only: n->cases80, real/synth n79->value_cases79, renamed percent/error/count fields. Individual rows and case identifiers omitted. Not marked synthetic and not represented as a new experiment.",
+      "limitations": [
+        "Paired denominators are not separately recorded in source summary.",
+        "No per-case observations or confidence intervals.",
+        "Later public round corrections limit early-round fidelity claims."
+      ]
+    },
+    {
+      "id": "aisha-coupling-story",
+      "kind": "synthetic_teaching",
+      "files": [
+        "research/aisha/__main__.py",
+        "docs/research/AISHA_CASE_STUDY.zh-CN.md"
+      ],
+      "sources": [
+        {
+          "project": "BidKing",
+          "commit": "965667e354104e66f2d2a40d9a7ec12a566a5ff8",
+          "path": "docs/HANDOFF_lever1_value_coupling_2026-06-27.zh-CN.md",
+          "git_blob": "7457fa5f0d2ea4e9505a1f305328abd30382e1e0",
+          "sha256": "ec79c83977cb18c862f90076d2445ce955a3fe8b57061911a9c019c73bd0b58b"
+        }
+      ],
+      "adaptation": "Historical story only. Independent fictional cancellation arithmetic uses arbitrary inputs and multiplier; no production no-red penalty function, current calibrated constants or compensation implementation copied."
+    },
+    {
+      "id": "research-scaffolding",
+      "kind": "research_scaffolding",
+      "files": [
+        "research/__init__.py",
+        "research/aisha/__init__.py"
+      ],
+      "sources": [],
+      "adaptation": "Source-checkout namespace only; does not change the installed public API."
+    },
+    {
+      "id": "historical-data-atlas",
+      "kind": "historical_derivative",
+      "files": [
+        "research/historical_data/__init__.py",
+        "research/historical_data/generate_charts.py",
+        "tests/test_research_historical_data.py",
+        "docs/research/HISTORICAL_DATA.zh-CN.md"
+      ],
+      "sources": [
+        {
+          "project": "BidKing",
+          "commit": "acae7011a346b2e0583bf882dd9dd841ac081c4a",
+          "path": "data/processed/battle_items.json",
+          "git_blob": "dc94eb6bdb26b2e46d209215776ebcd871316335"
+        },
+        {
+          "project": "BidKing",
+          "commit": "acae7011a346b2e0583bf882dd9dd841ac081c4a",
+          "path": "data/processed/dropmap_mem_0625.json",
+          "git_blob": "cb45ee8ece79e1b9833c9ab51951527992e6d7b7"
+        },
+        {
+          "project": "BidKing",
+          "commit": "acae7011a346b2e0583bf882dd9dd841ac081c4a",
+          "path": "data/processed/heroes.json",
+          "git_blob": "db45e83a2a71491a8a3fd4408f0191966c7c03fc"
+        },
+        {
+          "project": "BidKing",
+          "commit": "acae7011a346b2e0583bf882dd9dd841ac081c4a",
+          "path": "data/processed/item_category_mem_0625.json",
+          "git_blob": "1d2f05d8a226e03b14c9803806ab0bfbe83c70d9"
+        },
+        {
+          "project": "BidKing",
+          "commit": "acae7011a346b2e0583bf882dd9dd841ac081c4a",
+          "path": "data/processed/items_droppable.json",
+          "git_blob": "bad8b4dc621965b4747730aa9888403edf830719"
+        },
+        {
+          "project": "BidKing",
+          "commit": "acae7011a346b2e0583bf882dd9dd841ac081c4a",
+          "path": "data/processed/maps.json",
+          "git_blob": "4605d0e62e4e4bd856788f154d93ad52106aea3f"
+        },
+        {
+          "project": "BidKing",
+          "commit": "acae7011a346b2e0583bf882dd9dd841ac081c4a",
+          "path": "data/processed/quality_weights_measured.json",
+          "git_blob": "911112730960d7a1de89a479b0b917bfd4a51198"
+        }
+      ],
+      "adaptation": "New tabulation and plotting code. Reads all seven already-public frozen JSON files for inventory; quality weights and session counts are distinct from catalog records. Also redraws approved aisha-historical-summary values without rerunning cases. No new current tables."
+    },
+    {
+      "id": "match10-readiness-limiter",
+      "kind": "historical_adaptation",
+      "files": [
+        "research/match10-scheduling/ReadinessTraceLimiter.cs"
+      ],
+      "sources": [
+        {
+          "project": "BidKing",
+          "commit": "7746b26121136359aba81cf72d404b50c4b56881",
+          "path": "game_plugins/BidKingMatchItemsOver5/ReadinessTraceLimiter.cs",
+          "git_blob": "5f289567f70d6bd418fdddd55592548a0740524c",
+          "sha256": "4e2749781f52277585b302ac9720693677277349ddeb7192ae8239a6356e4075"
+        }
+      ],
+      "adaptation": "namespace BidKingMatchItemsOver5 -> HistoricalScheduling; provenance header; nameof(intervalMilliseconds) -> identical constant string for C# 5. No intended method logic change; terminal long.MaxValue saturation behavior retained and characterized"
+    },
+    {
+      "id": "match10-managed-scheduler",
+      "kind": "historical_adaptation",
+      "files": [
+        "research/match10-scheduling/ManagedInstallScheduler.cs"
+      ],
+      "sources": [
+        {
+          "project": "BidKing",
+          "commit": "7746b26121136359aba81cf72d404b50c4b56881",
+          "path": "game_plugins/BidKingMatchItemsOver5/ManagedInstallScheduler.cs",
+          "git_blob": "05e7e92340619690905174bd7d11971bd267ba61",
+          "sha256": "28f936be8cf4b650529bf54a02869553cdfe1d5a114308ae5475351e3dabdc23"
+        }
+      ],
+      "adaptation": "namespace replacement and provenance header; Task.Run(RunAsync) -> Task.Run((Func<Task>)RunAsync) to select the intended async overload under the installed C# 5 compiler. No new scheduler lifecycle, restart, or force-cancellation behavior"
+    },
+    {
+      "id": "match10-harnesses",
+      "kind": "historical_adaptation",
+      "files": [
+        "research/match10-scheduling/Harness.cs",
+        "research/match10-scheduling/run.ps1",
+        "research/match10-scheduling/README.md",
+        "docs/research/MATCH10_LESSONS.zh-CN.md"
+      ],
+      "sources": [
+        {
+          "project": "BidKing",
+          "commit": "7746b26121136359aba81cf72d404b50c4b56881",
+          "path": "tests/fixtures/match10_readiness_trace_limiter_harness.cs",
+          "git_blob": "a550815d7b4c1f5d306d0e357863c8a65c4b6872",
+          "sha256": "7ec0d75a22be9433172d20b44797ba38fa613e87ba0110d496a156347c5b8409"
+        },
+        {
+          "project": "BidKing",
+          "commit": "7746b26121136359aba81cf72d404b50c4b56881",
+          "path": "tests/fixtures/match_item_managed_install_scheduler_harness.cs",
+          "git_blob": "361558d9c89667285ebfad6f0dff730a9ee5910f",
+          "sha256": "6ee07c9070fb295a3fc5d18739e7940765cab9bb6ea60a30e02dd0f339e473c2"
+        }
+      ],
+      "adaptation": "merge two entrypoints into named console cases; private status labels replaced by synthetic pending/retry labels; preserve historical virtual-clock scales and primary scheduler normal/cancel/drain/fault/pre-start cases; add input/exception/lifecycle/known-terminal-limit controls and finally cleanup; add deliberately failed-invariant and finite-wait parent-deadline controls; new Windows csc runner, hidden direct child processes, bounded waits, output receipts and exit propagation. 18 named normal cases / 120 assertions, including one inherited-limit characterization; not comparable to old per-Require case counter"
+    },
+    {
+      "id": "match10-historical-lessons",
+      "kind": "historical_aggregate",
+      "files": [
+        "docs/research/MATCH10_LESSONS.zh-CN.md",
+        "docs/research/RUNTIME_IDENTITY.zh-CN.md"
+      ],
+      "sources": [
+        {
+          "project": "BidKing",
+          "commit": "77ceb74ab69ab5fef07f74a1f4ac6f9c9e13e8ec",
+          "path": "docs/handoffs/HANDOFF_0.3.2-hotfix3_release_successor_and_match10_deferred_2026-08-13.zh-CN.md",
+          "git_blob": "1e8b77cd8e9bb478777eeb4b6e7491dc1fe7fff4"
+        },
+        {
+          "project": "BidKing",
+          "commit": "7746b26121136359aba81cf72d404b50c4b56881",
+          "path": "docs/handoffs/HANDOFF_match10_runtime_exit_thread_attach_race_source_plan_0.3.2-hotfix3_2026-08-13.zh-CN.md",
+          "git_blob": "65428d25686a87b94fa31e3cd7742e6f8c56ed33"
+        }
+      ],
+      "adaptation": "Paraphrased historical lifecycle lessons only. Final feature remained deferred. No raw addresses, user stacks, plugin/authorization implementations or historical runtime kits copied; new C# harness success does not change the old product verdict."
+    },
+    {
+      "id": "nonlinear-penalty-teaching",
+      "kind": "synthetic_teaching",
+      "files": [
+        "research/aisha/penalty_example.py",
+        "tests/test_research_penalty_teaching.py",
+        "docs/assets/charts/penalty-teaching.png",
+        "docs/assets/charts/penalty_teaching_trace.csv"
+      ],
+      "sources": [],
+      "adaptation": "Independent generic arithmetic and invented parameters selected for teaching. Not a copy of the historical penalty with constants removed/replaced, and not fitted to product outputs. Exposes support input, gap, curved gap, penalty, multiplier and final output; no game-field mapping, production calibration or quote-accuracy claim. CSV and plot are computed by this public code."
+    }
+  ],
+  "fixtures": [
+    {
+      "path": "research/tables/fixtures/after/items.tsv",
+      "kind": "synthetic",
+      "sha256": "b312dd198dd994522d04d6b50ae5503f9f543386665234dac41b28d096bab5e9"
+    },
+    {
+      "path": "research/tables/fixtures/after/labels.tsv",
+      "kind": "synthetic",
+      "sha256": "5b64af5efe8cfff012970a1e04de51ba52d7209bca7c231245de376caa9d8ee9"
+    },
+    {
+      "path": "research/tables/fixtures/after/new.tsv",
+      "kind": "synthetic",
+      "sha256": "d1cd8af7beee5f9303449c1ac3b01c9fe765914a7e3aac7787477eff251dcf43"
+    },
+    {
+      "path": "research/tables/fixtures/after/notes.txt",
+      "kind": "synthetic",
+      "sha256": "3ad8cf596d80d9aa8d1e0498f91d73be9569a43ca1bc2895b02f8bbe1fa29656"
+    },
+    {
+      "path": "research/tables/fixtures/before/items.tsv",
+      "kind": "synthetic",
+      "sha256": "661a5c8418422ee82da7bf9a11cb99ce77bbaf9f180b96dbd5614e2f4927eaee"
+    },
+    {
+      "path": "research/tables/fixtures/before/labels.tsv",
+      "kind": "synthetic",
+      "sha256": "f63bf989401be003239f6fbc6dcff7dbcdc3b52b9f7b9f03f1797ca13680a7a4"
+    },
+    {
+      "path": "research/tables/fixtures/before/notes.txt",
+      "kind": "synthetic",
+      "sha256": "3ad8cf596d80d9aa8d1e0498f91d73be9569a43ca1bc2895b02f8bbe1fa29656"
+    },
+    {
+      "path": "research/tables/fixtures/before/retired.tsv",
+      "kind": "synthetic",
+      "sha256": "c12245c7531afb078e609c6b45b27aac7dfdd22fda33d1bf6841fd393030ca71"
+    },
+    {
+      "path": "research/tables/fixtures/schema.json",
+      "kind": "synthetic",
+      "sha256": "ce5b5bef46e1a66f57f82c7f2ac08f094f7f3e74bc1a936223f2567749ae92c0"
+    },
+    {
+      "path": "research/aisha/fixtures/toy_warehouse.json",
+      "kind": "synthetic",
+      "sha256": "f79c0205071ed7737d88546a77e0836ab9e590d73b38846c8031f03bff954d2f"
+    },
+    {
+      "path": "research/aisha/fixtures/historical_summary.json",
+      "kind": "historical_aggregate",
+      "sha256": "ef9981f02b0757b21a4f4996b99c3a5f7a57e1918b5158a7f148fa9db189f02b"
+    }
+  ],
+  "historical_notes": [
+    {
+      "id": "table-collection-summary",
+      "kind": "historical_aggregate",
+      "recorded_date": "2026-09-03",
+      "document": "docs/research/TABLE_CHANGE_STUDY.zh-CN.md",
+      "scope": "Historical name-set/raw-byte summary; not reproduced by the five-name synthetic demo and not a semantic compatibility verdict.",
+      "old_names": 61,
+      "new_names": 62,
+      "added_names": [
+        "GuildLevel"
+      ],
+      "removed_names": 0,
+      "byte_changed": 24,
+      "byte_unchanged": 37,
+      "retained_receipts_sha256": [
+        "e66e8acf2560c9b2b7d0f145f74af93815147d61dc0a42d96b9533d0d57db8d2",
+        "387910dc0752fb28be12f2f80696cfcb4fb10cb7acbd2a69151040e7e3278a38"
+      ],
+      "original_receipts_distributed": false,
+      "raw_tables_distributed": false
+    }
+  ]
+}

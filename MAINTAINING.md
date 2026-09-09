@@ -10,6 +10,9 @@ input.
 - Require a positive and a falsifying negative test for behavioral changes.
 - Require DCO sign-off and a clean `python scripts/verify.py` result.
 - Keep unrelated refactors and generated artifacts out of the change.
+- Research is not part of package SemVer. Keep its provenance/fixture classifications
+  current, verify C# changes with the independent runner, and visually inspect changed charts.
+  Selected historical adaptations are exceptions by exact scope, not permission to mirror a product.
 
 ## Release checklist
 

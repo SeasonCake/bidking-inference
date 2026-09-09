@@ -39,7 +39,7 @@ the repository [`NOTICE.md`](../NOTICE.md).
 
 ## Deliberately excluded
 
-- all `0.2.8+` product source, newer map adaptation, current calibration, and current
+- from this frozen snapshot: all `0.2.8+` product source, newer map adaptation, current calibration, and current
   decision policy;
 - activation, upload, private/server code, production locators, packaging and protection;
 - raw captures, player or customer data, diagnostics, sample manifests, and incident
@@ -48,3 +48,7 @@ the repository [`NOTICE.md`](../NOTICE.md).
 
 The maintained public API lives in [`src/auction_inference`](../src/auction_inference).
 Legacy files may contain obsolete assumptions and are not covered by Semantic Versioning.
+
+Separately selected later helper adaptations are now in [research](../docs/research/README.md),
+with their own provenance. They do not alter these frozen snapshots or turn this
+historical application subset into a current runnable client.

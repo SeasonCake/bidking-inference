@@ -1,0 +1,37 @@
+name: Research question
+description: A bounded experiment, historical-helper counterexample, or reproducible data question
+title: "[Research] "
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: component
+    attributes:
+      label: Research component
+      options:
+        - Aisha windows / visibility / replay
+        - Historical data and charts
+        - TCP / OCR / table tools
+        - Match10 scheduling
+        - Capture architecture (proposal)
+        - Runtime identity / symbols (proposal)
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question and smallest falsifying case
+      description: Name one claim and what result would disprove it. Proposed labs are not existing supported modules.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Input, command, expected and actual output
+      description: Use synthetic input or already-public historical aggregates. No captures, player records, current private parameters, credentials or third-party assets.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Source identity and environment
+      description: Commit, Python or C# toolchain, OS, and relevant configuration. Do not paste private paths.

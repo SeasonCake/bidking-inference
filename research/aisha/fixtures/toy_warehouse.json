@@ -1,0 +1,23 @@
+{
+  "kind": "synthetic_warehouse",
+  "synthetic": true,
+  "description": "Ten fictional items. Values are arbitrary teaching units, not game prices.",
+  "coordinate_system": "one_based_row_col_rectangles",
+  "map_family": "villa",
+  "items": [
+    {"entity": "toy-01", "quality": 1, "cells": 1, "row": 1, "col": 1, "width": 1, "height": 1, "value": 100},
+    {"entity": "toy-02", "quality": 1, "cells": 2, "row": 1, "col": 3, "width": 2, "height": 1, "value": 200},
+    {"entity": "toy-03", "quality": 2, "cells": 1, "row": 1, "col": 6, "width": 1, "height": 1, "value": 400},
+    {"entity": "toy-04", "quality": 2, "cells": 2, "row": 1, "col": 8, "width": 2, "height": 1, "value": 600},
+    {"entity": "toy-05", "quality": 3, "cells": 2, "row": 3, "col": 1, "width": 2, "height": 1, "value": 1500},
+    {"entity": "toy-06", "quality": 3, "cells": 3, "row": 3, "col": 4, "width": 3, "height": 1, "value": 2400},
+    {"entity": "toy-07", "quality": 4, "cells": 4, "row": 5, "col": 1, "width": 2, "height": 2, "value": 5000},
+    {"entity": "toy-08", "quality": 4, "cells": 2, "row": 5, "col": 4, "width": 2, "height": 1, "value": 7000},
+    {"entity": "toy-09", "quality": 5, "cells": 4, "row": 5, "col": 7, "width": 2, "height": 2, "value": 12000},
+    {"entity": "toy-10", "quality": 6, "cells": 6, "row": 8, "col": 1, "width": 3, "height": 2, "value": 20000}
+  ],
+  "public_events": [
+    {"wire_round": 1, "semantic": "total_avg_cells", "value": 2.7, "unit": "cells_per_item"},
+    {"wire_round": 2, "semantic": "q4_count", "value": 2, "unit": "items"}
+  ]
+}

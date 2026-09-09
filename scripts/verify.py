@@ -7,16 +7,39 @@ import compileall
 import hashlib
 import json
 import os
+import re
 import struct
 import subprocess
 import sys
 from pathlib import Path
+from urllib.parse import unquote, urlsplit
 
 
 ROOT = Path(__file__).resolve().parents[1]
-TEXT_SUFFIXES = {".md", ".py", ".toml", ".yml", ".yaml", ".json"}
-BINARY_SUFFIXES = {".dll", ".exe", ".pyd", ".so", ".dylib", ".zip", ".tar", ".7z", ".rar"}
+TEXT_SUFFIXES = {".md", ".py", ".toml", ".yml", ".yaml", ".json", ".cs", ".csproj",
+                 ".ps1", ".cpp", ".c", ".h", ".hpp", ".txt", ".tsv", ".csv", ".svg"}
+BINARY_SUFFIXES = {".dll", ".exe", ".pyd", ".pdb", ".so", ".dylib", ".zip", ".tar", ".7z", ".rar"}
 DOCUMENTATION_IMAGES = {
+    "docs/assets/charts/penalty-teaching.png": {
+        "bytes": 73_956, "width": 1500, "height": 810,
+        "sha256": "ecf01c85d245b0b3bb1cecfbb8b5b79b1b7a5ad056a1af4cfbddfa34cf560379",
+    },
+    "docs/assets/charts/quality-mix.png": {
+        "bytes": 78_388, "width": 1500, "height": 810,
+        "sha256": "2e996a394796775f53b1e17b655c2f0ceebab3408f0f7fa64c5bd2a281dd2b67",
+    },
+    "docs/assets/charts/session-coverage.png": {
+        "bytes": 49_082, "width": 1500, "height": 810,
+        "sha256": "af30250294999a53f213d6fc904ec9eb74d6f65decdf282c7e7b2a700a685ea9",
+    },
+    "docs/assets/charts/catalog-coverage.png": {
+        "bytes": 48_626, "width": 1500, "height": 810,
+        "sha256": "ab7a178c84a02927a086fecd8c39298c7ede9c14f7813b2f8e9a85d5a2d730e6",
+    },
+    "docs/assets/charts/aisha-real-synthetic.png": {
+        "bytes": 58_806, "width": 1500, "height": 810,
+        "sha256": "fb222978219dc3360bf23311b63216944d0edf93356d5b722c1f051040df2a30",
+    },
     "docs/assets/screenshots/bidking-v0.3.4-standby.png": {
         "bytes": 150_824,
         "width": 996,
@@ -93,7 +116,153 @@ REQUIRED_PUBLIC_FILES = (
     "docs/INPUT_SCHEMA.md",
     "docs/assets/screenshots/README.md",
     "legacy/README.md",
+    "docs/research/README.zh-CN.md",
+    "docs/research/README.md",
+    "docs/research/PROVENANCE.json",
+    ".github/ISSUE_TEMPLATE/research_question.yml",
 )
+
+
+def _safe_relative(value: object) -> bool:
+    return (isinstance(value, str) and bool(value)
+            and re.fullmatch(r"[A-Za-z0-9_. /-]+", value) is not None
+            and not value.startswith(("/", " "))
+            and all(part not in ("", ".", "..") for part in value.split("/")))
+
+
+def text_boundary_errors(relative: str, content: str) -> list[str]:
+    # This exact already-public snapshot is a legitimate research input.
+    content = content.replace("legacy/data-v0.2.7-hotfix3/data/processed", "public-legacy-data")
+    if relative == "docs/research/PROVENANCE.json":
+        # Source-relative locators in structured provenance are metadata, not imports.
+        # Only the path field receives this exception; prose, code and other fields do not.
+        try:
+            document = json.loads(content)
+            for entry in document.get("entries", []):
+                for source in entry.get("sources", []):
+                    if _safe_relative(source.get("path")):
+                        source["path"] = "reviewed-source-relative-locator"
+            content = json.dumps(document, ensure_ascii=False)
+        except (json.JSONDecodeError, AttributeError, TypeError):
+            return ["invalid structured research provenance"]
+    lowered = content.casefold()
+    return [f"private fragment {fragment!r} in {relative}"
+            for fragment in BANNED_SOURCE_FRAGMENTS if fragment.casefold() in lowered]
+
+
+def research_manifest_errors(manifest: dict, root: Path) -> list[str]:
+    """Check declared source identities and exact fixture bytes; no private repo required."""
+    errors = []
+    if (not isinstance(manifest, dict) or type(manifest.get("schema_version")) is not int
+            or manifest.get("schema_version") != 1):
+        return ["research provenance requires schema_version=1"]
+    entries, fixtures = manifest.get("entries"), manifest.get("fixtures")
+    if not isinstance(entries, list) or not entries or not isinstance(fixtures, list):
+        return ["research provenance requires entries and fixture list"]
+    ids, covered = set(), set()
+    kinds = {"historical_adaptation", "synthetic_teaching", "historical_aggregate",
+             "historical_derivative", "research_scaffolding"}
+    for entry in entries:
+        if not isinstance(entry, dict):
+            errors.append("invalid research entry")
+            continue
+        identity = entry.get("id")
+        if not isinstance(identity, str) or not identity or identity in ids:
+            errors.append("missing or duplicate research entry id")
+            continue
+        ids.add(identity)
+        if entry.get("kind") not in kinds or not entry.get("adaptation"):
+            errors.append(f"research classification or adaptation missing: {identity}")
+        sources = entry.get("sources", [])
+        if not isinstance(sources, list):
+            errors.append(f"invalid research sources: {identity}")
+            continue
+        if entry.get("kind") in {"historical_adaptation", "historical_aggregate"} and not sources:
+            errors.append(f"historical research source missing: {identity}")
+        for source in sources:
+            if (not isinstance(source, dict) or not _safe_relative(source.get("path"))
+                    or not re.fullmatch(r"[0-9a-f]{40}", str(source.get("commit", "")))
+                    or not re.fullmatch(r"[0-9a-f]{40}", str(source.get("git_blob", "")))):
+                errors.append(f"invalid research source identity: {identity}")
+        paths = entry.get("files", [])
+        if not isinstance(paths, list) or not paths:
+            errors.append(f"research entry has no files: {identity}")
+            continue
+        for relative in paths:
+            if not _safe_relative(relative) or not (root / relative).is_file():
+                errors.append(f"invalid or missing research file in {identity}")
+            else:
+                covered.add(relative)
+    actual = {p.relative_to(root).as_posix() for p in (root / "research").rglob("*")
+              if p.is_file() and "__pycache__" not in p.parts}
+    for relative in sorted(actual - covered):
+        errors.append(f"research file has no provenance entry: {relative}")
+    fixture_paths = set()
+    for fixture in fixtures:
+        if not isinstance(fixture, dict) or not _safe_relative(fixture.get("path")):
+            errors.append("invalid research fixture entry")
+            continue
+        relative = fixture["path"]
+        if relative in fixture_paths:
+            errors.append(f"duplicate research fixture: {relative}")
+        fixture_paths.add(relative)
+        path = root / relative
+        if fixture.get("kind") not in {"synthetic", "historical_aggregate"}:
+            errors.append(f"unclassified research fixture: {relative}")
+        if not path.is_file():
+            errors.append(f"missing research fixture: {relative}")
+            continue
+        payload = path.read_bytes()
+        if hashlib.sha256(payload).hexdigest() != fixture.get("sha256"):
+            errors.append(f"research fixture bytes changed: {relative}")
+        if fixture.get("kind") == "historical_aggregate":
+            try:
+                value = json.loads(payload)
+                if value.get("kind") != "historical_aggregate":
+                    errors.append(f"historical fixture mislabeled: {relative}")
+            except (ValueError, AttributeError):
+                errors.append(f"invalid historical aggregate fixture: {relative}")
+        elif fixture.get("kind") == "synthetic" and path.suffix == ".json":
+            try:
+                value = json.loads(payload)
+                if isinstance(value, dict) and (value.get("kind") == "historical_aggregate"
+                                                or value.get("synthetic") is False):
+                    errors.append(f"synthetic fixture contradicts its content: {relative}")
+            except ValueError:
+                errors.append(f"invalid synthetic JSON fixture: {relative}")
+    actual_fixtures = {p for p in actual if "fixtures" in Path(p).parts}
+    for relative in sorted(actual_fixtures - fixture_paths):
+        errors.append(f"research fixture not reviewed: {relative}")
+    return errors
+
+
+def research_provenance_errors() -> list[str]:
+    try:
+        manifest = json.loads((ROOT / "docs/research/PROVENANCE.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return ["research provenance missing or invalid JSON"]
+    return research_manifest_errors(manifest, ROOT)
+
+
+def local_document_link_errors(root: Path) -> list[str]:
+    """Check local destinations only; this does not claim remote URL availability."""
+    pages = list(root.glob("*.md")) + list((root / "docs").rglob("*.md"))
+    pages += list((root / "research").rglob("*.md"))
+    if (root / "legacy/README.md").is_file():
+        pages.append(root / "legacy/README.md")
+    errors = []
+    for path in pages:
+        content = path.read_text(encoding="utf-8")
+        targets = re.findall(r"\[[^\]\n]*\]\(([^)\n]+)\)", content)
+        targets += re.findall(r'(?:href|src)="([^"]+)"', content)
+        for target in targets:
+            target = target.strip().strip("<>")
+            parsed = urlsplit(target)
+            if parsed.scheme or parsed.netloc or not parsed.path:
+                continue
+            if not (path.parent / unquote(parsed.path)).exists():
+                errors.append(f"missing local link in {path.relative_to(root).as_posix()}: {target}")
+    return errors
 
 
 def _tree_manifest_digest(root: Path) -> tuple[int, int, str]:
@@ -218,7 +387,8 @@ def documentation_image_errors() -> list[str]:
 
 
 def public_boundary_errors() -> list[str]:
-    errors = documentation_image_errors() + legacy_snapshot_errors()
+    errors = (documentation_image_errors() + legacy_snapshot_errors()
+              + research_provenance_errors() + local_document_link_errors(ROOT))
     for relative in REQUIRED_PUBLIC_FILES:
         if not (ROOT / relative).is_file():
             errors.append(f"required public-maintenance file is missing: {relative}")
@@ -234,7 +404,7 @@ def public_boundary_errors() -> list[str]:
     relationship = (ROOT / "PROJECT_RELATIONSHIP.md").read_text(encoding="utf-8")
     if "evidence-first-agent-skills" not in relationship:
         errors.append("companion skills repository is not linked")
-    scan_roots = [ROOT / "src", ROOT / "tests", ROOT / "examples", ROOT / "docs"]
+    scan_roots = [ROOT / name for name in ("src", "tests", "examples", "docs", "research")]
     for scan_root in scan_roots:
         for path in scan_root.rglob("*"):
             if not path.is_file() or "__pycache__" in path.parts:
@@ -244,10 +414,8 @@ def public_boundary_errors() -> list[str]:
                 errors.append(f"binary is outside the public boundary: {relative}")
                 continue
             if path.suffix.casefold() in TEXT_SUFFIXES:
-                text = path.read_text(encoding="utf-8", errors="replace").casefold()
-                for fragment in BANNED_SOURCE_FRAGMENTS:
-                    if fragment.casefold() in text:
-                        errors.append(f"private fragment {fragment!r} in {relative}")
+                content = path.read_text(encoding="utf-8", errors="replace")
+                errors.extend(text_boundary_errors(relative, content))
     for fixture_path in sorted((ROOT / "examples").glob("*.json")):
         fixture = json.loads(fixture_path.read_text(encoding="utf-8"))
         if type(fixture) is not dict or fixture.get("synthetic") is not True:
@@ -260,6 +428,8 @@ def main() -> int:
     env = {**os.environ, "PYTHONPATH": str(ROOT / "src")}
     if not compileall.compile_dir(ROOT / "src", quiet=1):
         raise SystemExit("compileall failed")
+    if not compileall.compile_dir(ROOT / "research", quiet=1):
+        raise SystemExit("research compileall failed")
     if not compileall.compile_dir(
         ROOT / "legacy" / "source-v0.2.0-hotfix1", quiet=1
     ):
@@ -271,11 +441,13 @@ def main() -> int:
         [sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v"],
         cwd=ROOT,
         env=env,
-        check=True,
+        check=False,
         text=True,
         stderr=subprocess.PIPE,
     )
     sys.stderr.write(completed.stderr)
+    if completed.returncode:
+        return completed.returncode
     subprocess.run(
         [sys.executable, "scripts/run_example.py", "examples/synthetic_session.json"],
         cwd=ROOT,
@@ -292,10 +464,21 @@ def main() -> int:
         check=True,
         stdout=subprocess.DEVNULL,
     )
-    test_lines = [line for line in completed.stderr.splitlines() if line.startswith("test_")]
+    # FunctionTestCase and TestCase have different verbose line formats.
+    # Read unittest's actual run summary instead of counting name prefixes.
+    summary = re.search(r"Ran (\d+) tests? in ", completed.stderr)
+    if summary is None:
+        raise SystemExit("unittest did not provide a run-count summary")
+    tests_run = int(summary.group(1))
+    skipped_match = re.search(r"skipped=(\d+)", completed.stderr)
+    expected_match = re.search(r"expected failures=(\d+)", completed.stderr)
+    skipped = int(skipped_match.group(1)) if skipped_match else 0
+    expected_failures = int(expected_match.group(1)) if expected_match else 0
     print(
         json.dumps(
-            {"result": "PASS", "tests": len(test_lines), "private_boundary_errors": 0}
+            {"result": "PASS", "tests": tests_run, "passed": tests_run - skipped - expected_failures,
+             "failed": 0, "skipped": skipped, "expected_failures": expected_failures,
+             "private_boundary_errors": 0}
         )
     )
     return 0

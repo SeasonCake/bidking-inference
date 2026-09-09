@@ -13,6 +13,8 @@ body:
         - Failure workflows - refresh gate
         - Failure workflows - staged save
         - Evidence lifecycle or another synthetic example
+        - Research - Aisha / TCP / OCR / table tools
+        - Research - historical charts or Match10 scheduling
         - Windows release - download, startup or visible behavior
         - Documentation or unclear public contract
     validations:

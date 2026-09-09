@@ -13,10 +13,15 @@ Included:
   map/item tables under `legacy/`;
 - reviewed, author-supplied documentation screenshots listed in `NOTICE.md`;
 - tests, CI, contributor documentation, and public-boundary checks.
+- selected historical adaptations in `research/`: v0.3.0 TCP reassembly, table text
+  decoding and OCR normalization; Aisha window/grid helpers; the later Match10 trace
+  limiter and managed scheduler with self-contained harnesses;
+- newly written synthetic visibility/replay/table-diff examples and reviewed historical
+  aggregate summaries/charts, separately classified in `docs/research/PROVENANCE.json`.
 
 Excluded:
 
-- private `0.2.8+` product source and history;
+- unselected private product source and history, including the full `0.2.8+` engine;
 - current game tables, extracted assets, captured traffic, unreviewed screenshots, and
   real match data;
 - client, server, activation, packaging, deployment, protection, and production tooling;
@@ -24,9 +29,11 @@ Excluded:
   decision strategy, incident logs, product diagnostics, and receipts;
 - third-party binaries or source copied from reference projects.
 
-The engineering cases are independent synthetic reconstructions, not renamed extracts
-of product persistence, authorization, network or calculation implementations. They do
-not import the private repository or disclose its protocols, constants or incident text.
+The earlier failure-workflow and evidence-lifecycle cases are independent synthetic
+reconstructions. The new research layer also includes genuine historical adaptations:
+each names its exact source and changes. Some selected helpers remain reused in later
+private versions; old age is not a claim of non-use. This limited selection does not
+disclose the full calibration/compensation or integration chain.
 
 The maintained package must remain useful without the private project, a game
 installation, credentials, GUI interaction, or machine-specific paths. The legacy
@@ -36,9 +43,12 @@ Documentation screenshots provide historical context only. They are not fixtures
 runtime inputs, calibration evidence, or permission to redistribute standalone game
 assets.
 
-The intended level is a medium open core with a historical reference layer: another
+The intended level is a maintained public core with historical and research layers: another
 developer can install the maintained package, adapt shareable records, score
 multidimensional candidates, inspect uncertainty/calibration/sensitivity, run synthetic
-pool simulations, and study the early real implementation and tables. Reconstructing
+pool simulations, study the early real implementation and tables, and run the selected
+standalone research tools. Research is source-checkout-only, outside the stable API.
+Unimplemented C++/identity labs are documented proposals, not completed integrations.
+Reconstructing
 the current BidKing product still requires the excluded newer model, calibration,
 policy, integrations, client evolution, and operational code.

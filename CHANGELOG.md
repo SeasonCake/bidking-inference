@@ -4,6 +4,15 @@ This project follows Semantic Versioning. Dates use `YYYY-MM-DD`.
 
 ## [Unreleased]
 
+- Add an independent nonlinear penalty example with explicitly fictional parameters,
+  intermediate-value CSV and an actual computed curve; distinguish the first research
+  batch from future identity/C++ experiments. No production penalty function or calibration added.
+- Add a source-checkout research layer: selected historical Aisha/TCP/table/OCR helpers,
+  independent synthetic visibility and bounded table-diff tools, Match10 C# scheduling
+  harnesses, historical CSV/charts, and substantive future capture/identity experiments.
+  Preserve the v0.1.0 package API and original 56-source/7-data snapshot bytes.
+- Extend research provenance, fixture classifications and native/text boundary checks;
+  distinguish tests passed from skipped. No Windows product rebuild or release is implied.
 - Add three newly written synthetic failure-workflow slices: atomic snapshots,
   stale-refresh completion gates and independent remote/local/recovery outcomes;
   include nine runnable scenarios, falsifying controls and bilingual engineering notes.

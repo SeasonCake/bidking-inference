@@ -16,7 +16,7 @@ early desktop implementation, and reproducible engineering case studies: a path 
 the mathematics to a working product architecture.
 
 [Download 0.3.5 for Windows](https://github.com/SeasonCake/bidking-inference/releases/tag/product-v0.3.5) ·
-[Run the toolkit](#quick-start) · [Explore failure workflows](docs/FAILURE_WORKFLOWS.md) ·
+[Run the toolkit](#quick-start) · [Research: code, data and failure cases](docs/research/README.md) ·
 [Watch the product demo](https://www.bilibili.com/video/BV15z4C6SEoz/)
 
 0.3.5 is released, adding personal bidding presets and improving calculation refresh
@@ -34,6 +34,25 @@ The public Python toolkit retains its separate `v0.1.0` version;
 | Frozen old data | the last `<0.2.8` maps, heroes, items, drop mapping, and quality weights | studying historical schemas and data modeling; not current game authority |
 | Engineering methods | tests, CLI, boundary verification, and companion evidence-first skills | reusing verification and agent-compatibility workflows |
 | Failure workflows | atomic JSON snapshots, refresh handles and independent save outcomes; nine synthetic scenarios | adapting small mechanisms and reporting reproducible failure cases |
+| Research and adaptations | Aisha helpers/visibility, TCP/OCR/table tools, C# scheduling harnesses and historical charts | studying real historical code, running isolated examples and contributing counterexamples |
+
+## A deeper research route
+
+**Why can more information make an estimate disappear?** Start with an inverted Aisha
+candidate window, then explore synthetic visibility, replay-field parity, historical
+data, table changes and runtime identity. Selected historical helpers are runnable;
+the deeper C++/symbol experiments are explicitly marked as proposals.
+
+[Aisha cases](docs/research/AISHA_CASE_STUDY.zh-CN.md) ·
+[Historical atlas](docs/research/HISTORICAL_DATA.zh-CN.md) ·
+[Python tools](docs/research/PYTHON_TOOLS.zh-CN.md) ·
+[Match10 lessons](docs/research/MATCH10_LESSONS.zh-CN.md)
+
+![Historical quality weights: q1 includes q2; not current drop probabilities](docs/assets/charts/quality-mix.png)
+
+See the [English guide](docs/research/README.md) for runnable entry points and the
+full Chinese case studies. Research is separate from the v0.1.0 stable package and
+requires no game installation.
 
 ## Problems it can solve
 
@@ -153,6 +172,8 @@ covered by this repository's MIT License. See [`NOTICE.md`](NOTICE.md) and the
 | [`calibration.py`](src/auction_inference/calibration.py) | binary forecast calibration and reliability bins |
 | [`sensitivity.py`](src/auction_inference/sensitivity.py) | distribution shift and leave-one-evidence-out ranking |
 | [`examples/`](examples) | constraints, posterior, joint state, simulation, adapters, calibration, and sensitivity |
+| [`research/`](research) | source-checkout historical adaptations, synthetic models and C# harnesses; not stable APIs |
+| [`docs/research/`](docs/research/README.md) | research route, charts, provenance, failure lessons and experiment proposals |
 | [`legacy/source-v0.2.0-hotfix1`](legacy/source-v0.2.0-hotfix1) | 56 real early source files, 1.59 MB |
 | [`legacy/data-v0.2.7-hotfix3`](legacy/data-v0.2.7-hotfix3/data/processed) | 7 frozen historical tables, 641 KB |
 | [`legacy/README.md`](legacy/README.md) | exact provenance, manifest digests, limits, and exclusions |
@@ -193,6 +214,7 @@ python examples/failure_workflows.py
 
 ## Documentation
 
+- [Research guide: from surprising estimates to data and runtime](docs/research/README.md)
 - [Three runnable failure workflows and contribution directions](docs/FAILURE_WORKFLOWS.md)
 - [0.3.5 development progress and reusable workflows](docs/DEVELOPMENT_STATUS.md)
 - [Hotfix1 engineering case study: completeness, revision identity, and posterior](docs/EVIDENCE_LIFECYCLE.md)

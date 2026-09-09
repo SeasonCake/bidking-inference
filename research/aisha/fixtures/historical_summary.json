@@ -1,0 +1,21 @@
+{
+  "kind": "historical_aggregate",
+  "recorded_date": "2026-06-27",
+  "provenance_entry": "aisha-historical-summary",
+  "cases": 80,
+  "value_cases": 79,
+  "real": {"median_bias_pct": -1.5, "mean_bias_pct": 23.2, "mae_pct": 51.5},
+  "synth": {"median_bias_pct": -0.8, "mean_bias_pct": 23.4, "mae_pct": 47.2},
+  "paired": {
+    "median_abs_quote_delta_pct": 19.6,
+    "mean_abs_quote_delta_pct": 31.4,
+    "median_abs_count_delta_items": 2.0,
+    "mean_abs_count_delta_items": 4.1
+  },
+  "limitations": [
+    "Historical summary only; these experiments were not rerun for this teaching example.",
+    "Paired metric denominators are not specified separately in the source summary.",
+    "No case identifiers or individual observations are included; confidence intervals cannot be reconstructed.",
+    "Public-event round mapping was corrected later; this is not proof of complete R1-R5 parity."
+  ]
+}
