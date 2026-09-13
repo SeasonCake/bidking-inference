@@ -15,12 +15,14 @@ by settlement review. This repository also offers a standalone Python inference 
 early desktop implementation, and reproducible engineering case studies: a path from
 the mathematics to a working product architecture.
 
-[Download 0.3.5 for Windows](https://github.com/SeasonCake/bidking-inference/releases/tag/product-v0.3.5) ·
+[Download 0.3.5-hotfix1 for Windows](https://bidking-dist-1317950063.cos.ap-shanghai.myqcloud.com/bidking-live-v0.3.5-hotfix1-encrypted.zip) ·
 [Run the toolkit](#quick-start) · [Research: code, data and failure cases](docs/research/README.md) ·
 [Watch the product demo](https://www.bilibili.com/video/BV15z4C6SEoz/)
 
-0.3.5 is released, adding personal bidding presets and improving calculation refresh
-and startup handling. See [version status and remaining work](docs/DEVELOPMENT_STATUS.md).
+September 13: 0.3.5-hotfix1 completed selected local checks and a representative real-use
+journey, and the full downloaded object matched the local package hash.
+See [hotfix status, downloads and verification limits](docs/DEVELOPMENT_STATUS.md).
+The existing GitHub product release and its assets remain unchanged.
 The public Python toolkit retains its separate `v0.1.0` version;
 [the older hotfix1 download](https://github.com/SeasonCake/bidking-inference/releases/tag/product-v0.3.4-hotfix1) remains available.
 
@@ -40,13 +42,15 @@ The public Python toolkit retains its separate `v0.1.0` version;
 
 **Why can more information make an estimate disappear?** Start with an inverted Aisha
 candidate window, then explore synthetic visibility, replay-field parity, historical
-data, table changes and runtime identity. Selected historical helpers are runnable;
-the deeper C++/symbol experiments are explicitly marked as proposals.
+data, table changes and runtime identity. The second batch adds posterior/evaluation and
+ownership examples plus own-host Windows identity, symbol, cold-process and warm-pipe experiments.
 
 [Aisha cases](docs/research/AISHA_CASE_STUDY.zh-CN.md) ·
 [Historical atlas](docs/research/HISTORICAL_DATA.zh-CN.md) ·
 [Python tools](docs/research/PYTHON_TOOLS.zh-CN.md) ·
-[Match10 lessons](docs/research/MATCH10_LESSONS.zh-CN.md)
+[Match10 lessons](docs/research/MATCH10_LESSONS.zh-CN.md) ·
+[Posterior and lifecycle](docs/research/POSTERIOR_AND_LIFECYCLE.zh-CN.md) ·
+[Native host experiments](docs/research/NATIVE_LAB.zh-CN.md)
 
 ![Historical quality weights: q1 includes q2; not current drop probabilities](docs/assets/charts/quality-mix.png)
 

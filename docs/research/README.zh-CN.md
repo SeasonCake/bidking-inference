@@ -19,7 +19,9 @@
 | “旧爆率”到底代表什么？ | 三张旧表数据图、艾莎对照图、CSV与生成脚本 | [历史数据图谱](HISTORICAL_DATA.zh-CN.md) |
 | 乱序、OCR错字和表变更如何落到具体代码？ | 真实 TCP/OCR/解码函数、有界表差分 CLI | [Python 工具](PYTHON_TOOLS.zh-CN.md) |
 | 为什么编译通过仍不能完成一次业务调用？ | 两个 C# 调度/限流类与独立测试程序、Match10 失败复盘 | [Match10 的边界](MATCH10_LESSONS.zh-CN.md) |
-| 换成 C++ 薄层是否值得？地址和符号怎样配对？ | 接口与基准协议、身份/ABI实验设计；尚未实现深度实验 | [采集链路](CAPTURE_ARCHITECTURE.zh-CN.md) · [运行时身份](RUNTIME_IDENTITY.zh-CN.md) |
+| 换成 C++ 薄层是否值得？地址和符号怎样配对？ | 自有Windows host、ABI/PDB/MVID/栈、冷/暖pipe与反例 | [可运行native实验](NATIVE_LAB.zh-CN.md) |
+| 同一结果的主行、边际和详情为何矛盾？ | 完整/截断投影、共同消费者、真0与missing | [后验与评估](POSTERIOR_AND_LIFECYCLE.zh-CN.md) |
+| 汇总误差为0、stop已发出，就能宣布成功吗？ | train/holdout、逐例误差、线程owner与join、记录和成员闭合 | [生命周期与证据](POSTERIOR_AND_LIFECYCLE.zh-CN.md) |
 | 61→62张表，怎么避免“解析通过＝兼容”？ | 五名人工表集合、字节/结构/consumer三层方法 | [表变更研究](TABLE_CHANGE_STUDY.zh-CN.md) |
 
 ## 先看一张图
@@ -40,11 +42,17 @@ python -m research.transport
 python -X utf8 -m research.text
 python -m research.tables --help
 python -m research.historical_data.generate_charts --csv-only
+python examples/posterior_projection.py
+python examples/regression_evaluation.py
+python -m research.records
+python -m research.lifecycle
 python scripts/verify.py
 ```
 
 表差分的完整人工输入命令见[Python工具说明](PYTHON_TOOLS.zh-CN.md)；
 Windows C# 入口见[独立runner](../../research/match10-scheduling/run.ps1)。
+新的Windows自有host入口为`python -m research.native_lab.run --repeats 100`，需预先安装MSVC x64
+和.NET Framework工具链；[实验说明](NATIVE_LAB.zh-CN.md)列出实际覆盖、计时口径与未测范围。
 绘图是可选依赖：`python -m pip install matplotlib==3.10.8`，
 再运行 `python -m research.historical_data.generate_charts`。
 CSV/重绘图片默认写到忽略的 `outputs/historical-data/`，原七份 JSON 不变。

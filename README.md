@@ -13,11 +13,12 @@ BidKing 在竞拍中持续合并件数、格数、品质、技能和道具揭示
 并在结算后帮助复盘。这里也提供可独立运行的 Python 推断工具箱、早期桌面实现和可复现的工程案例，
 方便从数学方法一路读到实际产品架构。
 
-[下载 0.3.5 Windows 成品](https://github.com/SeasonCake/bidking-inference/releases/tag/product-v0.3.5) ·
+[下载 0.3.5-hotfix1 Windows 成品](https://bidking-dist-1317950063.cos.ap-shanghai.myqcloud.com/bidking-live-v0.3.5-hotfix1-encrypted.zip) ·
 [运行推断示例](#快速开始) · [研究路线：代码、数据与失败案例](docs/research/README.zh-CN.md) ·
 [观看实机演示](https://www.bilibili.com/video/BV15z4C6SEoz/)
 
-0.3.5 已发布，新增个人报价方案并改进计算刷新与启动体验；查看[版本状态与后续工作](docs/DEVELOPMENT_STATUS.zh-CN.md)。
+2026-09-13：0.3.5-hotfix1 已完成选定本地验收、代表性实机流程与下载对象完整哈希读回。
+查看[热修状态、下载与验证范围](docs/DEVELOPMENT_STATUS.zh-CN.md)。已有GitHub发行及旧资产保留。
 公开 Python 推断包仍为独立的 `v0.1.0`；[旧热修1下载](https://github.com/SeasonCake/bidking-inference/releases/tag/product-v0.3.4-hotfix1)继续保留。
 
 ## 从哪里开始
@@ -36,12 +37,15 @@ BidKing 在竞拍中持续合并件数、格数、品质、技能和道具揭示
 
 **信息更多，为什么报价反而没了？** 从艾莎的候选窗口开始，读到合成样本与真实可见信息的差异，
 再沿旧数据、表结构变更、运行时身份与采集链路逐步加深。
-这一层包含真实历史小源码、可运行适配与失败案例；深度 C++/符号实验则明确列为研究框架。
+这一层包含真实历史小源码、可运行适配与失败案例。第二批新增后验/评估/生命周期例子，以及
+自有Windows程序的身份、符号和冷/暖事件实验。
 
 [艾莎四个案例](docs/research/AISHA_CASE_STUDY.zh-CN.md) ·
 [历史数据图谱](docs/research/HISTORICAL_DATA.zh-CN.md) ·
 [TCP／表差分／OCR](docs/research/PYTHON_TOOLS.zh-CN.md) ·
-[Match10 复盘](docs/research/MATCH10_LESSONS.zh-CN.md)
+[Match10 复盘](docs/research/MATCH10_LESSONS.zh-CN.md) ·
+[概率、评估与退出责任](docs/research/POSTERIOR_AND_LIFECYCLE.zh-CN.md) ·
+[自有C++／符号实验](docs/research/NATIVE_LAB.zh-CN.md)
 
 ![五档历史品质权重：q1包含q2，不代表当前掉落概率](docs/assets/charts/quality-mix.png)
 

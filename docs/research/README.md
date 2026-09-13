@@ -14,8 +14,17 @@ python -m research.transport
 python -X utf8 -m research.text
 python -m research.tables --help
 python -m research.historical_data.generate_charts --csv-only
+python examples/posterior_projection.py
+python examples/regression_evaluation.py
+python -m research.records
+python -m research.lifecycle
 python scripts/verify.py
 ```
+
+The second batch also includes the [own-host Windows identity/symbol/pipe lab](NATIVE_LAB.zh-CN.md):
+`python -m research.native_lab.run --repeats 100` with an installed MSVC x64 and .NET Framework
+toolchain. See [posterior/evaluation/ownership examples](POSTERIOR_AND_LIFECYCLE.zh-CN.md) for
+full versus truncated probability mass, holdout metrics, and stop versus reaped state.
 
 - [Aisha case study](AISHA_CASE_STUDY.zh-CN.md): inverted candidate windows, synthetic
   visibility, replay-field parity, and competing count/value metrics.

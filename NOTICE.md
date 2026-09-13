@@ -12,6 +12,10 @@ source-relative paths, original blobs and adaptations appear in
 are separately labeled. This limited grant is not a license for unselected private
 product source or third-party assets.
 
+The second research batch is independently written teaching code. Its native lab builds
+only its own C++ and C# sources using an already installed toolchain and Windows APIs;
+compiler/runtime binaries, PDBs, game assets and internal product code are not distributed.
+
 Charts under `docs/assets/charts/` are original numeric visualizations derived from
 the explicitly named public historical tables, approved aggregate summaries, or clearly
 labeled synthetic teaching inputs. Their

@@ -4,6 +4,15 @@ This project follows Semantic Versioning. Dates use `YYYY-MM-DD`.
 
 ## [Unreleased]
 
+- Add the second research batch: full-marginal/joint-tail projection, train/holdout
+  regression metrics, typed record parity, epoch/queue controls, member-closure checks,
+  and owned-operation/thread shutdown with falsifying tests.
+- Add an own-host Windows C++/C# lab for build/instance identity, ABI, matching PDBs,
+  MVID, a local symbolized stack, and equivalent encoded/typed cold and warm pipe paths.
+  Record finite slow-consumer/reconnect controls and timing limits; no game integration.
+- Update the dated 0.3.5-hotfix1 product snapshot without changing the stable v0.1.0 API,
+  legacy snapshots, historical data, product Release assets, or server configuration.
+
 - Add an independent nonlinear penalty example with explicitly fictional parameters,
   intermediate-value CSV and an actual computed curve; distinguish the first research
   batch from future identity/C++ experiments. No production penalty function or calibration added.

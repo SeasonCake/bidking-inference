@@ -17,9 +17,13 @@ published separately in
 That companion covers browser-edit recovery, intent checkpoints, evidence levels,
 verification, CLI contracts, architecture surveys and fresh-agent compatibility.
 
-The Windows product 0.3.5 is released, as described in the dated
+The Windows product now has a dated 0.3.5-hotfix1 local/real-use snapshot, as described in the
 [development snapshot](docs/DEVELOPMENT_STATUS.md). It does not change the public
 package's separate v0.1.0 line. Research-source checks are not product release evidence.
+
+The second research batch provides synthetic posterior/evaluation/ownership examples and
+an own-host Windows identity/symbol/pipe lab. It does not expose the current product's
+model, data, integration, runtime management or deployment implementation.
 
 Neither repository mirrors current private source history or contains production topology,
 customer diagnostics, credentials, captured traffic, or third-party binary/game assets.

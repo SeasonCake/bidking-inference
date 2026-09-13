@@ -18,6 +18,8 @@ Included:
   limiter and managed scheduler with self-contained harnesses;
 - newly written synthetic visibility/replay/table-diff examples and reviewed historical
   aggregate summaries/charts, separately classified in `docs/research/PROVENANCE.json`.
+- independent posterior-projection, regression-evaluation, record/manifest and lifecycle
+  teaching code; an own-host native identity/symbol/pipe experiment, with synthetic inputs.
 
 Excluded:
 

@@ -1,6 +1,7 @@
 # WSS → C++ 薄层：比较成本转移，不比较语言口号
 
-状态：**研究协议，C++ producer/IPC 基准尚未实现**。
+状态：**研究协议＋第二批自有host的两臂冷/暖pipe实验**。
+已实现范围见[运行与实测](NATIVE_LAB.zh-CN.md)；下文四臂是更广的设计空间，未全部实现。
 仓库中可运行的 [TCP重组工具](PYTHON_TOOLS.zh-CN.md)不是TLS解密器、游戏适配器或本章基准。
 
 ## 问题从哪来
@@ -23,7 +24,8 @@ WebSocket定义握手与消息帧，WSS再使用TLS；应用payload的语义仍�
 | 自有host的typed callback | 下游对wire字段的依赖 | ABI、对象寿命、重入、线程退出 | C：语义producer |
 | 独立sidecar输出统一事件 | 下游生命周期与依赖耦合 | IPC排队、背压、丢弃、重启恢复 | D：统一consumer |
 
-这些都是实验设计，尚无吞吐/延迟结果；不承诺B/C/D一定更快。
+第二批实现encoded roundtrip与typed直接交付，共用JSONL pipe和同一consumer，记录有限冷/暖计时、
+慢消费者和重连epoch结果。它没有实现全部四臂或真实游戏路径，也不承诺B/C/D普遍更快。
 
 ## 共同事件合同 v0（提案）
 

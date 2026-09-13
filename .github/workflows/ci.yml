@@ -28,3 +28,13 @@ jobs:
       - name: Compile and run the independent historical scheduling harness
         shell: powershell
         run: ./research/match10-scheduling/run.ps1
+
+  research-native:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: "3.13"
+      - name: Build own native/managed fixtures and verify identity, symbols and pipe behavior
+        run: python -B -m research.native_lab.run --repeats 100

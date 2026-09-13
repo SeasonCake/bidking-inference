@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_at": "2026-09-09",
+  "recorded_at": "2026-09-13",
   "lifecycle": "source-checkout-research",
   "description": "Selected historical adaptations, independently written teaching code and explicitly reviewed summaries. Original source identities refer to author-owned historical Git objects; the entire private source tree is not distributed. This manifest records provenance, not current game compatibility or a publication receipt.",
   "entries": [
@@ -409,6 +409,60 @@
       ],
       "sources": [],
       "adaptation": "Independent generic arithmetic and invented parameters selected for teaching. Not a copy of the historical penalty with constants removed/replaced, and not fitted to product outputs. Exposes support input, gap, curved gap, penalty, multiplier and final output; no game-field mapping, production calibration or quote-accuracy claim. CSV and plot are computed by this public code."
+    },
+    {
+      "id": "posterior-projection-and-evaluation",
+      "kind": "synthetic_teaching",
+      "files": [
+        "examples/posterior_projection.py",
+        "examples/regression_evaluation.py",
+        "tests/test_posterior_projection.py",
+        "tests/test_regression_evaluation.py"
+      ],
+      "sources": [],
+      "adaptation": "Independent synthetic examples using the existing public Candidate, normalization and exact-observation APIs. No current product model, training data or calibration constants."
+    },
+    {
+      "id": "record-and-member-contracts",
+      "kind": "synthetic_teaching",
+      "files": [
+        "research/records/__init__.py",
+        "research/records/__main__.py",
+        "research/records/compare.py",
+        "research/records/events.py",
+        "research/records/manifest.py",
+        "tests/test_research_records.py",
+        "tests/test_research_manifest.py"
+      ],
+      "sources": [],
+      "adaptation": "Independent field-path comparison, epoch-aware snapshot consumer, bounded queue and small manifest/transform/readback controls; hardcoded inputs are wholly synthetic."
+    },
+    {
+      "id": "owned-lifecycle-lab",
+      "kind": "synthetic_teaching",
+      "files": [
+        "research/lifecycle/__init__.py",
+        "research/lifecycle/__main__.py",
+        "research/lifecycle/ownership.py",
+        "research/lifecycle/worker.py",
+        "tests/test_research_lifecycle.py"
+      ],
+      "sources": [],
+      "adaptation": "Independent lease and thread-owner teaching code with barrier-driven stop/finished/reaped controls. No product process termination or capture implementation."
+    },
+    {
+      "id": "native-identity-and-pipe-lab",
+      "kind": "synthetic_teaching",
+      "files": [
+        "research/native_lab/__init__.py",
+        "research/native_lab/host.cpp",
+        "research/native_lab/ManagedIdentity.cs",
+        "research/native_lab/pipe_session.py",
+        "research/native_lab/run.py",
+        "tests/test_native_lab_contract.py"
+      ],
+      "sources": [],
+      "adaptation": "New self-owned Windows C++ and C# fixtures, MSVC/Framework runner, identity/PDB/MVID/stack controls and encoded/typed cold/warm pipe comparison. Synthetic source-defined events only; compiler outputs and runtime receipts remain ignored."
     }
   ],
   "fixtures": [
