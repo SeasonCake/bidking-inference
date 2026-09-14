@@ -17,7 +17,8 @@ the mathematics to a working product architecture.
 
 [Download 0.3.5-hotfix1 for Windows](https://bidking-dist-1317950063.cos.ap-shanghai.myqcloud.com/bidking-live-v0.3.5-hotfix1-encrypted.zip) ·
 [Run the toolkit](#quick-start) · [Research: code, data and failure cases](docs/research/README.md) ·
-[Watch the product demo](https://www.bilibili.com/video/BV15z4C6SEoz/)
+[68-second BidKing and Grok/Codex demo](https://x.com/zheng_qili666/status/2099349396895019095) ·
+[Explore public data](https://api.bidkinglab.cn/public)
 
 September 13: 0.3.5-hotfix1 completed selected local checks and a representative real-use
 journey, and the full downloaded object matched the local package hash.
@@ -25,6 +26,14 @@ See [hotfix status, downloads and verification limits](docs/DEVELOPMENT_STATUS.m
 The existing GitHub product release and its assets remain unchanged.
 The public Python toolkit retains its separate `v0.1.0` version;
 [the older hotfix1 download](https://github.com/SeasonCake/bidking-inference/releases/tag/product-v0.3.4-hotfix1) remains available.
+
+## From the demo to runnable code
+
+The [English demo](https://x.com/zheng_qili666/status/2099349396895019095)
+([Chinese on Bilibili](https://www.bilibili.com/video/BV1rRYk63ER5/)) shows bidding and
+settlement review, combined map/hero/date filters, then Grok model selection and tool work
+inside Codex. Use the [timestamp and source guide](docs/DEMO_GUIDE.md) to find the relevant
+examples and understand which components the public repositories include.
 
 ## Where to start
 
@@ -188,7 +197,7 @@ outside the maintained package's Semantic Versioning contract.
 
 ## Quick start
 
-**Use the calculator:** download the ZIP from the Release above and fully extract it.
+**Use the calculator:** download the ZIP from the Windows application link above and fully extract it.
 Start `BidKingLive.exe` first, wait for the overlay, then launch the game from Steam.
 Windows 10/11 64-bit is required; follow the first-run setup prompts.
 
@@ -219,8 +228,9 @@ python examples/failure_workflows.py
 ## Documentation
 
 - [Research guide: from surprising estimates to data and runtime](docs/research/README.md)
+- [68-second demo: timestamps, public data and source routes](docs/DEMO_GUIDE.md)
 - [Three runnable failure workflows and contribution directions](docs/FAILURE_WORKFLOWS.md)
-- [0.3.5 development progress and reusable workflows](docs/DEVELOPMENT_STATUS.md)
+- [0.3.5-hotfix1 product status and reusable workflows](docs/DEVELOPMENT_STATUS.md)
 - [Hotfix1 engineering case study: completeness, revision identity, and posterior](docs/EVIDENCE_LIFECYCLE.md)
 - [Public API](docs/PUBLIC_API.md)
 - [Strict input schema](docs/INPUT_SCHEMA.md)
@@ -236,11 +246,15 @@ The companion repository
 [`evidence-first-agent-skills`](https://github.com/SeasonCake/evidence-first-agent-skills)
 publishes browser-edit verification, intent checkpoints, architecture-survey,
 claim-verification, CLI-contract and agent-compatibility workflows distilled from
-BidKing/LC2 engineering experience. Install them independently; the installation guide
-includes an optional standing-route example.
+BidKing/LC2 engineering experience. A separate
+[Grok/Codex desktop integration](https://github.com/SeasonCake/evidence-first-agent-skills/tree/main/integrations/grok-codex-bridge)
+includes runtime code, model/provider routing and setup instructions; copying its Skill
+alone does not install the integration. The other skills can be installed independently.
 
 ## Demo and community
 
+- [BidKing and Grok/Codex: 68-second English demo](https://x.com/zheng_qili666/status/2099349396895019095)
+- [Chinese version on Bilibili](https://www.bilibili.com/video/BV1rRYk63ER5/)
 - [Complete BidKing 0.3.4 gameplay demo](https://www.bilibili.com/video/BV15z4C6SEoz/)
 - [Author's Bilibili profile](https://space.bilibili.com/88048665)
 - Public-code questions and feature proposals: [GitHub Issues](https://github.com/SeasonCake/bidking-inference/issues)

@@ -16,6 +16,13 @@ published separately in
 [`evidence-first-agent-skills`](https://github.com/SeasonCake/evidence-first-agent-skills).
 That companion covers browser-edit recovery, intent checkpoints, evidence levels,
 verification, CLI contracts, architecture surveys and fresh-agent compatibility.
+It also contains a separately packaged Grok/Codex desktop integration with runtime,
+model/provider routing, setup and synthetic checks. The integration and its instruction
+Skill are distinct from this inference package.
+
+The [demo guide](docs/DEMO_GUIDE.md) maps the September 14 video to both repositories,
+public statistics and runnable examples without treating the current product or local
+native media wrapper as distributed open-source components.
 
 The Windows product now has a dated 0.3.5-hotfix1 local/real-use snapshot, as described in the
 [development snapshot](docs/DEVELOPMENT_STATUS.md). It does not change the public

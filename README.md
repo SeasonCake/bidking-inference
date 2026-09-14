@@ -15,11 +15,18 @@ BidKing 在竞拍中持续合并件数、格数、品质、技能和道具揭示
 
 [下载 0.3.5-hotfix1 Windows 成品](https://bidking-dist-1317950063.cos.ap-shanghai.myqcloud.com/bidking-live-v0.3.5-hotfix1-encrypted.zip) ·
 [运行推断示例](#快速开始) · [研究路线：代码、数据与失败案例](docs/research/README.zh-CN.md) ·
-[观看实机演示](https://www.bilibili.com/video/BV15z4C6SEoz/)
+[68秒看 BidKing 与 Grok/Codex](https://www.bilibili.com/video/BV1rRYk63ER5/) ·
+[打开公共数据筛选](https://api.bidkinglab.cn/public)
 
 2026-09-13：0.3.5-hotfix1 已完成选定本地验收、代表性实机流程与下载对象完整哈希读回。
 查看[热修状态、下载与验证范围](docs/DEVELOPMENT_STATUS.zh-CN.md)。已有GitHub发行及旧资产保留。
 公开 Python 推断包仍为独立的 `v0.1.0`；[旧热修1下载](https://github.com/SeasonCake/bidking-inference/releases/tag/product-v0.3.4-hotfix1)继续保留。
+
+## 从演示找到代码
+
+[最新中文演示](https://www.bilibili.com/video/BV1rRYk63ER5/)依次展示竞价估值与结算复盘、
+地图/英雄/日期联合筛选，以及在 Codex 里切换 Grok、调用工具和展示生图结果。
+[视频时间点与对应源码](docs/DEMO_GUIDE.zh-CN.md)帮你从感兴趣的一段找到可运行示例。
 
 ## 从哪里开始
 
@@ -175,7 +182,7 @@ Semantic Versioning 合同。
 
 ## 快速开始
 
-**直接使用计算器：** 从上方 Release 下载 ZIP，完整解压后，先启动 `BidKingLive.exe`；
+**直接使用计算器：** 从上方 Windows 成品链接下载 ZIP，完整解压后，先启动 `BidKingLive.exe`；
 等悬浮窗出现，再从 Steam 启动游戏。需要 Windows 10/11 64位，首次按提示完成设置。
 
 **运行开源推断工具箱：**
@@ -205,8 +212,9 @@ python examples/failure_workflows.py
 ## 文档
 
 - [研究总览：从报价异常到数据与运行时](docs/research/README.zh-CN.md)
+- [68秒演示：时间点、公共数据与源码路线](docs/DEMO_GUIDE.zh-CN.md)
 - [三组可运行故障案例与贡献方向](docs/FAILURE_WORKFLOWS.zh-CN.md)
-- [0.3.5研发进展与当前可复用内容](docs/DEVELOPMENT_STATUS.zh-CN.md)
+- [0.3.5-hotfix1 产品状态与当前可复用内容](docs/DEVELOPMENT_STATUS.zh-CN.md)
 - [热修1工程案例：观测完整性、跨版本资格与后验](docs/EVIDENCE_LIFECYCLE.zh-CN.md)
 - [公开 API](docs/PUBLIC_API.md)
 - [严格输入 schema](docs/INPUT_SCHEMA.md)
@@ -220,10 +228,14 @@ python examples/failure_workflows.py
 
 配套仓库 [`evidence-first-agent-skills`](https://github.com/SeasonCake/evidence-first-agent-skills)
 公开了从 BidKing/LC2 工程实践中抽象出的通用流程：浏览器编辑与保存回读、意图确认、架构调查、
-结论验证、CLI 合同和 agent 兼容性。技能可独立安装，场景入口示例见该仓安装说明。
+结论验证、CLI 合同和 agent 兼容性。另有独立的
+[Grok/Codex 桌面集成](https://github.com/SeasonCake/evidence-first-agent-skills/tree/main/integrations/grok-codex-bridge)，
+包含运行代码、模型/提供方路由及安装说明；复制 Skill 本身不会安装集成。技能可独立安装。
 
 ## 演示与交流
 
+- [BidKing 与 Grok/Codex：68秒中文演示](https://www.bilibili.com/video/BV1rRYk63ER5/)
+- [English demo on X](https://x.com/zheng_qili666/status/2099349396895019095)
 - [BidKing 0.3.4 完整实机演示](https://www.bilibili.com/video/BV15z4C6SEoz/)
 - [作者 Bilibili 主页](https://space.bilibili.com/88048665)
 - 公开代码问题与功能建议：[GitHub Issues](https://github.com/SeasonCake/bidking-inference/issues)

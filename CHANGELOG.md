@@ -4,6 +4,11 @@ This project follows Semantic Versioning. Dates use `YYYY-MM-DD`.
 
 ## [Unreleased]
 
+- Link the September 14 bilingual BidKing/Grok demo and hosted data filters, with a
+  timestamp-to-source guide, runnable examples and clear component boundaries.
+- Correct the Windows download instruction and stale development labels; describe
+  the companion's executable integration separately from its instruction skills.
+
 - Add the second research batch: full-marginal/joint-tail projection, train/holdout
   regression metrics, typed record parity, epoch/queue controls, member-closure checks,
   and owned-operation/thread shutdown with falsifying tests.
