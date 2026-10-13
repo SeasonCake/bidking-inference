@@ -1,0 +1,277 @@
+{
+  "schema": "bidking_client_protection_v2",
+  "manifest_version": 9,
+  "description": "Exhaustive value-tiered client protection boundary for encrypted public candidates.",
+  "wss_operational_abi": {
+    "schema": "bidking_wss_operational_abi_v1",
+    "contract_version": 1,
+    "abi_version": "bidking_wss_addon_operational_v1",
+    "native_module": "_local_compat_addon_loader",
+    "entrypoint": "load_addons",
+    "source_export": false,
+    "runtime_roles": {
+      "main": "cpython-313",
+      "mitmdump": "cpython-314"
+    },
+    "source_members": [
+      {
+        "path": "scripts/bidking_wss_capture_core.py",
+        "sha256": "06927102fd0b9b6b0cee7809c5a6ab748f2dbfef4a7984451de3ba2f9ce515a2"
+      },
+      {
+        "path": "scripts/mitm_bidking_wss_addon.py",
+        "sha256": "54a883044427707b6b973de291d3af60f81d150e4751cd30c86663e7d25b093a"
+      }
+    ],
+    "bootstrap_sha256": "8e56ab0b5aff57d86f74ebeff6670652bcae196b093c04ae17bc8fac9d50a73f",
+    "generation_sha256": "f14045323478eeab5c5654854dccd444e75e626a15c64bd6fed8332b4093c153"
+  },
+  "native_abi_tags": [
+    "cp313-win_amd64"
+  ],
+  "cython_surface": {
+    "compiler_directives": {
+      "embedsignature": false,
+      "emit_code_comments": false
+    },
+    "binding_false_groups": [
+      "local-compat"
+    ],
+    "build_only_augmentations": [
+      {
+        "source": "hero_ref/src/ahmad_ref_engine.py",
+        "declaration": "scripts/cython/ahmad_ref_engine.pxd",
+        "internal_symbols": [
+          "_log_fact"
+        ]
+      }
+    ]
+  },
+  "source_roots": [
+    "hero_ref/src",
+    "hero_ref/tools",
+    "src/bidking_lab"
+  ],
+  "build_only_source_authorities": [
+    "src/bidking_lab/extract/official_20261008_model_profile.py",
+    "src/bidking_lab/extract/update606_package_input_contract.py",
+    "src/bidking_lab/extract/update606_release_contract.py"
+  ],
+  "plaintext_allowlist": [
+    "hero_ref/src/__init__.py",
+    "hero_ref/tools/hero_ref_version.py",
+    "src/bidking_lab/__init__.py",
+    "src/bidking_lab/_atomic_json.py",
+    "src/bidking_lab/capture/__init__.py",
+    "src/bidking_lab/config.py",
+    "src/bidking_lab/data/__init__.py",
+    "src/bidking_lab/data/quality.py",
+    "src/bidking_lab/data/schema.py",
+    "src/bidking_lab/extract/__init__.py",
+    "src/bidking_lab/http_tls.py",
+    "src/bidking_lab/inference/__init__.py",
+    "src/bidking_lab/inference/v3/__init__.py",
+    "src/bidking_lab/live/__init__.py",
+    "src/bidking_lab/live/startup_version_notice.py",
+    "src/bidking_lab/live/types.py",
+    "src/bidking_lab/live/version_check.py",
+    "src/bidking_lab/runtime/__init__.py",
+    "src/bidking_lab/secure/__init__.py",
+    "src/bidking_lab/secure/membership_ui.py",
+    "src/bidking_lab/simulation/__init__.py"
+  ],
+  "packaged_plaintext_python_allowlist": [
+    "hero_ref/src/__init__.py",
+    "hero_ref/tools/ahmad_tk_overlay.py",
+    "hero_ref/tools/hero_ref_version.py",
+    "scripts/build_match_records.py",
+    "scripts/local_compat_addon.py",
+    "scripts/local_compat_component.py",
+    "scripts/local_integrity_namespace_guard.py",
+    "scripts/local_compat_monitor.py",
+    "scripts/match_records_html.py",
+    "scripts/package_generation_identity.py",
+    "scripts/run_fatbeans_webhook_monitor.py",
+    "scripts/run_npcap_live_monitor.py",
+    "scripts/run_windivert_live_monitor.py",
+    "src/bidking_lab/__init__.py",
+    "src/bidking_lab/_atomic_json.py",
+    "src/bidking_lab/capture/__init__.py",
+    "src/bidking_lab/config.py",
+    "src/bidking_lab/data/__init__.py",
+    "src/bidking_lab/data/quality.py",
+    "src/bidking_lab/data/schema.py",
+    "src/bidking_lab/extract/__init__.py",
+    "src/bidking_lab/http_tls.py",
+    "src/bidking_lab/inference/__init__.py",
+    "src/bidking_lab/inference/v3/__init__.py",
+    "src/bidking_lab/live/__init__.py",
+    "src/bidking_lab/live/startup_version_notice.py",
+    "src/bidking_lab/live/types.py",
+    "src/bidking_lab/live/version_check.py",
+    "src/bidking_lab/runtime/__init__.py",
+    "src/bidking_lab/secure/__init__.py",
+    "src/bidking_lab/secure/membership_ui.py",
+    "src/bidking_lab/simulation/__init__.py",
+    "诊断工具/activation_transport_diagnostic.py"
+  ],
+  "critical_native": {
+    "engine_modules": [
+      "ahmad_ref_engine",
+      "auction_hall_6001_quote_model",
+      "wuqilin_5215_quote_model",
+      "layout_depth_policy",
+      "draw_hero_policy"
+    ],
+    "tool_modules": [
+      "ahmad_live_panel_server",
+      "detail_composition_view",
+      "hero_ref_live_schedule",
+      "network_connection_status",
+      "pet_access",
+      "pet_companion",
+      "product_profile",
+      "replay_vs_truth"
+    ],
+    "overlay": {
+      "source": "hero_ref/tools/ahmad_tk_overlay.py",
+      "native_module": "_protected_ahmad_tk_overlay",
+      "normalized_shell_sha256": "6cf75f794ba0bbb5d4c12160f2b0034584133374a2d115d86514def3216c66af"
+    },
+    "package_modules": [
+      "bidking_lab/data/item_category_authority.py",
+      "bidking_lab/runtime/snapshot.py"
+    ],
+    "package_trees": [
+      {
+        "path": "bidking_lab/capture",
+        "protected_modules": [
+          "bidking_lab/capture/apply.py",
+          "bidking_lab/capture/clipboard.py",
+          "bidking_lab/capture/diag.py",
+          "bidking_lab/capture/log_util.py",
+          "bidking_lab/capture/map_resolve.py",
+          "bidking_lab/capture/ocr.py",
+          "bidking_lab/capture/ocr_normalize.py",
+          "bidking_lab/capture/parser.py",
+          "bidking_lab/capture/patterns.py",
+          "bidking_lab/capture/screen.py",
+          "bidking_lab/capture/types.py"
+        ]
+      },
+      {
+        "path": "bidking_lab/extract",
+        "protected_modules": [
+          "bidking_lab/extract/battle_item_table.py",
+          "bidking_lab/extract/bid_map_table.py",
+          "bidking_lab/extract/current_rankmap_package_contract.py",
+          "bidking_lab/extract/drop_table.py",
+          "bidking_lab/extract/hero_table.py",
+          "bidking_lab/extract/item_table.py",
+          "bidking_lab/extract/streaming_assets.py",
+          "bidking_lab/extract/tables.py"
+        ]
+      },
+      {
+        "path": "bidking_lab/inference",
+        "protected_modules": [
+          "bidking_lab/inference/bid_strategy.py",
+          "bidking_lab/inference/decimal_reading_sim.py",
+          "bidking_lab/inference/diagnostics.py",
+          "bidking_lab/inference/display.py",
+          "bidking_lab/inference/ground_truth.py",
+          "bidking_lab/inference/joint.py",
+          "bidking_lab/inference/map_likelihood.py",
+          "bidking_lab/inference/mean_multiset_support.py",
+          "bidking_lab/inference/observation.py",
+          "bidking_lab/inference/outline.py",
+          "bidking_lab/inference/posterior.py",
+          "bidking_lab/inference/q6_full_avg_evidence.py",
+          "bidking_lab/inference/q6_residual.py",
+          "bidking_lab/inference/quality_combo_presolve.py",
+          "bidking_lab/inference/quality_priors.py",
+          "bidking_lab/inference/readings_validate.py",
+          "bidking_lab/inference/roi.py",
+          "bidking_lab/inference/size_avg_evidence.py",
+          "bidking_lab/inference/snipe.py",
+          "bidking_lab/inference/synth_readings.py",
+          "bidking_lab/inference/tier_value_subset.py",
+          "bidking_lab/inference/tool_info_roi.py",
+          "bidking_lab/inference/v2.py",
+          "bidking_lab/inference/v3/calibration.py",
+          "bidking_lab/inference/v3/capacity_source_expansion.py",
+          "bidking_lab/inference/v3/constraints.py",
+          "bidking_lab/inference/v3/coverage.py",
+          "bidking_lab/inference/v3/events.py",
+          "bidking_lab/inference/v3/evidence_registry.py",
+          "bidking_lab/inference/v3/formal_value_sampler.py",
+          "bidking_lab/inference/v3/pipeline.py",
+          "bidking_lab/inference/v3/posterior.py",
+          "bidking_lab/inference/v3/practical_advisory.py",
+          "bidking_lab/inference/v3/prior_robustness.py",
+          "bidking_lab/inference/v3/priors.py",
+          "bidking_lab/inference/v3/residual_gate.py",
+          "bidking_lab/inference/v3/residual_targets.py",
+          "bidking_lab/inference/v3/settlement_count_prior.py",
+          "bidking_lab/inference/v3/summary.py",
+          "bidking_lab/inference/v3/tail_value_review.py",
+          "bidking_lab/inference/v3/truth.py",
+          "bidking_lab/inference/v3/underestimate_repair.py",
+          "bidking_lab/inference/warehouse_estimator.py"
+        ]
+      },
+      {
+        "path": "bidking_lab/live",
+        "protected_modules": [
+          "bidking_lab/live/capture.py",
+          "bidking_lab/live/catalog_value.py",
+          "bidking_lab/live/compare.py",
+          "bidking_lab/live/current_rankmap_runtime.py",
+          "bidking_lab/live/evaluation.py",
+          "bidking_lab/live/fatbeans.py",
+          "bidking_lab/live/fact_receipts.py",
+          "bidking_lab/live/layout.py",
+          "bidking_lab/live/legacy.py",
+          "bidking_lab/live/live_refresh_signatures.py",
+          "bidking_lab/live/monitor.py",
+          "bidking_lab/live/packet.py",
+          "bidking_lab/live/quote_preferences.py",
+          "bidking_lab/live/replay.py",
+          "bidking_lab/live/sample_upload.py",
+          "bidking_lab/live/state.py",
+          "bidking_lab/live/stream_diag.py",
+          "bidking_lab/live/tcp_reassembly.py",
+          "bidking_lab/live/warehouse_source.py"
+        ]
+      },
+      {
+        "path": "bidking_lab/secure",
+        "protected_modules": [
+          "bidking_lab/secure/activation_http_e2ee.py",
+          "bidking_lab/secure/activation.py",
+          "bidking_lab/secure/antidebug.py",
+          "bidking_lab/secure/client_activate.py",
+          "bidking_lab/secure/data_crypt.py",
+          "bidking_lab/secure/diagnostic_redaction.py",
+          "bidking_lab/secure/enforce.py",
+          "bidking_lab/secure/integrity.py",
+          "bidking_lab/secure/rust_provider.py"
+        ]
+      },
+      {
+        "path": "bidking_lab/simulation",
+        "protected_modules": [
+          "bidking_lab/simulation/basic_mc.py",
+          "bidking_lab/simulation/bidding.py",
+          "bidking_lab/simulation/hero_skills.py",
+          "bidking_lab/simulation/hero_value.py",
+          "bidking_lab/simulation/placeholders.py",
+          "bidking_lab/simulation/robust_value.py"
+        ]
+      }
+    ]
+  },
+  "encrypted_stage_excludes": [
+    "hero_ref/tools/smoke_ahmed_ref_samples.py"
+  ]
+}

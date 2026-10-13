@@ -1,0 +1,133 @@
+{
+  "schema": "bidking_release_native_binary_contract_v2",
+  "contract_version": 2,
+  "protected_cython_module_count": 112,
+  "additional_native_binary_count": 7,
+  "bootstrap": {
+    "crate": "native/bidking_trust_bootstrap",
+    "staged_member": "BidKingLive.exe",
+    "python_member": "runtime/python/python.exe",
+    "manifest_member": "integrity/local_integrity_manifest.json",
+    "signature_member": "integrity/local_integrity_manifest.sig",
+    "user_experience": {
+      "subsystem": 2,
+      "icon_source": "hero_ref/assets/bidking_cat.ico",
+      "icon_source_bytes": 24747,
+      "icon_source_sha256": "11e495dea7c8c6beec526c7a1c06ec59e4cca8f5a1d6aa33565ef2e904240c67",
+      "resource_type": 14,
+      "resource_name": 1,
+      "resource_language": 1033,
+      "codepage": 0,
+      "image_count": 7,
+      "group_bytes": 104,
+      "group_sha256": "893589c5f4cc0ae85e517ce823f6b872c0dea66026c5f98c585a8d47e74369e3",
+      "image_payload_sha256": "48d36cdbc76f7ba3be37787fa6d3e71c3fab54bdd54ad0c2c817602261d4be39"
+    },
+    "execution_manifest": {
+      "source": "native/bidking_trust_bootstrap/build.rs",
+      "linker_args": [
+        "/MANIFEST:EMBED",
+        "/MANIFESTUAC:level='requireAdministrator' uiAccess='false'"
+      ],
+      "resource_type": 24,
+      "resource_name": 1,
+      "resource_language": 1033,
+      "embedded_bytes": 392,
+      "embedded_sha256": "165c5c883fd4fd36758bcba6baf2faffb77d2f4872ffd5ee918a16f91de5a8a8",
+      "codepage": 0,
+      "requested_execution_level": "requireAdministrator",
+      "ui_access": false,
+      "createprocess_pre_uac_error": 740
+    }
+  },
+  "cython": {
+    "compiler_directives": {
+      "embedsignature": false,
+      "emit_code_comments": false
+    },
+    "binding_false_groups": [
+      "local-compat"
+    ],
+    "build_only_augmentations": [
+      {
+        "source": "hero_ref/src/ahmad_ref_engine.py",
+        "declaration": "scripts/cython/ahmad_ref_engine.pxd",
+        "internal_symbols": [
+          "_log_fact"
+        ]
+      }
+    ]
+  },
+  "msvc": {
+    "compile_flags": [
+      "/O2",
+      "/GL",
+      "/guard:cf"
+    ],
+    "link_flags": [
+      "/LTCG",
+      "/OPT:REF",
+      "/OPT:ICF",
+      "/GUARD:CF",
+      "/DYNAMICBASE",
+      "/NXCOMPAT",
+      "/HIGHENTROPYVA"
+    ],
+    "forbidden_environment": [
+      "CL",
+      "_CL_",
+      "LINK",
+      "_LINK_"
+    ]
+  },
+  "pe": {
+    "machine": "amd64",
+    "format": "pe32+",
+    "required_dll_characteristics": [
+      "dynamic_base",
+      "nx_compat",
+      "high_entropy_va",
+      "guard_cf"
+    ],
+    "required_guard_flags": [
+      "cf_instrumented",
+      "cf_function_table_present"
+    ],
+    "embedded_authenticode_allowed": false
+  },
+  "inventory": {
+    "exact_members": [
+      "BidKingLive.exe",
+      "scripts/_client_launcher.cp313-win_amd64.pyd",
+      "scripts/_local_compat_addon_loader.pyd",
+      "scripts/_local_compat_core.cp313-win_amd64.pyd",
+      "scripts/_local_compat_monitor.cp313-win_amd64.pyd",
+      "scripts/_runtime_component.cp313-win_amd64.pyd"
+    ],
+    "exactly_one_globs": [
+      "src/bidking_kernel*.pyd"
+    ],
+    "protected_members_from": "scripts/client_protection_manifest.json",
+    "first_party_prefixes": [
+      "hero_ref/src/",
+      "hero_ref/tools/",
+      "scripts/",
+      "src/"
+    ],
+    "vendor_prefixes": [
+      "runtime/",
+      "vendor/"
+    ]
+  },
+  "distribution": {
+    "mode": "unsigned",
+    "publisher_claim": false,
+    "receipt_schema": "bidking_native_binary_receipt_v2",
+    "receipt_member": "integrity/native_binary_receipt.json",
+    "forbidden_build_inputs": [
+      "certificate",
+      "native_signing_policy",
+      "signtool"
+    ]
+  }
+}

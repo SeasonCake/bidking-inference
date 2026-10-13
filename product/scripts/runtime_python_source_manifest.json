@@ -1,0 +1,175 @@
+{
+  "schema": "bidking_runtime_python_source_v1",
+  "manifest_version": 1,
+  "python": {
+    "version": "3.13.15",
+    "cache_tag": "cpython-313",
+    "abi_tag": "cp313-win_amd64",
+    "platform": "win-amd64",
+    "release_url": "https://www.python.org/downloads/release/python-31315/",
+    "build_layout": {
+      "filename": "python-3.13.15-amd64.zip",
+      "url": "https://www.python.org/ftp/python/3.13.15/python-3.13.15-amd64.zip",
+      "bytes": 34324622,
+      "sha256": "6479223746cdfb79d25865110d6f524ac98de081324e119af1dc3ae36bddc7a5",
+      "python_exe_sha256": "85b71d8c6ec1905935f74be0c9869aae198d00e98f39df699ec66f9c5a84cecd"
+    },
+    "embed": {
+      "filename": "python-3.13.15-embed-amd64.zip",
+      "url": "https://www.python.org/ftp/python/3.13.15/python-3.13.15-embed-amd64.zip",
+      "bytes": 11009825,
+      "sha256": "d1f04d990aee1253d8569e8e5104e30fa9f5fa830899f14843448872d936a2cf",
+      "python_exe_sha256": "85b71d8c6ec1905935f74be0c9869aae198d00e98f39df699ec66f9c5a84cecd"
+    },
+    "installer": {
+      "filename": "python-3.13.15-amd64.exe",
+      "url": "https://www.python.org/ftp/python/3.13.15/python-3.13.15-amd64.exe",
+      "bytes": 29452944,
+      "sha256": "edec09c4853aeae9ac36efb8c9f95b6b8e2fee65eee56d9767a8b7c69c574403"
+    }
+  },
+  "runtime_dependencies": {
+    "annotated-types": "0.7.0",
+    "certifi": "2026.4.22",
+    "cffi": "2.0.0",
+    "cryptography": "48.0.1",
+    "numpy": "2.4.4",
+    "pillow": "12.2.0",
+    "psutil": "7.0.0",
+    "pycparser": "3.0",
+    "pydantic": "2.13.3",
+    "pydantic-core": "2.46.3",
+    "typing-extensions": "4.15.0",
+    "typing-inspection": "0.4.2"
+  },
+  "build_tools": {
+    "cython": "3.2.5",
+    "maturin": "1.14.1",
+    "setuptools": "82.0.1"
+  },
+  "layout_tools": {
+    "pip": "26.2.1"
+  },
+  "wheels": [
+    {
+      "distribution": "annotated-types",
+      "version": "0.7.0",
+      "role": "runtime",
+      "filename": "annotated_types-0.7.0-py3-none-any.whl",
+      "bytes": 13643,
+      "sha256": "1f02e8b43a8fbbc3f3e0d4f0f4bfc8131bcb4eebe8849b8e5c773f3a1c582a53"
+    },
+    {
+      "distribution": "certifi",
+      "version": "2026.4.22",
+      "role": "runtime",
+      "filename": "certifi-2026.4.22-py3-none-any.whl",
+      "bytes": 135707,
+      "sha256": "3cb2210c8f88ba2318d29b0388d1023c8492ff72ecdde4ebdaddbb13a31b1c4a"
+    },
+    {
+      "distribution": "cffi",
+      "version": "2.0.0",
+      "role": "runtime",
+      "filename": "cffi-2.0.0-cp313-cp313-win_amd64.whl",
+      "bytes": 183402,
+      "sha256": "19f705ada2530c1167abacb171925dd886168931e0a7b78f5bffcae5c6b5be75"
+    },
+    {
+      "distribution": "cryptography",
+      "version": "48.0.1",
+      "role": "runtime",
+      "filename": "cryptography-48.0.1-cp311-abi3-win_amd64.whl",
+      "bytes": 3817138,
+      "sha256": "39489bfca54c7a1f6b297efcd8bc608ab92d16c4ca631b0cad4da46724588b24"
+    },
+    {
+      "distribution": "cython",
+      "version": "3.2.5",
+      "role": "build",
+      "filename": "cython-3.2.5-cp313-cp313-win_amd64.whl",
+      "bytes": 2757027,
+      "sha256": "3795237ab49753647e329181b140c424e8aa97543074f171f8d2c45e5014a06e"
+    },
+    {
+      "distribution": "maturin",
+      "version": "1.14.1",
+      "role": "build",
+      "filename": "maturin-1.14.1-py3-none-win_amd64.whl",
+      "bytes": 10314067,
+      "sha256": "3c9f94640ecc4895e94abaf834a0684430032c865b2748a36c12461fd9252fdd"
+    },
+    {
+      "distribution": "numpy",
+      "version": "2.4.4",
+      "role": "runtime",
+      "filename": "numpy-2.4.4-cp313-cp313-win_amd64.whl",
+      "bytes": 12317311,
+      "sha256": "5c70f1cc1c4efbe316a572e2d8b9b9cc44e89b95f79ca3331553fbb63716e2bf"
+    },
+    {
+      "distribution": "pillow",
+      "version": "12.2.0",
+      "role": "runtime",
+      "filename": "pillow-12.2.0-cp313-cp313-win_amd64.whl",
+      "bytes": 7081266,
+      "sha256": "390ede346628ccc626e5730107cde16c42d3836b89662a115a921f28440e6a3b"
+    },
+    {
+      "distribution": "psutil",
+      "version": "7.0.0",
+      "role": "runtime",
+      "filename": "psutil-7.0.0-cp37-abi3-win_amd64.whl",
+      "bytes": 244885,
+      "sha256": "4cf3d4eb1aa9b348dec30105c55cd9b7d4629285735a102beb4441e38db90553"
+    },
+    {
+      "distribution": "pycparser",
+      "version": "3.0",
+      "role": "runtime",
+      "filename": "pycparser-3.0-py3-none-any.whl",
+      "bytes": 48172,
+      "sha256": "b727414169a36b7d524c1c3e31839a521725078d7b2ff038656844266160a992"
+    },
+    {
+      "distribution": "pydantic-core",
+      "version": "2.46.3",
+      "role": "runtime",
+      "filename": "pydantic_core-2.46.3-cp313-cp313-win_amd64.whl",
+      "bytes": 2071517,
+      "sha256": "68cc7866ed863db34351294187f9b729964c371ba33e31c26f478471c52e1ed0"
+    },
+    {
+      "distribution": "pydantic",
+      "version": "2.13.3",
+      "role": "runtime",
+      "filename": "pydantic-2.13.3-py3-none-any.whl",
+      "bytes": 471981,
+      "sha256": "6db14ac8dfc9a1e57f87ea2c0de670c251240f43cb0c30a5130e9720dc612927"
+    },
+    {
+      "distribution": "setuptools",
+      "version": "82.0.1",
+      "role": "build",
+      "filename": "setuptools-82.0.1-py3-none-any.whl",
+      "bytes": 1006223,
+      "sha256": "a59e362652f08dcd477c78bb6e7bd9d80a7995bc73ce773050228a348ce2e5bb"
+    },
+    {
+      "distribution": "typing-extensions",
+      "version": "4.15.0",
+      "role": "runtime",
+      "filename": "typing_extensions-4.15.0-py3-none-any.whl",
+      "bytes": 44614,
+      "sha256": "f0fa19c6845758ab08074a0cfa8b7aecb71c999ca73d62883bc25cc018c4e548"
+    },
+    {
+      "distribution": "typing-inspection",
+      "version": "0.4.2",
+      "role": "runtime",
+      "filename": "typing_inspection-0.4.2-py3-none-any.whl",
+      "bytes": 14611,
+      "sha256": "4ed1cacbdc298c220f1bd249ed5287caa16f34d44ef4e9c3d0cbad5b521545e7"
+    }
+  ]
+}

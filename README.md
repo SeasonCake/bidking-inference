@@ -2,6 +2,10 @@
 
 # BidKing Inference
 
+**现代产品源码现已扩充到 `product/`：推断引擎、桌面 UI、采集与状态、激活续费、服务端、原生源及构建测试。**
+从[产品源码与离线示例](product/README.md)开始；[公开范围](OPEN_SOURCE_BOUNDARY.md)说明需要自行提供的数据、资产与部署配置。
+原 `auction_inference` v0.1.0 API、历史源码和研究内容保持独立。
+
 [![CI](https://github.com/SeasonCake/bidking-inference/actions/workflows/ci.yml/badge.svg)](https://github.com/SeasonCake/bidking-inference/actions/workflows/ci.yml)
 [![Release](https://img.shields.io/github/v/release/SeasonCake/bidking-inference)](https://github.com/SeasonCake/bidking-inference/releases)
 [![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -13,12 +17,12 @@ BidKing 在竞拍中持续合并件数、格数、品质、技能和道具揭示
 并在结算后帮助复盘。这里也提供可独立运行的 Python 推断工具箱、早期桌面实现和可复现的工程案例，
 方便从数学方法一路读到实际产品架构。
 
-[下载 0.3.5-hotfix1 Windows 成品](https://bidking-dist-1317950063.cos.ap-shanghai.myqcloud.com/bidking-live-v0.3.5-hotfix1-encrypted.zip) ·
+[下载 0.3.6 Windows 成品](https://bidking-dist-1317950063.cos.ap-shanghai.myqcloud.com/bidking-live-v0.3.6-encrypted.zip) ·
 [运行推断示例](#快速开始) · [研究路线：代码、数据与失败案例](docs/research/README.zh-CN.md) ·
 [68秒看 BidKing 与 Grok/Codex](https://www.bilibili.com/video/BV1rRYk63ER5/) ·
 [打开公共数据筛选](https://api.bidkinglab.cn/public)
 
-2026-09-13：0.3.5-hotfix1 已完成选定本地验收、代表性实机流程与下载对象完整哈希读回。
+2026-10-11：0.3.6 Windows 成品已完成作者选定的验收与发布；本次公开源码另有自建适配及明确的验证范围。
 查看[热修状态、下载与验证范围](docs/DEVELOPMENT_STATUS.zh-CN.md)。已有GitHub发行及旧资产保留。
 公开 Python 推断包仍为独立的 `v0.1.0`；[旧热修1下载](https://github.com/SeasonCake/bidking-inference/releases/tag/product-v0.3.4-hotfix1)继续保留。
 
@@ -33,6 +37,7 @@ BidKing 在竞拍中持续合并件数、格数、品质、技能和道具揭示
 | 层 | 可以直接获得的内容 | 适合用途 |
 | --- | --- | --- |
 | Windows 成品 | 实时估价悬浮窗、三档报价参考、候选详情、小地图与结算复盘 | 下载即用；试用与激活按程序内说明 |
+| 现代产品源码 | `product/` 中的引擎、客户端、采集、认证续费、服务端及构建测试 | 从离线示例入手；自备合法数据、资产和密钥进行开发或自建 |
 | Python 推断工具箱 | 严格观测、加权后验、联合枚举、可信集合、校准、敏感性和池模拟 | 接入自己的数据，构建小型推断/估计工具 |
 | 早期真实源码 | `v0.2.0-hotfix1` 的 Tk 主界面、参考引擎、推断和模拟源码 | 阅读真实 UI、状态、推断与展示如何协作 |
 | 冻结旧数据 | 最后一个 `<0.2.8` 版本的地图、英雄、道具、掉落映射和品质权重 | 研究旧版数据建模和表结构；不代表当前游戏 |

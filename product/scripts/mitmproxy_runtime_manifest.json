@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "asset_id": "mitmproxy-windows-runtime",
+  "version": "12.2.3",
+  "architecture": "windows-x86_64",
+  "source": {
+    "url": "https://downloads.mitmproxy.org/12.2.3/mitmproxy-12.2.3-windows-x86_64-installer.exe",
+    "installer_bytes": 57786874,
+    "installer_sha256": "844d0d40c4b9d7e68a8fcdb66354255c4480ea43c4ceb783d7e41c7a98fa8ce9"
+  },
+  "inventory": {
+    "file_count": 209,
+    "total_bytes": 61109502,
+    "inventory_sha256": "5d6c1e57352aea1cdcb6bcc7cb6e1296585751f9704129c638b09d1cfa2ee5fa"
+  },
+  "required_files": {
+    "LICENSE.txt": {
+      "bytes": 1079,
+      "sha256": "cc4ab04ed7180af6c0ede7147f9ec2aa05212c088d7b3c8e38bbffe91c9c8f82"
+    },
+    "mitmdump.exe": {
+      "bytes": 11328914,
+      "sha256": "66121020afdaf676ca076e851f1fcdf5399d4c4ad707df4c1b2d5143a739cdb1"
+    },
+    "_internal/mitmproxy_windows/windows-redirector.exe": {
+      "bytes": 1000448,
+      "sha256": "84227e039fc684dcf0f2265eab75def06a893b0c091d6b59290cb1d4be6a1bf8"
+    },
+    "_internal/mitmproxy_windows/WinDivert64.sys": {
+      "bytes": 94144,
+      "sha256": "8da085332782708d8767bcace5327a6ec7283c17cfb85e40b03cd2323a90ddc2"
+    }
+  },
+  "forbidden_globs": [
+    "*mitmproxy-ca*",
+    "*.p12",
+    "*.pcap",
+    "*.pcapng",
+    "*.mitm",
+    "*.flow"
+  ]
+}

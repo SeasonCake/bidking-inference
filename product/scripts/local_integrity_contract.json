@@ -1,0 +1,70 @@
+{
+  "schema": "bidking_local_integrity_contract_v1",
+  "contract_version": 1,
+  "manifest_member": "integrity/local_integrity_manifest.json",
+  "signature_member": "integrity/local_integrity_manifest.sig",
+  "fixed_members": [
+    {
+      "path": "BidKingLive.exe",
+      "role": "launcher"
+    },
+    {
+      "path": "activation_service_endpoints.json",
+      "role": "activation-endpoint"
+    },
+    {
+      "path": "activation_http_e2ee.json",
+      "role": "activation-endpoint"
+    },
+    {
+      "path": "scripts/package_data_fingerprints.json",
+      "role": "entry"
+    },
+    {
+      "path": "external_references/AuctionAnalyzer4.13.3/_decompiled/MapBidCalculator/MapBidCalculator/Models/StaticData.cs",
+      "role": "proprietary-data"
+    }
+  ],
+  "trees": [
+    {
+      "path": "runtime/python",
+      "role": "runtime"
+    },
+    {
+      "path": "scripts",
+      "role": "entry"
+    },
+    {
+      "path": "hero_ref/src",
+      "role": "product-code"
+    },
+    {
+      "path": "hero_ref/tools",
+      "role": "product-code"
+    },
+    {
+      "path": "src",
+      "role": "product-code"
+    },
+    {
+      "path": "data/processed",
+      "role": "proprietary-data"
+    },
+    {
+      "path": "data/raw/tables",
+      "role": "proprietary-data"
+    }
+  ],
+  "required_role_minimums": {
+    "activation-endpoint": 2,
+    "engine-native": 3,
+    "entry": 1,
+    "launcher": 1,
+    "overlay-native": 1,
+    "parser-native": 1,
+    "proprietary-data": 1,
+    "runtime": 1,
+    "secure-native": 1,
+    "trust-root-native": 1
+  }
+}

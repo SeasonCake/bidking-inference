@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "generation": 1,
+  "endpoint_3_enabled": false,
+  "endpoints": [
+    {
+      "endpoint_id": "endpoint_1",
+      "base": "https://api.bidking.example.invalid",
+      "telemetry": "https://api.bidking.example.invalid/telemetry"
+    },
+    {
+      "endpoint_id": "endpoint_2",
+      "base": "https://backup.bidking.example.invalid",
+      "telemetry": "https://backup.bidking.example.invalid/telemetry"
+    }
+  ]
+}

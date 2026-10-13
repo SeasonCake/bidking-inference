@@ -1,0 +1,406 @@
+{
+  "schema": "bidking_release_zip_contract_v1",
+  "contract_version": 26,
+  "required_members": {
+    "common": [
+      "BUILD_MANIFEST.txt",
+      "activation_service_endpoints.json",
+      "activation_http_e2ee.json",
+      "BidKingLive.exe",
+      "其他启动方式/启动.bat",
+      "其他启动方式/start.bat",
+      "integrity/native_binary_receipt.json",
+      "使用说明.txt",
+      "LICENSE.txt",
+      "公共大数据平台.html",
+      "scripts/start_live_npcap_overlay.ps1",
+      "scripts/wss_environment_preflight.ps1",
+      "scripts/collect_diagnostics.ps1",
+      "scripts/package_data_fingerprints.json",
+      "诊断工具/收集诊断.bat",
+      "诊断工具/启动修复.bat",
+      "诊断工具/网吧环境兼容检查.bat",
+      "诊断工具/高级卸载与清理/卸载本地兼容证书（高级清理）.bat",
+      "诊断工具/高级卸载与清理/remove_wss_capture_ca.ps1",
+      "诊断工具/高级卸载与清理/说明.txt",
+      "诊断工具/激活网络诊断.bat",
+      "诊断工具/activation_transport_diagnostic.py",
+      "runtime/python/python.exe",
+      "runtime/python/python313.zip",
+      "runtime/python/python313._pth"
+    ],
+    "encrypted": [
+      "data/processed/upload_config.enc",
+      "integrity/local_integrity_manifest.json",
+      "integrity/local_integrity_manifest.sig"
+    ],
+    "standard": [
+      "hero_ref/assets/shop_qr.png",
+      "购买与续费/打开店铺.html",
+      "购买与续费/店铺二维码.png",
+      "购买与续费/支付宝付款码.png",
+      "购买与续费/微信付款码.jpg",
+      "购买与续费/扫码购买说明.txt"
+    ],
+    "network-diagnostic": [
+      "网络诊断内测说明/内测边界.txt"
+    ]
+  },
+  "required_manifest_fields": [
+    "PackageVersion",
+    "SourceCommit",
+    "SourceBranch",
+    "PackageInputsDirty",
+    "BuildScriptSHA256",
+    "ReleaseZipContractSHA256",
+    "ClientProtectionSchema",
+    "ClientProtectionManifestSHA256",
+    "NativeBinaryContractSHA256",
+    "NativeBinaryDistribution",
+    "NativeBinaryReceiptSHA256",
+    "NativeBinaryVerified",
+    "NativeBinaryCount",
+    "WssOperationalABI",
+    "WssOperationalGeneration",
+    "WssAddonBootstrapSHA256",
+    "WssAddonLoaderSHA256",
+    "PackageDataManifestSHA256",
+    "PackageDataFingerprintSHA256",
+    "PackageDataBaselineID",
+    "RuntimePythonSourceManifestSHA256",
+    "RuntimeDependencyInventorySHA256",
+    "RuntimeInventoryApprovalSHA256",
+    "RuntimeInventoryReceiptSHA256",
+    "BkencAuthenticationReceiptSHA256",
+    "LauncherSHA256",
+    "StaticDataSourceSHA256",
+    "ActivationServiceEndpointsSHA256",
+    "ActivationServiceEndpointsGeneration",
+    "ActivationServiceEndpoint3Enabled",
+    "ActivationHttpE2EEConfigSHA256",
+    "ActivationHttpE2EEEnabled",
+    "ActivationHttpE2EEKeyID",
+    "LocalIntegrityPublicKeySHA256",
+    "LocalIntegrityManifestSHA256",
+    "LocalIntegrityEntryCount",
+    "LocalIntegrityVerified",
+    "Encrypted",
+    "EncryptedUploadConfig",
+    "ReleaseKeyCacheVerified",
+    "UploadConfigRoundTripVerified",
+    "BundledCABundle",
+    "WssCaptureDefault",
+    "MitmproxyBundled",
+    "CompatibilityRuntimeMode",
+    "CompatibilityRuntimeArchive",
+    "CompatibilityRuntimeArchiveBytes",
+    "CompatibilityRuntimeArchiveSHA256",
+    "CompatibilityRuntimeDescriptorSHA256",
+    "MitmproxyVersion",
+    "MitmproxySourceURL",
+    "MitmproxyInstallerSHA256",
+    "MitmproxyInventorySHA256",
+    "PetAssetsInventorySHA256",
+    "DiagnosticProfile",
+    "ProductProfile",
+    "CommercialSurfaceMode",
+    "PythonVersion",
+    "BuildTime"
+  ],
+  "fixed_manifest_values": {
+    "PackageInputsDirty": "False",
+    "ClientProtectionSchema": "bidking_client_protection_v2",
+    "WssOperationalABI": "bidking_wss_addon_operational_v1",
+    "WssOperationalGeneration": "f14045323478eeab5c5654854dccd444e75e626a15c64bd6fed8332b4093c153",
+    "WssAddonBootstrapSHA256": "8e56ab0b5aff57d86f74ebeff6670652bcae196b093c04ae17bc8fac9d50a73f",
+    "RuntimePythonSourceManifestSHA256": "7ded788a091865c68c1bc9060414ae13e027c930ffd7f57aa2526d5650487b7e",
+    "RuntimeDependencyInventorySHA256": "03d72fac91af2e3af4d5fef9ce4a4159267700ffa0ac9ca81e64c314c1371597",
+    "RuntimeInventoryApprovalSHA256": "9ca16fd8b613dbce1eb22b372ecaa5b22d289677be054bd21be1960d0b864a8b",
+    "StaticDataSourceSHA256": "7543b4aa16addc73dfaaaf3c6df9bc0f6662bd83458de110a16d04ff9f2f9676",
+    "ActivationServiceEndpoint3Enabled": "False",
+    "ActivationHttpE2EEEnabled": "True",
+    "ActivationHttpE2EEKeyID": "x25519-c92a2efc4a9f4118",
+    "LocalIntegrityVerified": "True",
+    "Encrypted": "True",
+    "EncryptedUploadConfig": "True",
+    "ReleaseKeyCacheVerified": "True",
+    "UploadConfigRoundTripVerified": "True",
+    "BundledCABundle": "True",
+    "WssCaptureDefault": "True",
+    "PythonVersion": "3.13.15",
+    "NativeBinaryVerified": "True",
+    "NativeBinaryCount": "119"
+  },
+  "fixed_member_sha256": {
+    "其他启动方式/启动.bat": "2d78cf1e3635bbd89ca168a1f15ddc6652ee13c0acd48ccd73b7832fb0de7938",
+    "其他启动方式/start.bat": "2d78cf1e3635bbd89ca168a1f15ddc6652ee13c0acd48ccd73b7832fb0de7938",
+    "诊断工具/收集诊断.bat": "497d56935b3cf853461b676b7e0d8c1d0573abda0100975fa3e5343c4251f5e2",
+    "诊断工具/启动修复.bat": "dbbb2e3c4f03c4c784c478fd9bad506adb7ca613487bf0de19ef16a4a8d4ee6b",
+    "诊断工具/激活网络诊断.bat": "a9d78e1914604e77c03ff06c73ad2aa9f0b2b1523b4ca0a8843004a690d139fa",
+    "诊断工具/activation_transport_diagnostic.py": "15e1e6108d04af353c40e501f6e3adb41d8d4a11bc42fa4e47235ec17be53601",
+    "scripts/package_data_fingerprints.json": "b6b0d66c961b1fa352a0fad6adb18ecf264e0a6954f498c7f6b2ade5b5e4ed03",
+    "runtime/python/python.exe": "85b71d8c6ec1905935f74be0c9869aae198d00e98f39df699ec66f9c5a84cecd"
+  },
+  "launcher_wrappers": {
+    "members": [
+      "其他启动方式/启动.bat",
+      "其他启动方式/start.bat"
+    ],
+    "target": "BidKingLive.exe",
+    "encoding": "ascii",
+    "line_endings": "crlf",
+    "sha256": "2d78cf1e3635bbd89ca168a1f15ddc6652ee13c0acd48ccd73b7832fb0de7938"
+  },
+  "release_availability": {
+    "receipt_schema": "bidking_release_availability_receipt_v1",
+    "receipt_version": 1,
+    "captures": [
+      {
+        "bytes": 30381,
+        "sha256": "fb9154cf98c1cb995d3ccb23ddeaa5bb703aafe6185ea05f111d197a2f17d82f"
+      },
+      {
+        "bytes": 12457,
+        "sha256": "417c5e64f1fcb7e86e4d2792b2ac7319ca092a5376cccd186d85ea84e46964a5"
+      },
+      {
+        "bytes": 31637,
+        "sha256": "27402d6deb00a831de46254cd7680de789418e38329cef846eb43763d8397ea6"
+      },
+      {
+        "bytes": 36360,
+        "sha256": "0b7dcb7f5ad3d40c7a3b7000ee725d514a3a26a407e599dc99cd1c81389d3df0"
+      },
+      {
+        "bytes": 30187,
+        "sha256": "d2073b9039ad611e3d527a9e774f8cafaf211a784f267903e9f5b09baa0c5262"
+      }
+    ],
+    "policy_census": {
+      "policy_roots": 112,
+      "direct_root": {
+        "complete": 112,
+        "degraded": 0,
+        "sampleable": 112,
+        "missing": 0,
+        "empty": 0,
+        "unsupported": 0,
+        "unsupported_ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "source_map": {
+        "complete": 112,
+        "degraded": 0,
+        "sampleable": 112,
+        "missing": 0,
+        "empty": 0,
+        "unsupported": 0,
+        "unsupported_ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    "route_scope": {
+      "changed_route_count": 16,
+      "changed_route_ids_sha256": "f43e639dbbdeb3d855cce7aa4eb21a94a8923ca21ef49f3d944e8496a89adbec",
+      "new_only_count": 42,
+      "new_only_ids_sha256": "493adee43dcb7af1214ee561b971f679b9823859b82d2393d67da9082482fb98",
+      "legacy_only_count": 8,
+      "legacy_only_ids_sha256": "ff51a78e43e1e3af45d851b8d2f7077a2dbd761cfaf25824824ae43ec37515a7",
+      "forbidden_count": 66,
+      "forbidden_ids_sha256": "53db1aad267ce4b33f05e4b1fbc2fa6ce24576681f385d1a87ec369c9829f32a",
+      "policy_root_ids_sha256": "78bab49717c2a3884ea49e8452cc779544ce4ee8bad5dce49e513e5bbfb4c99d",
+      "current_activity_alias_sampleable_count": 20,
+      "current_activity_alias_ids_sha256": "ba37e047d27d9793961abe16268a1bb769e96a97457b7cf06e36879e50cf5d6e",
+      "ranked_production_unsupported_count": 0,
+      "ranked_production_unsupported_ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "current_authority": {
+      "map_id": 2409,
+      "canonical_input_sha256": "8407441f9e70e8ba4be28dec8e570252806da61c7ca3b6696a416e21ef78d87d",
+      "package_generation": "76b7ca-2026-10-08-723",
+      "distribution_authority": "modeled_not_official_drop",
+      "scope_map_count": 112,
+      "scope_map_ids_sha256": "78bab49717c2a3884ea49e8452cc779544ce4ee8bad5dce49e513e5bbfb4c99d",
+      "runtime_open_claim": false,
+      "historical_capture_scope": "compatibility_replay_not_current_generation_live"
+    }
+  },
+  "runtime_dependencies": {
+    "annotated-types": "0.7.0",
+    "certifi": "2026.4.22",
+    "cffi": "2.0.0",
+    "cryptography": "48.0.1",
+    "numpy": "2.4.4",
+    "pillow": "12.2.0",
+    "psutil": "7.0.0",
+    "pycparser": "3.0",
+    "pydantic": "2.13.3",
+    "pydantic-core": "2.46.3",
+    "typing-extensions": "4.15.0",
+    "typing-inspection": "0.4.2"
+  },
+  "archive_limits": {
+    "max_entries": 10000,
+    "max_member_uncompressed_bytes": 134217728,
+    "max_total_uncompressed_bytes": 536870912,
+    "max_compression_ratio": 200,
+    "max_member_path_chars": 240,
+    "allowed_compression_methods": [
+      0,
+      8
+    ]
+  },
+  "runtime_inventory": {
+    "approval_required": true,
+    "approval_schema": "bidking_runtime_inventory_approval_v1",
+    "prefix": "runtime/python/",
+    "receipt_required": true,
+    "receipt_schema": "bidking_runtime_inventory_receipt_v1"
+  },
+  "bkenc_authentication": {
+    "envelope_aad": "bidking_bkenc_member_path_by_format_v1",
+    "receipt_required": true,
+    "receipt_schema": "bidking_bkenc_authentication_receipt_v1"
+  },
+  "native_binary": {
+    "contract_source": "scripts/release_native_binary_contract.json",
+    "distribution": "unsigned",
+    "receipt_member": "integrity/native_binary_receipt.json",
+    "receipt_schema": "bidking_native_binary_receipt_v2"
+  },
+  "sensitive_prefixes": [
+    "data/processed/",
+    "data/raw/tables/",
+    "external_references/AuctionAnalyzer4.13.3/_decompiled/MapBidCalculator/MapBidCalculator/Models/"
+  ],
+  "member_protection": {
+    "data/processed/upload_config.enc": {
+      "mode": "bkenc1",
+      "required": true
+    },
+    "data/processed/drop_table_priors_0627.json": {
+      "mode": "bkenc2-gzip",
+      "required": true
+    },
+    "data/processed/red_longtail_normalized_0627.json": {
+      "mode": "bkenc2-gzip",
+      "required": true
+    },
+    "data/processed/items.json": {
+      "mode": "bkenc2-gzip",
+      "required": true
+    },
+    "data/processed/items_droppable.json": {
+      "mode": "bkenc2-gzip",
+      "required": true
+    },
+    "data/processed/item_category_authority_0_3_2.json": {
+      "mode": "bkenc2-gzip",
+      "required": true
+    },
+    "data/processed/drop_weights_all_maps_0627.json": {
+      "mode": "bkenc2-gzip",
+      "required": true
+    },
+    "data/processed/rankmap_drop_weights_current.json": {
+      "mode": "bkenc2-gzip",
+      "required": true
+    },
+    "data/processed/rankmap_drop_priors_current.json": {
+      "mode": "bkenc2-gzip",
+      "required": true
+    },
+    "data/processed/rankmap_distribution_authority_current.json": {
+      "mode": "bkenc2-gzip",
+      "required": true
+    },
+    "data/processed/auction_hall_6001_shadow_distribution.json": {
+      "mode": "bkenc2-gzip",
+      "required": true
+    },
+    "data/processed/shipwreck_calibrated_b049.json": {
+      "mode": "bkenc2-gzip",
+      "required": true
+    },
+    "data/processed/maps.json": {
+      "mode": "bkenc2-gzip",
+      "required": true
+    },
+    "data/processed/quality_combo_presolve_q456.json": {
+      "mode": "bkenc2-gzip",
+      "required": true
+    },
+    "data/processed/battle_items.json": {
+      "mode": "bkenc2-gzip",
+      "required": true
+    },
+    "data/processed/map_fragment_fixes.json": {
+      "mode": "bkenc2-gzip",
+      "required": true
+    },
+    "data/processed/heroes.json": {
+      "mode": "plaintext",
+      "required": true
+    },
+    "data/processed/local_compat_component.json": {
+      "mode": "plaintext",
+      "required": false
+    },
+    "data/raw/tables/Item.txt": {
+      "mode": "bkenc2-gzip",
+      "required": true
+    },
+    "data/raw/tables/BidMap.txt": {
+      "mode": "bkenc2-gzip",
+      "required": true
+    },
+    "data/raw/tables/RankMap.txt": {
+      "mode": "bkenc2-gzip",
+      "required": true
+    },
+    "data/raw/tables/Drop.txt": {
+      "mode": "bkenc2-gzip",
+      "required": true
+    },
+    "data/raw/tables/Hero.txt": {
+      "mode": "bkenc2-gzip",
+      "required": true
+    },
+    "external_references/AuctionAnalyzer4.13.3/_decompiled/MapBidCalculator/MapBidCalculator/Models/StaticData.cs": {
+      "mode": "bkenc2-gzip",
+      "required": true
+    }
+  },
+  "public_text_members": [
+    "购买与续费/打开店铺.html",
+    "使用说明.txt",
+    "LICENSE.txt",
+    "购买与续费/扫码购买说明.txt"
+  ],
+  "mutually_exclusive_text_terms": [
+    {
+      "label": "trial_duration",
+      "left": [
+        "试用 12 小时",
+        "试用为【12 小时】",
+        "免费体验 12 小时",
+        "公测服务器临时提供/刷新 12 小时"
+      ],
+      "right": [
+        "试用 3 小时",
+        "试用为【3 小时】",
+        "免费体验 3 小时"
+      ]
+    },
+    {
+      "label": "trial_metering",
+      "left": [
+        "自然时间",
+        "首次激活后"
+      ],
+      "right": [
+        "实际开启计时",
+        "开启时计时",
+        "只在计算器开启期间计时"
+      ]
+    }
+  ]
+}

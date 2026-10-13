@@ -1,0 +1,10 @@
+# BidKing Lab v1.0.0 — one-stop release runtime (UI + OCR capture)
+# Installed by start_ui.ps1; no dev/notebook deps.
+
+pydantic>=2.0
+numpy>=1.26
+certifi>=2025.7.14
+streamlit>=1.30
+matplotlib>=3.7
+rapidocr-onnxruntime>=1.2.0
+mss>=9.0.0

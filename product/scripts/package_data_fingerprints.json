@@ -1,0 +1,100 @@
+{
+  "schema": "bidking_package_data_fingerprints_v1",
+  "baseline_id": "package-data-2026-10-08-76b7ca-0.3.6",
+  "manifest": "scripts/package_data_manifest.json",
+  "manifest_sha256": "e301d9f501b02f0b53739e9fa5d59c0016a997f189e74b80bd1e2313971cc16e",
+  "scheduled_consumers_contract": "scripts/package_data_scheduled_consumers.json",
+  "provenance": "Local 0.3.6 development cutover to Steam build25795126 / 76b7ca-2026-10-08-723. Twelve exact audited SRC2A leaves replace the retained b049 leaves. 1432 old Item rows plus74 new; random support union690, ordinary675/S2 684; ordinary101/ranked18 union112 modeled physical maps, no official item-level rate or runtime-open claim. Other nine shipped inputs, including offline historical presolve and generation-qualified activity sidecars, remain exact. 6001/2511/4511 successors and 5215 current-generation qualification remain separate pending integration. No build, native, live-game, accuracy-improvement, release or production PASS is asserted.",
+  "source_validation": {
+    "package_fingerprint": "15b3fbccf79e3de88c0f78814a0adc144af7ad245b63cfc8b040508325d15da8",
+    "previous_package_fingerprint": "92c9a44dbb0b0da18e300ccde3e0305cb448a43b87b2b006f0f4ecace9e120da",
+    "stage": "local_development_inputs_awaiting_integrated_engine_gates",
+    "candidate_or_artifact": false
+  },
+  "files": {
+    "data/processed/shipwreck_calibrated_b049.json": {
+      "sha256": "0e9a3400aef9a057ccea16494fd57bf52716edbcace80c46cfce7e073da2edee",
+      "size": 2039
+    },
+    "data/raw/tables/Item.txt": {
+      "size": 746484,
+      "sha256": "380f1072fab85e7be8f2b03bc530a11b2b14681bad0366f411151294636fed40"
+    },
+    "data/raw/tables/BidMap.txt": {
+      "size": 138300,
+      "sha256": "5b97e9ab4a8a3a583c239d6113b561200586e997cb41be79b8b2e0c447b9d020"
+    },
+    "data/raw/tables/RankMap.txt": {
+      "sha256": "e6b4fae0caa8e71b342c79c3fc2235a9285ac4d28b918604af088b156885d1a7",
+      "size": 118344
+    },
+    "data/raw/tables/Drop.txt": {
+      "sha256": "9a8ed5748d05d774fb49f3aabd0769c5e81afe149d1ffaa8dcce92314948c307",
+      "size": 294160
+    },
+    "data/raw/tables/Hero.txt": {
+      "sha256": "c370291e0692f8d67a84d6f4edc5ff5f0d13c22b62f45f476627ea2e9d77a91d",
+      "size": 13140
+    },
+    "data/processed/red_longtail_normalized_0627.json": {
+      "size": 1326,
+      "sha256": "4dead13f44eb1885cd3d1a82c8391ca39393bec222879f451c379620ac703300"
+    },
+    "data/processed/drop_table_priors_0627.json": {
+      "size": 21239,
+      "sha256": "83f2d76cfffb907fd3cd5116f9dcde880112255b818ea1e9dafe361eab901ef9"
+    },
+    "data/processed/quality_combo_presolve_q456.json": {
+      "sha256": "7b851efb21d08221c09c12c74065a86a5bdfde158f001598e62c857271cfdd42",
+      "size": 15444339
+    },
+    "data/processed/items.json": {
+      "size": 737910,
+      "sha256": "7be0cb441b7b63e87e08d3f15ede1d3f4e2435e299715b13ff02fcc629287bab"
+    },
+    "data/processed/items_droppable.json": {
+      "size": 322888,
+      "sha256": "68e944020749968d301dca61ff2b12fccd21b32d93c22b72d394285cd9658f91"
+    },
+    "data/processed/item_category_authority_0_3_2.json": {
+      "size": 645491,
+      "sha256": "48a76a52abf6aef7c3596ce216147e8dcae770a905e4121340f22851f6d2c6d8"
+    },
+    "data/processed/drop_weights_all_maps_0627.json": {
+      "size": 2556143,
+      "sha256": "b7c55c9ee0a8b9211b4a70f53f1c67d4e3f037d4a2faa8e7550e1f240d4499d3"
+    },
+    "data/processed/rankmap_drop_weights_current.json": {
+      "size": 449613,
+      "sha256": "08ba45ee553bdd08effe338b91237efcaef1115c82ab649eaf95a2ab72aa5453"
+    },
+    "data/processed/rankmap_drop_priors_current.json": {
+      "size": 4966,
+      "sha256": "6db45943867d9028f0b2e2a13fc18f6ff10a8c4f0bc70e0cd8d68195ef139713"
+    },
+    "data/processed/rankmap_distribution_authority_current.json": {
+      "size": 24690,
+      "sha256": "55b56d8c506685a806f0a9891e8999ac2d1e467ac25598c551d35579eaec4bfe"
+    },
+    "data/processed/auction_hall_6001_shadow_distribution.json": {
+      "sha256": "b7135585a6e6230ac52522ab71f4d7943b068f880e61ec7817ca5342ee6808fa",
+      "size": 279564
+    },
+    "data/processed/battle_items.json": {
+      "sha256": "c5389aaf1a282b9c0224eb0ed296fc368fcb335fc8bd0cff883e9b289eea34e8",
+      "size": 17982
+    },
+    "data/processed/heroes.json": {
+      "sha256": "525582d5006cd97d03d5c66526f1a56d58fdcfb8b2a38b69ef328171a536aeef",
+      "size": 5626
+    },
+    "data/processed/maps.json": {
+      "size": 181859,
+      "sha256": "af272ffcb855633ecc78314ead660f08037f57c50e0197006e2cea3693831532"
+    },
+    "data/processed/map_fragment_fixes.json": {
+      "sha256": "5bd53288b9af6c261f748a131d8609e6641da30828790b83b5b47ffe97e48452",
+      "size": 2071
+    }
+  }
+}

@@ -1,9 +1,9 @@
 # Contributing
 
-1. Keep changes domain-neutral and fixture-driven.
+1. Keep the stable package domain-neutral; product changes follow product/README.md.
 2. Add a positive and a falsifying negative test for behavioral changes.
 3. Run `python scripts/verify.py`.
-4. Do not add private paths, real captures, proprietary assets, secrets, or unselected product code.
+4. Keep private paths, real captures, proprietary assets and secrets out; update the product manifest for selected implementation changes.
 
 Research has its own [entry points and contribution ideas](docs/research/CONTRIBUTION_IDEAS.zh-CN.md).
 Keep historical adaptations, new synthetic examples and historical aggregate data

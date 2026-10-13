@@ -2,3 +2,5 @@
 *.bat text eol=crlf
 *.cmd text eol=crlf
 *.ps1 text eol=crlf
+# The product manifest pins reviewed source bytes and script encodings.
+/product/** -text

@@ -1,0 +1,9 @@
+{
+  "approval_version": 1,
+  "directory_count": 217,
+  "file_count": 2485,
+  "inventory_sha256": "3697aa54b4dd4d0bb442d7e7156a89d49dae20a2e940828c758b2c0e18a5b82e",
+  "prefix": "runtime/python/",
+  "schema": "bidking_runtime_inventory_approval_v1",
+  "total_bytes": 106141084
+}

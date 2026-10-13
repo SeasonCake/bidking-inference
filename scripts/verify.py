@@ -13,6 +13,12 @@ import subprocess
 import sys
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
+try:
+    from scripts.verify_product import product_errors
+except ModuleNotFoundError as exc:
+    if exc.name not in {"scripts", "scripts.verify_product"}:
+        raise
+    from verify_product import product_errors
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -248,6 +254,7 @@ def local_document_link_errors(root: Path) -> list[str]:
     """Check local destinations only; this does not claim remote URL availability."""
     pages = list(root.glob("*.md")) + list((root / "docs").rglob("*.md"))
     pages += list((root / "research").rglob("*.md"))
+    pages += list((root / "product").rglob("*.md"))
     if (root / "legacy/README.md").is_file():
         pages.append(root / "legacy/README.md")
     errors = []
@@ -388,7 +395,8 @@ def documentation_image_errors() -> list[str]:
 
 def public_boundary_errors() -> list[str]:
     errors = (documentation_image_errors() + legacy_snapshot_errors()
-              + research_provenance_errors() + local_document_link_errors(ROOT))
+              + research_provenance_errors() + local_document_link_errors(ROOT)
+              + product_errors(ROOT))
     for relative in REQUIRED_PUBLIC_FILES:
         if not (ROOT / relative).is_file():
             errors.append(f"required public-maintenance file is missing: {relative}")

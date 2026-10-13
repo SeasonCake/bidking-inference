@@ -1,0 +1,26 @@
+{
+  "schema": "bidking_package_data_manifest_v1",
+  "files": [
+    "data/raw/tables/Item.txt",
+    "data/raw/tables/BidMap.txt",
+    "data/raw/tables/RankMap.txt",
+    "data/raw/tables/Drop.txt",
+    "data/raw/tables/Hero.txt",
+    "data/processed/red_longtail_normalized_0627.json",
+    "data/processed/drop_table_priors_0627.json",
+    "data/processed/quality_combo_presolve_q456.json",
+    "data/processed/items.json",
+    "data/processed/items_droppable.json",
+    "data/processed/item_category_authority_0_3_2.json",
+    "data/processed/drop_weights_all_maps_0627.json",
+    "data/processed/rankmap_drop_weights_current.json",
+    "data/processed/rankmap_drop_priors_current.json",
+    "data/processed/rankmap_distribution_authority_current.json",
+    "data/processed/auction_hall_6001_shadow_distribution.json",
+    "data/processed/shipwreck_calibrated_b049.json",
+    "data/processed/battle_items.json",
+    "data/processed/heroes.json",
+    "data/processed/maps.json",
+    "data/processed/map_fragment_fixes.json"
+  ]
+}

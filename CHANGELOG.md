@@ -4,6 +4,13 @@ This project follows Semantic Versioning. Dates use `YYYY-MM-DD`.
 
 ## [Unreleased]
 
+- Open the modern author-owned product source under `product/`: inference, desktop UI,
+  capture/state adapters, activation and renewal, collector/readers, native source and
+  build/test tools. Keep the stable v0.1.0 API and frozen research/legacy inputs intact.
+- Add an offline product example and self-hosting/input documentation. Public defaults
+  use fictional endpoints and identities, local binding, explicit external-service
+  authentication and bounded HTTP request parsing with separate administrator access.
+
 - Link the September 14 bilingual BidKing/Grok demo and hosted data filters, with a
   timestamp-to-source guide, runnable examples and clear component boundaries.
 - Correct the Windows download instruction and stale development labels; describe

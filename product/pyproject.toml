@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bidking-lab"
+version = "1.0.0"
+description = "Unofficial tools for BidKing (竞拍之王) — observation inference + MC bidding hints."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY.md"]
+dependencies = [
+  "pydantic>=2.0",
+  "numpy>=1.26",
+  "certifi>=2025.7.14",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+ui = ["streamlit>=1.30", "matplotlib>=3.7"]
+capture = ["rapidocr-onnxruntime>=1.2.0", "mss>=9.0.0"]
+packet = ["pydivert>=3.0.0", "psutil>=5.9"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+# 默认只排除 @pytest.mark.slow，不是小型 smoke，也不保证其它测试便宜/输入已装配。
+# 快速/按变更/全部 pytest 与独立发布门见 docs/testing/TESTING.zh-CN.md。
+addopts = "-m 'not slow'"
+markers = [
+  "slow: integration/regression tests that are useful before release but too slow for everyday smoke runs",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# Static analysis (Pylance/Pyright) import resolution.
+# Tests import from four non-package source roots via sys.path injection at runtime:
+#   hero_ref/src   -> ahmad_ref_engine, layout_depth_policy (top-of-file sys.path.insert)
+#   scripts        -> audit_aisha_gap (in-test sys.path.insert)
+#   hero_ref/tools -> hero_ref_live_schedule (in-test sys.path.insert)
+#   src            -> bidking_lab.* (covered by [tool.pytest.ini_options].pythonpath above,
+#                    but that is pytest-only; Pylance needs it re-declared here).
+# Pylance reads [tool.pyright] with full precedence over python.analysis.extraPaths,
+# so all four roots must be listed. Rel paths are workspace-root-relative.
+[tool.pyright]
+extraPaths = ["src", "hero_ref/src", "scripts", "hero_ref/tools"]

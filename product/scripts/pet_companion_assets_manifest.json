@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "asset_id": "pet-companion-assets",
+  "version": "0.3.0-hotfix1-settlement-reactions",
+  "inventory": {
+    "file_count": 150,
+    "total_bytes": 6407775,
+    "inventory_sha256": "06ae02428b968873778bfe1d3c64506db19ef156d1a495788b37ca281a0e3e96"
+  },
+  "suffix_counts": {
+    ".md": 1,
+    ".png": 149
+  },
+  "required_files": {
+    "README.md": {
+      "bytes": 1648,
+      "sha256": "165182d2b408395d8e8118aad91cfdcc846b1f0d9a370a812eba33afac4a7a0d"
+    }
+  },
+  "forbidden_globs": [
+    "*capture*",
+    "*manifest*",
+    "*screenshot*",
+    "*.json",
+    "*.py",
+    "*.ps1"
+  ]
+}

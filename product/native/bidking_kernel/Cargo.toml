@@ -1,0 +1,40 @@
+[package]
+name = "bidking_kernel"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+
+[lib]
+name = "bidking_kernel"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = "0.29.0"
+sha2 = "0.10"
+hmac = "0.12"
+hkdf = "0.12"
+hex = "0.4"
+ed25519-dalek = "2.1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[target.'cfg(windows)'.dependencies]
+winreg = "0.52"
+windows-sys = { version = "0.48", features = [
+  "Win32_Foundation",
+  "Win32_Security",
+  "Win32_Storage_FileSystem",
+  "Win32_System_Threading",
+  "Win32_System_SystemInformation",
+] }
+
+[build-dependencies]
+sha2 = "0.10"
+
+# release profile: activation primitives + client lifecycle helper share one stripped/LTO native trust boundary.
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true

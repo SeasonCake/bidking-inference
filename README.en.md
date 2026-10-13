@@ -2,6 +2,12 @@
 
 # BidKing Inference
 
+**The modern product source is now included under `product/`: inference, desktop UI,
+capture/state adapters, activation/renewal, services, native source and build/test tools.**
+Start with the [offline product example](product/README.md); [scope](OPEN_SOURCE_BOUNDARY.md)
+identifies data, assets and configuration you must supply. The stable auction_inference
+v0.1.0 API, legacy snapshots and research layer keep their independent lifecycles.
+
 [![CI](https://github.com/SeasonCake/bidking-inference/actions/workflows/ci.yml/badge.svg)](https://github.com/SeasonCake/bidking-inference/actions/workflows/ci.yml)
 [![Release](https://img.shields.io/github/v/release/SeasonCake/bidking-inference)](https://github.com/SeasonCake/bidking-inference/releases)
 [![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -15,13 +21,13 @@ by settlement review. This repository also offers a standalone Python inference 
 early desktop implementation, and reproducible engineering case studies: a path from
 the mathematics to a working product architecture.
 
-[Download 0.3.5-hotfix1 for Windows](https://bidking-dist-1317950063.cos.ap-shanghai.myqcloud.com/bidking-live-v0.3.5-hotfix1-encrypted.zip) ·
+[Download 0.3.6 for Windows](https://bidking-dist-1317950063.cos.ap-shanghai.myqcloud.com/bidking-live-v0.3.6-encrypted.zip) ·
 [Run the toolkit](#quick-start) · [Research: code, data and failure cases](docs/research/README.md) ·
 [68-second BidKing and Grok/Codex demo](https://x.com/zheng_qili666/status/2099349396895019095) ·
 [Explore public data](https://api.bidkinglab.cn/public)
 
-September 13: 0.3.5-hotfix1 completed selected local checks and a representative real-use
-journey, and the full downloaded object matched the local package hash.
+October 11: the 0.3.6 Windows package completed the author's selected acceptance and
+publication. This source export has separate self-hosting adaptations and validation scope.
 See [hotfix status, downloads and verification limits](docs/DEVELOPMENT_STATUS.md).
 The existing GitHub product release and its assets remain unchanged.
 The public Python toolkit retains its separate `v0.1.0` version;
@@ -40,6 +46,7 @@ examples and understand which components the public repositories include.
 | Layer | Included | Useful for |
 | --- | --- | --- |
 | Windows application | live estimates, three bidding references, candidate details, minimap, and settlement review | trying the product; trial and activation follow the in-app instructions |
+| Modern product source | engine, client/UI, capture, authority/renewal, server and build/test code in `product/` | offline examples, development and self-hosting with your own data, assets and keys |
 | Python inference toolkit | strict observations, weighted posterior, joint enumeration, credible sets, calibration, sensitivity, and pool simulation | building an inference tool with your own data |
 | Real early source | the `v0.2.0-hotfix1` Tk interface, reference engine, inference, and simulation source | studying real UI/state/inference/presentation collaboration |
 | Frozen old data | the last `<0.2.8` maps, heroes, items, drop mapping, and quality weights | studying historical schemas and data modeling; not current game authority |

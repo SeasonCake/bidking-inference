@@ -1,0 +1,156 @@
+{
+  "schema": "bidking_package_data_scheduled_consumers_v1",
+  "activation_stage": "final_release_integration",
+  "package_only_runtime_consumer": true,
+  "current_rankmap_distribution": {
+    "status": "68171c_source_owner_inputs_frozen_pending_different_owner_audit",
+    "package_generation": "68171c-2026-09-03-907",
+    "authority_mode": "rankmap_drop_model_algorithm_prior",
+    "required_package_inputs": [
+      "data/raw/tables/Item.txt",
+      "data/raw/tables/BidMap.txt",
+      "data/raw/tables/RankMap.txt",
+      "data/processed/items_droppable.json",
+      "data/processed/item_category_authority_0_3_2.json",
+      "data/processed/drop_weights_all_maps_0627.json",
+      "data/processed/drop_table_priors_0627.json",
+      "data/processed/red_longtail_normalized_0627.json",
+      "data/processed/rankmap_drop_weights_current.json",
+      "data/processed/rankmap_drop_priors_current.json",
+      "data/processed/rankmap_distribution_authority_current.json"
+    ],
+    "scopes": {
+      "route_stable_210x": [
+        2101,
+        2102,
+        2103,
+        2104,
+        2105,
+        2106,
+        2107
+      ],
+      "changed_route_ranked_560x": [
+        5601,
+        5602,
+        5603,
+        5604,
+        5605,
+        5606,
+        5607,
+        5608,
+        5609,
+        5610,
+        5611
+      ],
+      "all_current_modeled_maps": {
+        "map_count": 101,
+        "items_per_map": 702
+      }
+    },
+    "recognized_unmodeled_scopes": {
+      "raven_chaotic_space_510x": {
+        "activity_id": 40002,
+        "activity_map_id": 20002,
+        "hero_id": 301,
+        "map_group_id": 601,
+        "map_ids": [5101, 5102, 5103, 5104, 5105, 5106, 5107, 5108, 5109, 5110],
+        "pool_ids_not_model_ids": [5001, 5002, 5003, 5004, 5005, 5006, 5007, 5008, 5009, 5010],
+        "quote_available": false,
+        "qualification_reason": "raven_chaotic_space_distribution_input_unavailable"
+      },
+      "large_auction_6001": {
+        "map_id": 6001,
+        "static_table_present": true,
+        "runtime_observed": false,
+        "lifecycle": "dormant_history_no_current_entry",
+        "distribution_authority": false,
+        "official_quote_authority": false,
+        "provisional_distribution_available": false,
+        "provisional_quote_available": false,
+        "historical_sidecar": "data/processed/auction_hall_6001_shadow_distribution.json"
+      }
+    },
+    "claims": {
+      "drop_or_dropmap_textasset": false,
+      "item_level_drop_graph": false,
+      "drop_or_dropmap_absence_is_not_a_blocker": true,
+      "distribution_input_contract": "since_2026-06-25_current_support_rankmap_quality_value_settlement_model",
+      "model_distribution_authority": true,
+      "official_distribution_authority": false,
+      "ranked_5606": "modeled_empirically_calibrated",
+      "runtime_open_claim": true,
+      "chenmei_5506": "pending_isolated",
+      "raven_510x": "recognized_unavailable_not_distribution_authority"
+    },
+    "current_runtime_consumer_code": {
+      "hero_ref/src/ahmad_ref_engine.py": "4857bbfbace895269f0611368136b48bb46c00c3"
+    },
+    "activation_requirement": "Require exact 68171c official inputs plus the 717-row normalization authority, 101-map/702-item current model, exact 210x overlap, 560x/711-item S2 model and generation-bound runtime receipt. Typed Item/BidMap/catalog semantics and weights/priors must remain byte-identical to the exact eb1 predecessor. This continues the established post-2026-06-25 contract: current support plus RankMap/quality weights, the existing value-weight algorithm, and settlement calibration; no Drop/DropMap input is awaited and its absence is not a 68171c degradation. Each map keeps its measured quality mass; q1-q5 empirical values remain unchanged and q6 alone is scaled by that map scope's old/new modeled conditional fitted-value ratio. The 191-session S2 aggregate is an empirical calibration gate, not official item-level exactness. Missing, old, mixed or malformed required inputs fail closed. Raven 510x remains recognized-unavailable. Map 6001 is dormant/no-quote in 68171c; its 4ae sidecar is historical only."
+  },
+  "lane_a": {
+    "status": "68171c_current_source_pending_different_owner_audit",
+    "source_commit": "6329d24e9cac2e88d4ace4dc4d7ebfef5e5cd3a8",
+    "audit_commit": "c7d471ab09bc1c715938b20d9136b26d71e6333f",
+    "audit_document": {
+      "path": "docs/handoffs/AUDIT_core_engine_0.3.2_jianying_category_authority_single_snapshot_successor3_pass_2026-08-09.zh-CN.md",
+      "blob": "39869492e25d4c9c2e17f463c5a0363e00f4152d",
+      "verdict": "PASS"
+    },
+    "strict_code": {
+      "src/bidking_lab/data/item_category_authority.py": "17afedf960aa715de51a882f29fbef428ed7d886",
+      "src/bidking_lab/inference/v2.py": "66ae1b7bfe0bef6bdb363510fb0c7375e3ed3a0b"
+    },
+    "current_strict_code": {
+      "src/bidking_lab/data/item_category_authority.py": "5ff9463d6fc2361f57a544649953b301ce339039",
+      "src/bidking_lab/inference/v2.py": "5d9a275bbaf81608fb6c736da969643b386f139d"
+    },
+    "bkenc2_loader_successor": {
+      "status": "historical_audit_plus_eb1_and_68171c_42_column_extensions_pending_audit",
+      "source_commit": "53ffce24933d3e825aa3b69cdcf1fa5f1088942e",
+      "handoff_commit": "9f3f43b20a52a0019a1de3bc896bb7b4c03ac563",
+      "audit_commit": "62ffd904160228b35a952c20fcebf8b14b9c84de",
+      "audit_document": {
+        "path": "docs/handoffs/AUDIT_core_engine_0.3.2_jianying_authority_bkenc2_successor4_pass_2026-08-09.zh-CN.md",
+        "blob": "531c314f03d4332836ede6eca719918fb49b0845",
+        "verdict": "PASS"
+      },
+      "strict_code": {
+        "src/bidking_lab/data/item_category_authority.py": "fe7c4799e6155f3b5283d5dfbce0b56569047a38",
+        "tests/test_jianying_category_authority_tristate_successor_0_3_2.py": "8bdbda89f8b5879ef952cd80c73b97ae23ee7aa9"
+      },
+      "current_strict_code": {
+        "src/bidking_lab/data/item_category_authority.py": "5ff9463d6fc2361f57a544649953b301ce339039"
+      }
+    },
+    "required_package_inputs": [
+      "data/processed/items_droppable.json",
+      "data/processed/item_category_authority_0_3_2.json",
+      "data/processed/drop_weights_all_maps_0627.json"
+    ],
+    "optional_nonpackage_inputs": [
+      "data/processed/item_category_mem_0625.json"
+    ],
+    "required_symbols": [
+      "load_item_category_authority_document",
+      "_complete_physical_category_authority",
+      "_validated_physical_category_catalog"
+    ],
+    "packaged_loader_requirement": "Use the duplicate-safe BKENC2-aware loader with separate exact eb1 historical and 68171c current 42-column profiles. The current 1427-row authority is Item-bound SHA-256 79D0DCFEEC06E922FD91F75F6F1EA7B23D270C237B9D67914395B07D6D85B048 with exactly 717 current eligible union rows; current-source audit remains pending.",
+    "activation_requirement": "The final hunk-level composition must rerun runtime-consumer and package gates and receive an independent source-scoped audit before release build."
+  },
+  "sav2": {
+    "status": "source_scoped_pass",
+    "source_commit": "11e7dd6edfb44325d21ae4d8ff83e6bc5802836c",
+    "handoff_commit": "7b5c104c20bbeb8d0f62a8132baad09c1c0ef2b6",
+    "protected_module": "src/bidking_lab/inference/mean_multiset_support.py",
+    "exact_blob": "2efcda19548a004573810f570a9062cc1b908273",
+    "activation_requirement": "Preserve the exact SAV2 blob in client protection and keep SAV2 shadow-only in the final independently audited composition."
+  },
+  "offline_exclusions": [
+    "data/processed/map_category_calibration_0_3_2.json"
+  ],
+  "offline_historical_package_inputs": [
+    "data/processed/quality_combo_presolve_q456.json",
+    "data/processed/auction_hall_6001_shadow_distribution.json"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "_说明": "GET /version 下发给客户端的版本清单。把本文件复制成 version_manifest.json 放到服务器 ~/bidking/ 下,改完重启 collector 即生效(无需改代码)。没有该文件=不下发版本信息(客户端不提示更新,向后兼容)。",
+  "latest": "0.2.2",
+  "min": "0.2.0",
+  "url": "",
+  "notice": "",
+  "game_version": ""
+}

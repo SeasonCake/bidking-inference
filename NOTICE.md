@@ -1,5 +1,12 @@
 # Notice
 
+The author-owned modern application source is included under `product/` under the
+repository MIT license: engine, UI, capture/state adapters, reusable authentication and
+server implementation, native source and build/test tools. See `product/THIRD_PARTY.md`
+and `product/SOURCE_MANIFEST.json`. References below to unselected private source apply
+outside this newly selected product layer. Production secrets, real records and external
+assets remain excluded.
+
 The maintained `auction_inference` package was newly written for the public extraction.
 The repository also contains a separately labeled `legacy/` snapshot of author-owned
 BidKing code from the early free/open product line and a reviewed set of pre-0.2.8
@@ -22,9 +29,9 @@ labeled synthetic teaching inputs. Their
 CSV inputs and generator are linked in the research guide. They contain no extracted
 game artwork; the underlying historical metadata retains the rights distinction below.
 
-The general problem shape was informed by experience building a private imperfect-
-information auction calculator. That experience is not a license to redistribute its
-unselected later product source, current data, assets, or production topology.
+The general problem shape was informed by experience building an imperfect-information
+auction calculator. The selected author-owned product implementation is now included;
+current game data, external assets and private operational material remain separate.
 
 Reusable workflow lessons are published in the companion repository:
 <https://github.com/SeasonCake/evidence-first-agent-skills>.

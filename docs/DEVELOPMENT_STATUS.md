@@ -1,3 +1,10 @@
+# Current source publication
+
+The product source now includes the 0.3.6 line with public/self-hosting adaptations.
+See [source and verification](../product/README.md). The Windows 0.3.6 release was
+accepted and published on 2026-10-11; source, package and service deployment are separate.
+The record below retains its 2026-09-13 scope and is historical.
+
 # BidKing: 0.3.5-hotfix1 product snapshot
 
 [简体中文](DEVELOPMENT_STATUS.zh-CN.md) · [Overview](../README.en.md)

@@ -1,0 +1,13 @@
+# Core
+pydantic>=2.0
+numpy>=1.26
+certifi>=2025.7.14
+
+# Visualization (notebooks)
+matplotlib>=3.8
+seaborn>=0.13
+pandas>=2.0
+jupyter>=1.0
+
+# Dev / test (optional)
+pytest>=7.0
